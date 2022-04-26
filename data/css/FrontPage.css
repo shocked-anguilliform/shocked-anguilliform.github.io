@@ -1,0 +1,15 @@
+#menu {
+  position: relative;
+  width: 350px;
+  height: 550px;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  background-color: #eee;
+  box-shadow: 20px 20px rgba(118,64,32,1);
+  transition: all .4s ease;
+  text-align: center;
+  
+}
+#menu:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(4,64,64,1);
+}
