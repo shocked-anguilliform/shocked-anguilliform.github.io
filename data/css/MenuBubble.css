@@ -72,8 +72,8 @@
 		0 -0.25rem 1.5rem rgba(0, 0, 0, .9) inset,
 		0 0.75rem 0.5rem rgba(255,255,255, .4) inset,
 		0 0.25rem 0.5rem 0 rgba(0, 0, 0, .9) inset,
-        	0 0 .2rem .2rem rgba(0,120,135,.5),
-        	0 0 .625rem.625rem rgba(12,222,232,.65);
+        	0 0 .2rem .2rem rgba(110, 175, 228, .5),
+        	0 0 .625rem .625rem rgba(118, 181, 232, .65);
 	transform: scale(1.1); 
 }
 
