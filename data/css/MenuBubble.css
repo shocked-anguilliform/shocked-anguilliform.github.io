@@ -61,6 +61,10 @@
 	-webkit-background-clip: text;
 	background-clip: text;
 	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+	position: absolute;
+	top: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .menuButton:hover {
