@@ -73,3 +73,11 @@
         	0 0 .625rem.625rem rgba(12,222,232,.65);
 	transform: scale(1.1); 
 }
+
+.menuContainer {
+	position:relative;
+	top:40%;
+	height:55%;
+	left:15%;
+	width:70%;
+}
