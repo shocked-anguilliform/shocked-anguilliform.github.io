@@ -21,6 +21,8 @@
 
 /* NPCs */
 #npcs {
+	background-image: url(/data/images/NPCsIcon.jpg);
+	background-position: center center;
 }
 
 #npcs span {
