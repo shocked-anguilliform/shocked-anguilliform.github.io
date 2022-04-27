@@ -86,4 +86,5 @@
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	transform: translateY(max(calc(12.4rem - 50%), 0px));
 }
