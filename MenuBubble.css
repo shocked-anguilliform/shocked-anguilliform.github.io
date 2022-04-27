@@ -57,6 +57,7 @@
 
 .menu span {
 	color: transparent;
+	font-family: 'Jokerman';
 	background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
 	-webkit-background-clip: text;
 	background-clip: text;
