@@ -26,7 +26,9 @@
 
 /* Locations */
 #locations {
-font-size: 1.8rem;
+	font-size: 1.8rem;
+	background-image: url(\data\image\LocationsIcon.jpg);
+	background-position: center 15%;
 }
 
 #locations span {
