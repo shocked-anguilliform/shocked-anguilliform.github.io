@@ -81,3 +81,8 @@
 	left:15%;
 	width:70%;
 }
+
+.menuBox {
+	float:left;
+	padding: 10px;
+}
