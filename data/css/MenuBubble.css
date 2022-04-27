@@ -1,4 +1,4 @@
-.menu {
+.menuButton {
 	position: relative;
 	width: 10rem;
 	height: 15rem;
@@ -22,7 +22,7 @@
 		0 0 .25rem .25rem rgba(0,0,0,.5);
 }
 
-.menu::before {
+.menuButton::before {
 	content: "";
 	display: block;
 	height: 0.25rem;
@@ -38,7 +38,7 @@
 	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
 }
 
-.menu::after {
+.menuButton::after {
 	content: "";
 	display: block;
 	height: 0.25rem;
@@ -55,7 +55,7 @@
 	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFF 20%, #FFF 80%, rgba(255,255,255,0.00) 100%);
 }
 
-.menu span {
+.menuButton span {
 	color: transparent;
 	font-family: 'Jokerman';
 	background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
@@ -64,7 +64,7 @@
 	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
 }
 
-.menu:hover {
+.menuButton:hover {
 	box-shadow: 0 1rem 1.25rem 0 rgba(0,0,0, .5),
 		0 -0.25rem 1.5rem rgba(0, 0, 0, .9) inset,
 		0 0.75rem 0.5rem rgba(255,255,255, .4) inset,
