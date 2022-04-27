@@ -1,6 +1,8 @@
-h1 {
+.title {
 	font-family: 'Gabriola';
-	text-align: center;
-	font-weight: 100px;
+	font-weight: bold;
 	font-size: 6em;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 35%)
 }
