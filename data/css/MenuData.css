@@ -17,6 +17,8 @@
 }
 
 #maps span {
+	background-image: linear-gradient(0deg, #5ac81e 0%, #f7fef2 100%);
+	filter: drop-shadow(0 2px 2px hsl(144deg 86% 9%));
 }
 
 /* NPCs */
@@ -26,6 +28,9 @@
 }
 
 #npcs span {
+	background-image: linear-gradient(0deg, #7708cc 0%, #fef6ff 100%);
+	filter: drop-shadow(0 2px 2px hsl(298deg 90% 14%));
+
 }
 
 /* Locations */
@@ -36,6 +41,8 @@
 }
 
 #locations span {
+	background-image: linear-gradient(0deg, #cc6b08 0%, #ffefdd 100%);
+	filter: drop-shadow(0 2px 2px hsl(23deg 90% 14%));
 }
 
 /* Characters */
@@ -46,6 +53,9 @@
 }
 
 #characters span {
+	background-image: linear-gradient(0deg, #4795ea 0%, #f2f7fe 100%);
+	filter: drop-shadow(0 2px 2px hsl(271deg 90% 14%));
+
 }
 
 /* Resources */
@@ -55,5 +65,7 @@
 	background-position: center 15%;
 }
 
-#resources {
+#resources span {
+	background-image: linear-gradient(0deg, #78F7DE 0%, #FFF 100%);
+	filter: drop-shadow(0 2px 2px hsla(168, 100%, 20%, 1));
 }
