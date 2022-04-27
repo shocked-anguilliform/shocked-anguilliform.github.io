@@ -30,11 +30,11 @@
 	top: 0.5rem;
 	left: 50%;
 	transform: translateX(-50%);
-	width: calc(100% - 7.5rem);
+	width: calc(100% - 5rem);
 	background: #fff;
 	border-radius: 100%;
 	filter: blur(1px);
-	opacity: .4;
+	opacity: .35;
 	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
 }
 
