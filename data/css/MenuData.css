@@ -44,7 +44,9 @@ font-size: 1.6rem;
 
 /* Resources */
 #resources {
-font-size: 1.7rem;
+	font-size: 1.7rem;
+	background-image: url(/data/images/ResourcesIcon.jpg);
+	background-position: center 15%;
 }
 
 #resources {
