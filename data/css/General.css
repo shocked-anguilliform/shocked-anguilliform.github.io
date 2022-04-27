@@ -2,9 +2,9 @@
 	font-family: 'Gabriola';
 	font-weight: bold;
 	font-size: 6em;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, 25%);
+	position: relative;
+	text-align: center;
 	text-shadow: 0.125rem 0.125rem 0.2rem #111d, -0.125rem -0.125rem 0.2rem #111d, 0.125rem -0.125rem 0.2rem #111d, -0.125rem 0.125rem 0.2rem #111d;
-	color: #fd4;
+	color: #ffeb5a;
+	white-space: nowrap;
 }
