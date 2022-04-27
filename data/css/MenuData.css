@@ -36,7 +36,9 @@
 
 /* Characters */
 #characters {
-font-size: 1.6rem;
+	font-size: 1.6rem;
+	background-image: url(/data/images/TaliaPFP.jpg);
+	background-position: center 15%;
 }
 
 #characters span {
