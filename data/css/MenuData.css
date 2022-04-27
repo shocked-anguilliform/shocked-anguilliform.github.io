@@ -12,6 +12,8 @@
 
 /* Maps */
 #maps {
+	background-image: url(/data/images/MapsIcon.jpg);
+	background-position: center center;
 }
 
 #maps span {
