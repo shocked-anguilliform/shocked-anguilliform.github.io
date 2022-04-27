@@ -18,7 +18,7 @@
 
 #maps span {
 	background-image: linear-gradient(0deg, #5ac81e 0%, #f7fef2 100%);
-	filter: drop-shadow(0 2px 2px hsl(144deg 86% 9%));
+	filter: drop-shadow(0 2px 2px hsla(144, 86%, 9%, 1));
 }
 
 /* NPCs */
@@ -29,7 +29,7 @@
 
 #npcs span {
 	background-image: linear-gradient(0deg, #7708cc 0%, #fef6ff 100%);
-	filter: drop-shadow(0 2px 2px hsl(298deg 90% 14%));
+	filter: drop-shadow(0 2px 2px hsla(298, 90%, 14%, 1));
 
 }
 
@@ -42,7 +42,7 @@
 
 #locations span {
 	background-image: linear-gradient(0deg, #cc6b08 0%, #ffefdd 100%);
-	filter: drop-shadow(0 2px 2px hsl(23deg 90% 14%));
+	filter: drop-shadow(0 2px 2px hsla(23, 90%, 14%, 1));
 }
 
 /* Characters */
@@ -54,7 +54,7 @@
 
 #characters span {
 	background-image: linear-gradient(0deg, #4795ea 0%, #f2f7fe 100%);
-	filter: drop-shadow(0 2px 2px hsl(271deg 90% 14%));
+	filter: drop-shadow(0 2px 2px hsla(271, 90%, 14%, 1));
 
 }
 
