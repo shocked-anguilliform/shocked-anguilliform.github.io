@@ -75,6 +75,7 @@
         	0 0 .2rem .2rem rgba(110, 175, 228, .5),
         	0 0 .625rem .625rem rgba(118, 181, 232, .65);
 	transform: scale(1.1); 
+	z-index: 1;
 }
 
 .menuContainer {
