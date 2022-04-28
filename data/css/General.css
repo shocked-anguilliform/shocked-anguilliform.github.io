@@ -4,7 +4,14 @@
 	font-size: 6em;
 	position: relative;
 	text-align: center;
-	text-shadow: 0.125rem 0.125rem 0.2rem #111d, -0.125rem -0.125rem 0.2rem #111d, 0.125rem -0.125rem 0.2rem #111d, -0.125rem 0.125rem 0.2rem #111d;
-	color: #aeb5bc;
+	filter: drop-shadow(0.125rem 0.125rem 0.1rem #111a)
+drop-shadow(-0.125rem -0.125rem 0.1rem #111a)
+drop-shadow(0.125rem -0.125rem 0.1rem #111a)
+drop-shadow(-0.125rem 0.125rem 0.1rem #111a);
 	white-space: nowrap;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: #ccd7e1;
+	color: transparent;
+	background-image: linear-gradient(0deg, #a7b3be 0%, #d5dee5 50%, #ffffff 100%);
 }
