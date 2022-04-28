@@ -1,10 +1,10 @@
 .title {
-	font-family: 'Gabriola';
+	font-family: 'Copperplate Gothic';
 	font-weight: bold;
 	font-size: 6em;
 	position: relative;
 	text-align: center;
 	text-shadow: 0.125rem 0.125rem 0.2rem #111d, -0.125rem -0.125rem 0.2rem #111d, 0.125rem -0.125rem 0.2rem #111d, -0.125rem 0.125rem 0.2rem #111d;
-	color: #ffeb5a;
+	color: #aeb5bc;
 	white-space: nowrap;
 }
