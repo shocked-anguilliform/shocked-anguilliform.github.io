@@ -53,8 +53,8 @@
 }
 
 #characters span {
-	background-image: linear-gradient(0deg, #0397b4 0%, #e4ffed 100%);
-	filter: drop-shadow(0 2px 2px hsla(160, 90%, 14%, 1));
+	background-image: linear-gradient(0deg, #ff502a 0%, #fdf0ea 100%);
+	filter: drop-shadow(0 2px 2px hsla(30, 90%, 14%, 1));
 
 }
 
