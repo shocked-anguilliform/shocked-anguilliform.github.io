@@ -1,6 +1,5 @@
 /* Prototype "Adsasd"*/
 #wizard {
-	font-size: 2rem; /* Default */
 	background-image: url(https://tse2.mm.bing.net/th?id=OIP.79zCKBvPMhDpjo47TitDvgHaJo&pid=Api);
 	background-position: center 0;
 }
@@ -35,7 +34,6 @@
 
 /* Locations */
 #locations {
-	font-size: 1.8rem;
 	background-image: url(/data/images/LocationsIcon.jpg);
 	background-position: center 15%;
 }
@@ -47,7 +45,6 @@
 
 /* Characters */
 #characters {
-	font-size: 1.6rem;
 	background-image: url(/data/images/TaliaPFP.jpg);
 	background-position: center 15%;
 }
@@ -55,12 +52,10 @@
 #characters span {
 	background-image: linear-gradient(0deg, #ff502a 0%, #fdf0ea 100%);
 	filter: drop-shadow(0 2px 2px #470018);
-
 }
 
 /* Resources */
 #resources {
-	font-size: 1.7rem;
 	background-image: url(/data/images/ResourcesIcon.jpg);
 	background-position: center 15%;
 }
