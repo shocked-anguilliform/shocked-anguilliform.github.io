@@ -54,8 +54,8 @@
 }
 
 .menuButton span {
-	background-image: linear-gradient(0deg, #78F7DE 0%, #FFF 100%);
-	filter: drop-shadow(0 2px 2px hsla(168, 100%, 20%, 1));
+	background-image: linear-gradient(0deg, #4fe3c3 0%, #f5fcfb 100%);
+	filter: drop-shadow(0 2px 2px #517a74);
 	color: transparent;
 	font-family: 'Jokerman';
 	-webkit-background-clip: text;
