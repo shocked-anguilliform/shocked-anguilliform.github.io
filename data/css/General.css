@@ -5,9 +5,9 @@
 	position: relative;
 	text-align: center;
 	filter: drop-shadow(0.125rem 0.125rem 0.1rem #111a)
-drop-shadow(-0.125rem -0.125rem 0.1rem #111a)
-drop-shadow(0.125rem -0.125rem 0.1rem #111a)
-drop-shadow(-0.125rem 0.125rem 0.1rem #111a);
+		drop-shadow(-0.125rem -0.125rem 0.1rem #111a)
+		drop-shadow(0.125rem -0.125rem 0.1rem #111a)
+		drop-shadow(-0.125rem 0.125rem 0.1rem #111a);
 	white-space: nowrap;
 	-webkit-background-clip: text;
 	background-clip: text;
