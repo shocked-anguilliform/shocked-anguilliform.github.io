@@ -63,9 +63,22 @@ body {
 }
 
 .navBar a{
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 1.5rem;
 	cursor: pointer;
 	background: linear-gradient(to bottom, #eaeaea 0%, #dadada 26%, #bbb 100%);
 	padding: 1rem;
 	float: left;
 	cursor: pointer;
+	text-shadow: 0 -2px 0 #8a8a8a, 0 1px 1px #dedede;
+	font-weight: bold;
+	color: #a9a9a9;
+	border-radius: .3125rem;
+	border-top: 1px solid #c8e2d3;
+	border-bottom: 1px solid #c2dece;
 }
+
+.navBar a:active {
+  top: 6px;
+  text-shadow: 0 -2px 0 #bbb, 0 1px 1px #dedede, 0 0 4px white;
+  color: white;
