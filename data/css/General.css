@@ -54,3 +54,15 @@ body {
 .textBack p{
 	margin-top: 0;
 }
+
+.navBar{
+	position: absolute;
+	margin: 1rem;
+	margin-top: 1.4rem;
+}
+
+.navButton{
+	background: linear-gradient(to bottom, #eaeaea 0%, #b6b6b6 26%, #bbb 100%);
+	padding: 1rem;
+	float: left
+}
