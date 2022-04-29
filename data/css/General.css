@@ -22,7 +22,7 @@
 }
 
 .textBack {
-	width:min(60rem, 80%);
+	width:min(50rem, 80%);
 	background: #bbbd;
 	height: 100%;
 	top: max(min(7%, calc(10vw+2rem)), 2rem);
