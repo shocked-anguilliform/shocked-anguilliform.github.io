@@ -14,4 +14,33 @@ drop-shadow(-0.125rem 0.125rem 0.1rem #111a);
 	color: #ccd7e1;
 	color: transparent;
 	background-image: linear-gradient(0deg, #a7b3be 0%, #d5dee5 50%, #ffffff 100%);
+	top:max(min(calc(5vw+.1rem), .1rem), 3%);
+}
+
+.titleWord {
+	font-size: min(100%, 13vw)
+}
+
+.textBack {
+	width:min(45rem, 80%);
+	background: #bbbd;
+	height: 100%;
+	top: max(min(7%, calc(10vw+2rem)), 2rem);
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 0.25rem;
+	border-style: solid;
+	border-color: #666d;
+	font-family: "lucida bright";
+	text-indent: 2rem;
+}
+
+.textBack div{
+	padding:2rem 2rem 2rem 2rem;
+	font-size:1.5rem;
+}
+
+.textBack p{
+	margin-top: 0;
 }
