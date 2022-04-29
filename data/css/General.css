@@ -23,12 +23,13 @@
 
 .textBack {
 	width:min(50rem, 80%);
+	min-height:70%;
 	background: #bbbd;
-	top: min(3rem, 6vw);
 	position: relative;
+	top: min(3rem, 6vw);
 	left: 50%;
-	overflow: auto;
 	transform: translateX(-50%);
+	overflow: auto;
 	border-radius: 0.25rem;
 	border-style: solid;
 	border-color: #666d;
