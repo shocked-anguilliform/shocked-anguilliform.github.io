@@ -55,6 +55,7 @@ body {
 	margin-top: 0;
 }
 
+/*
 .navBar {
   margin: auto;
   position: absolute;
@@ -120,4 +121,34 @@ body {
   background: linear-gradient(to top, #535353 0%, #787878 6px);
   transition: all 0.078s ease-out;
   box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
+}
+*/
+
+.navBar {
+	position: absolute;
+	z-index: 1;
+}
+
+.navBar a {
+	height: 4rem;
+	width: 4rem;
+	margin: 4rem;
+	display: inline-block;
+	cursor: pointer;
+	
+}
+
+.orb {
+	filter:drop-shadow(0px 0px .2rem #6ff);
+	background-image: url('/data/images/CrystalBall.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	filter: opavity(50%);
+}
+
+.navBar span{
+	position: fixed;
+	top:100%;
+	font-size: 1.2rem;
+	color: #ddd;
 }
