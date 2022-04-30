@@ -7,8 +7,19 @@ body {
 	background-attachment: fixed;
 }
 
+@font-face {
+   font-family: CopperplateIda;
+   src: url(/data/fonts/CopperplateGothicLight.ttf);
+}
+
+@font-face {
+   font-family: CopperplateIda;
+   src: url(/data/fonts/CopperplateGothicBold.ttf);
+   font-weight: bold;
+}
+
 .title {
-	font-family: 'Copperplate Gothic';
+	font-family: CopperplateIda;
 	font-weight: bold;
 	font-size: 6em;
 	position: relative;
@@ -127,6 +138,7 @@ body {
 .navBar {
 	position: absolute;
 	z-index: 1;
+	padding: .75rem;
 }
 
 /* [Old format]
@@ -162,14 +174,14 @@ navButton a {
 	display: inline-block;
 	z-index: 2;
 	position: relative;
-	font-family: 'Copperplate Gothic';
+	font-family: CopperplateIda;
 	color: #ddd;
 	font-size: 1.2rem;
 	font-weight: bold;
 	text-decoration: none;
 	text-align: center;
 	text-shadow: 0 0 .1rem black, 0 0 .1rem black, 0 0 .1rem black, 0 0 .1rem black;
-	margin: 1rem 0rem 1rem 1rem;
+	margin: .25rem;
 }
 
 /* [Old format]
