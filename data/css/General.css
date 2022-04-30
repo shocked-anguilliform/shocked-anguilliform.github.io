@@ -183,6 +183,7 @@ navButton a {
 	text-shadow: 0 0 .1rem black, 0 0 .1rem black, 0 0 .1rem black, 0 0 .1rem black;
 	margin: .25rem;
 	border-radius: 2rem;
+	transition: all 0.3s ease-out;
 }
 
 /* [Old format]
@@ -203,4 +204,7 @@ navButton a {
 
 .navBar a:hover{
 	box-shadow: inset 0 0 1rem 2rem #bbff4448, 0px 0px .4rem #bf4;
+}
+.navBar a:active{
+box-shadow: inset 0 0 1rem 2rem #bb66ff48, 0px 0px .4rem #b6f;
 }
