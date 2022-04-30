@@ -139,6 +139,7 @@ body {
 	position: absolute;
 	z-index: 1;
 	padding: .75rem;
+	display: flex;
 }
 
 /* [Old format]
