@@ -139,9 +139,7 @@ body {
 }
 
 .navButton a {
-	filter:drop-shadow(0px 0px .2rem #ffff)
-		drop-shadow(0px 0px .2rem #fff3)
-		opacity(70%);
+	filter: opacity(90%);
 	background-image: url('/data/images/CrystalBall.png');
 	background-size: contain;
 	background-repeat: no-repeat; 
