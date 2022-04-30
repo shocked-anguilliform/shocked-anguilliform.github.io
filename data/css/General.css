@@ -24,7 +24,7 @@ body {
 
 @font-face {
    font-family: CopperplateIda;
-   src: url(/data/fonts/CopperplateGothicBold.ttf);
+   src: url(/data/fonts/CopperplateGothicBoldCondensed.otf);
    font-stretch: condensed;
    font-variant: bold;
 }
