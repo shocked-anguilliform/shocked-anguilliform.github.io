@@ -132,23 +132,24 @@ body {
 .navBar a {
 	height: 4rem;
 	width: 4rem;
-	margin: 4rem;
+	margin: 1rem;
 	display: inline-block;
 	cursor: pointer;
-	
+	text-align: center;
 }
 
 .orb {
-	filter:drop-shadow(0px 0px .2rem #6ff);
+	filter:drop-shadow(0px 0px .2rem #6ff),
+		opacity(50%);
 	background-image: url('/data/images/CrystalBall.png');
 	background-size: contain;
-	background-repeat: no-repeat;
-	filter: opavity(50%);
+	background-repeat: no-repeat; 
+	height: 100%;
+	width: 100%;
 }
 
 .navBar span{
-	position: fixed;
-	top:100%;
+	position: relative;
 	font-size: 1.2rem;
 	color: #ddd;
 	font-family: 'Copperplate Gothic';
