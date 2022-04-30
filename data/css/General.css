@@ -129,6 +129,7 @@ body {
 	z-index: 1;
 }
 
+/* [Old format]
 .navButton {
 	height: 4rem;
 	width: 4rem;
@@ -138,7 +139,7 @@ body {
 	text-align: center;
 }
 
-.navButton a {
+navButton a {
 	filter: opacity(90%);
 	background-image: url('/data/images/CrystalBall.png');
 	background-size: contain;
@@ -149,11 +150,30 @@ body {
 	display: inline-block;
 	z-index: 2;
 }
+*/
 
+.navBar a {
+	background-image: url('/data/images/CrystalBall.png');
+	background-size: contain;
+	background-repeat: no-repeat; 
+	padding: 1.4rem 0;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	z-index: 2;
+	position: relative;
+	font-family: 'Copperplate Gothic';
+	color: #ddd;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 0 0 .1rem black, 0 0 .1rem black, 0 0 .1rem black, 0 0 .1rem black;
+}
+
+/* [Old format]
 .navButton a:hover{
 	filter:drop-shadow(0px 0px .2rem #6fff);
-		/*drop-shadow(0px 0px .2rem #6ff8)
-		opacity(70%);*/
 }
 
 .navBar span{
@@ -164,4 +184,9 @@ body {
 	font-weight: bold;
 	text-decoration: none;
 	top: -1.2rem;
+}
+*/
+
+.navBar a:hover{
+	filter:drop-shadow(0px 0px .2rem #6fff);
 }
