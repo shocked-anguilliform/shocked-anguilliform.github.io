@@ -57,7 +57,9 @@
 	background-image: linear-gradient(0deg, #4fe3c3 0%, #f5fcfb 100%);
 	filter: drop-shadow(0 2px 2px #517a74);
 	color: transparent;
-	font-family: 'Jokerman';
+	font-family: 'CopperplateIda';
+	font-weight: bold;
+	font-stretch: condensed;
 	-webkit-background-clip: text;
 	background-clip: text;
 	position: absolute;
