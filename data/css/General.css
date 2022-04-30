@@ -1,9 +1,9 @@
 body {
-        height: 100%;
-        margin: 0;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 20% center;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% center;
 	background-attachment: fixed;
 }
 
@@ -151,4 +151,5 @@ body {
 	top:100%;
 	font-size: 1.2rem;
 	color: #ddd;
+	font-family: 'Copperplate Gothic';
 }
