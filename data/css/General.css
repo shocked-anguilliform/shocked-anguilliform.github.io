@@ -150,8 +150,8 @@ body {
 }
 
 .orb hover{
-	filter:drop-shadow(0px 0px .2rem 6fff)
-		drop-shadow(0px 0px .2rem #6ff3)
+	filter:drop-shadow(0px 0px .2rem #6fff)
+		drop-shadow(0px 0px .2rem #6ff8)
 		opacity(70%);
 }
 
