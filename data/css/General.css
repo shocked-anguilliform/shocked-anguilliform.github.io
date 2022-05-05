@@ -29,6 +29,10 @@ body {
    font-variant: bold;
 }
 
+.hide{
+	display: none;
+}
+
 .headSpace{
 	position: relative;
 	width: calc(100% - 1rem);
