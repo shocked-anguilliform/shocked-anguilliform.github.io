@@ -1,4 +1,9 @@
+html{
+	height: 100%;
+}
+
 body {
+	height: calc(100% + 2rem);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% center;
@@ -68,6 +73,7 @@ body {
 .textBack {
 	width:min(46rem, 80% - 4rem);
 	padding:1.4rem 2rem 0rem 2rem;
+	margin-bottom: 2rem;
 	min-height:max(70% - 10rem, 100% - 25vw - 10rem);
 	background: #bbbd;
 	position: relative;
