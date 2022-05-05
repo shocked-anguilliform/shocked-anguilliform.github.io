@@ -1,10 +1,4 @@
-html{
-	height: 100%;
-}
-
 body {
-    height: 100%;
-    margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% center;
@@ -72,8 +66,9 @@ body {
 }
 
 .textBack {
-	width:min(50rem, 80%);
-	min-height:max(70%, calc(100% - 25vw));
+	width:min(46rem, 80% - 4rem);
+	padding:1.4rem 2rem 0rem 2rem;
+	min-height:max(70% - 10rem, 100% - 25vw - 10rem);
 	background: #bbbd;
 	position: relative;
 	top: min(-5rem, max(9vw - 8.2rem, -6.2rem));
@@ -84,12 +79,8 @@ body {
 	border-style: solid;
 	border-color: #666d;
 	font-family: "lucida bright";
-	text-indent: 2rem;
-}
-
-.textBack div{
-	padding:2rem 2rem 2rem 2rem;
 	font-size:1.5rem;
+	text-indent: 2rem;
 }
 
 .textBack p{
@@ -126,10 +117,10 @@ body {
 	transition: all 0.3s ease-out;
 }
 
-
 .navBar a:hover{
 	box-shadow: inset 0 0 1rem 2rem #bbff4448, 0px 0px .4rem #bf4;
 }
+
 .navBar a:active{
 box-shadow: inset 0 0 1rem 2rem #bb66ff48, 0px 0px .4rem #b6f;
 }
