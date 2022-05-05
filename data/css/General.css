@@ -94,6 +94,18 @@ body {
 	text-indent: 2rem;
 }
 
+.textBack a:link{
+  color: #087a53;
+}
+
+.textBack a:visited {
+  color: #087a53;
+}
+
+.textBack a:hover {
+  color: #264836;
+}
+
 .foot{
 	height: 1rem;
 	position: relative;
