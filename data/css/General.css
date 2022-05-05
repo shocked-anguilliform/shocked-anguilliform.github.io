@@ -36,10 +36,6 @@ body {
 	min-height: min(7.85rem, 3vw + 6.5rem);
 }
 
-.foot{
-	height: 2rem;
-}
-
 .titleBox {
 	font-family: CopperplateIda;
 	font-weight: bold;
@@ -77,7 +73,6 @@ body {
 .textBack {
 	width:min(46rem, 80% - 4rem);
 	padding:1.4rem 2rem 0rem 2rem;
-	margin-bottom: 2rem;
 	min-height:max(70% - 10rem, 100% - 25vw - 10rem);
 	background: #bbbd;
 	position: relative;
@@ -92,6 +87,12 @@ body {
 	font-size:1.5rem;
 	text-indent: 2rem;
 }
+
+.foot{
+	height: 1rem;
+	top: min(-5rem, max(9vw - 8.2rem, -6.2rem));
+}
+
 
 .textBack p{
 	margin-top: 0;
