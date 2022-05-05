@@ -4,6 +4,7 @@ html{
 
 body {
 	height: 100%;
+	margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% center;
@@ -30,7 +31,8 @@ body {
 
 .headSpace{
 	position: relative;
-	width: 100%;
+	width: calc(100% - 1rem);
+	margin: .5rem .5rem 0 .5rem;
 	display: inline-flex;
 	flex-wrap: wrap;
 	min-height: min(7.85rem, 3vw + 6.5rem);
