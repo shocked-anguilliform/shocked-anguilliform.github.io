@@ -92,6 +92,7 @@ body {
 
 .foot{
 	height: 1rem;
+	position: relative;
 	top: min(-5rem, max(9vw - 8.2rem, -6.2rem));
 }
 
