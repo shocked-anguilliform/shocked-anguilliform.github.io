@@ -97,7 +97,7 @@ body {
 	position: relative;
 	z-index: 1;
 	padding: .75rem;
-	display: flex;
+	display: inline;
 }
 
 
