@@ -3,7 +3,7 @@ html{
 }
 
 body {
-	height: calc(100% + 2rem);
+	height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% center;
@@ -34,6 +34,10 @@ body {
 	display: inline-flex;
 	flex-wrap: wrap;
 	min-height: min(7.85rem, 3vw + 6.5rem);
+}
+
+.foot{
+	height: 2rem;
 }
 
 .titleBox {
