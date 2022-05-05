@@ -75,7 +75,7 @@ body {
 .textBack {
 	width:min(46rem, 80% - 4rem);
 	padding:1.4rem 2rem 0rem 2rem;
-	min-height:max(70% - 10rem, 100% - 25vw - 10rem);
+	min-height:max(70%, 100% - 25vw );
 	background: #bbbd;
 	position: relative;
 	top: min(-5rem, max(9vw - 8.2rem, -6.2rem));
