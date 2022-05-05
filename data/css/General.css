@@ -7,7 +7,6 @@ body {
 	margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 20% center;
 	background-attachment: fixed;
 	overflow-x: hidden;}
 
@@ -103,7 +102,7 @@ body {
 }
 
 .textBack a:hover {
-  color: #264836;
+  color: #45808c;
 }
 
 .foot{
