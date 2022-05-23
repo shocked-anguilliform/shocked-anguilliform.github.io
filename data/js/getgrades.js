@@ -62,7 +62,7 @@ function splitClass(semesterNumber) {
 	window['S'+semesterNumber+'C'+j].name = $.trim(window['S'+semesterNumber+'C'+j][0]);
 	window['S'+semesterNumber+'C'+j].shift();
 	window['S'+semesterNumber+'C'+j].grade = getGrade (window['S'+semesterNumber+'C'+j]);
-	window['S'+semesterNumber+'C'+j].oldgrade = getOldGrade (window['S'+semesterNumber+'C'+j]);
+	window['S'+semesterNumber+'C'+j].oldGrade = getOldGrade (window['S'+semesterNumber+'C'+j]);
 	console.log(window['S'+semesterNumber+'C'+j].name + ": " + window['S'+semesterNumber+'C'+j]);
 }
 
