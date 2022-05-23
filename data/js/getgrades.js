@@ -24,11 +24,12 @@ function splitFile(grades,mode){
 	for(i = 0; i < semestersCount; i++) {
 		splitSemester(semesters);
 	}
-	document.getElementById("test").innerHTML = "";
-	let last = semestersCount-1;
-	for(i = 0; i < window['semester'+last].length; i++){
-		document.getElementById("test").innerHTML += window['S'+last+'C'+i].name + ": " + window['S'+last+'C'+i].grade + "<br>";
+	if (mode == "current) {
+		displayCurrentGrades();
+	} else {
+		writeTranscript();
 	}
+	
 }
 
 function splitSemester(semesters){
@@ -66,4 +67,15 @@ function getGrade(gradeBits) {
 	}
 	console.log("Grade: " + grade);
 	return grade;
+}
+
+function displayCurrentGrades() {
+	document.getElementById("test").innerHTML = "";
+	let last = semestersCount-1;
+	for(i = 0; i < window['semester'+last].length; i++){
+		document.getElementById("test").innerHTML += window['S'+last+'C'+i].name + ": " + window['S'+last+'C'+i].grade + "<br>";
+	}
+}
+
+function writeTranscript() {
 }
