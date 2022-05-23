@@ -63,7 +63,7 @@ function splitClass(semesterNumber) {
 	window['S'+semesterNumber+'C'+j].shift();
 	window['S'+semesterNumber+'C'+j].grade = getGrade (window['S'+semesterNumber+'C'+j]);
 	window['S'+semesterNumber+'C'+j].oldGrade = getOldGrade (window['S'+semesterNumber+'C'+j]);
-	console.log(window['S'+semesterNumber+'C'+j].name + ": " + window['S'+semesterNumber+'C'+j]);
+	console.log(window['S'+semesterNumber+'C'+j].name + ": New: " + window['S'+semesterNumber+'C'+j].grade + " Old: " + window['S'+semesterNumber+'C'+j].oldGrade);
 }
 
 function getGrade(gradeBits) {
@@ -79,7 +79,6 @@ function getGrade(gradeBits) {
 			}
 			grade = (gradeSum / gradeBits.length).toFixed(1);
 	}
-	console.log("Grade: " + grade);
 	return grade;
 }
 
@@ -94,7 +93,6 @@ function getOldGrade(gradeBits) {
 		}
 		grade = (gradeSum / (gradeBits.length-1)).toFixed(1);
 	}
-	console.log("Old grade: " + grade);
 	return grade;
 }
 
