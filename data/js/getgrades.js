@@ -18,7 +18,7 @@ function populateCurrentGrades(grades){
 	document.getElementById("test").innerHTML = "";
 	let last = semestersCount-1;
 	for(i = 0; i < window['semester'+last].length; i++){
-		document.getElementById("test").innerHTML += window['S'+last+'C'+i] + "<br>";
+		document.getElementById("test").innerHTML += window['S'+last+'C'+i].name + ": " + window['S'+last+'C'+i] + "<br>";
 	}
 }
 
@@ -36,7 +36,22 @@ function splitSemester(semesters){
 function splitClass(semesterNumber) {
 	let semester = window['semester'+semesterNumber]
 	window['S'+semesterNumber+'C'+j] = semester[j].split(" | ");
-	window['S'+semesterNumber+'C'+j+'name'] = $.trim(window['S'+semesterNumber+'C'+j][0]);
-	console.log(window['S'+semesterNumber+'C'+j+'name']);
-	console.log("Result (S" + semesterNumber + "C" + j + "):" + window['S'+semesterNumber+'C'+j]);
+	window['S'+semesterNumber+'C'+j].name = $.trim(window['S'+semesterNumber+'C'+j][0]);
+	window['S'+semesterNumber+'C'+j].shift();
+	//window['S'+semesterNumber+'C'+j].grade = getGrade (window['S'+semesterNumber+'C'+j]);
+	console.log(window['S'+semesterNumber+'C'+j].name + ": " + window['S'+semesterNumber+'C'+j]);
 }
+/*
+function getGrade(gradeBits) {
+	var grade;
+	if gradeBits.length == 0 {
+		grade = "-";
+		if gradeBits.length == 1 {
+			grade = gradeBits[0];
+			grade = gradeBits.reduce((a, b) => a + b);
+		}
+	}
+	console.log(grade);
+	return grade;
+}
+*/
