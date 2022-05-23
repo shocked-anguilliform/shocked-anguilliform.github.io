@@ -22,14 +22,14 @@ async function getFile(student,mode,semester) {
 
 function splitFile(grades,mode,semester){
 	console.clear();
-	console.log("Current mode: " + mode);
+	console.log("Mode: " + mode);
 	const semesters = String(grades).split("\n#S\n");
 	var semestersCount = semesters.length;
 	for(i = 0; i < semestersCount; i++) {
 		splitSemester(semesters);
 	}
 	if (mode == "current") {
-		displaySemesterGrades(semestersCount-1);
+		displaySemesterGrades(semestersCount-3);
 	}
 	if (mode == "transcript") {
 		writeTranscript(semestersCount);
@@ -50,7 +50,6 @@ function splitSemester(semesters){
 	
 	console.log("Split semester " + i);
 	let classes = window['semester'+i].length;
-	console.log("Length: " + window['semester'+i].length);
 	for(j = 0; j < classes; j++) {
 		splitClass(i);
 	}
@@ -98,8 +97,19 @@ function getOldGrade(gradeBits) {
 
 function displaySemesterGrades(semester) {
 	document.getElementById("test").innerHTML = "";
+	var change;
 	for(i = 0; i < window['semester'+semester].length; i++){
-		document.getElementById("test").innerHTML += window['S'+semester+'C'+i].name + ": " + window['S'+semester+'C'+i].grade + "<br>";
+		change = "";
+		if (window['S'+semester+'C'+i].oldGrade != "-") {
+			if (window['S'+semester+'C'+i].oldGrade < window['S'+semester+'C'+i].grade) {
+				change = ' <span class="up">⯅</span> ';
+			}
+			if (window['S'+semester+'C'+i].oldGrade > window['S'+semester+'C'+i].grade) {
+				change = ' <span class="down">⯆</span>';
+			}
+		}
+		
+		document.getElementById("test").innerHTML += window['S'+semester+'C'+i].name + ": " + window['S'+semester+'C'+i].grade + change +"<br>";
 	}
 }
 
