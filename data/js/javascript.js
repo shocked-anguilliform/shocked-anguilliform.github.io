@@ -1,9 +1,9 @@
 function runFunction(){
-	testFunction();
+	testFunction("sample");
 }
 
-function testFunction(){
-	let grades = "/data/grades/sample.txt"
+function testFunction(name){
+	let grades = "/data/grades/" + name + ".txt"
 
 fetch (grades)
 .then(x => x.text())
