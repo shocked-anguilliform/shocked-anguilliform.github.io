@@ -44,7 +44,7 @@ function splitClass(semesterNumber) {
 
 function getGrade(gradeBits) {
 	var grade;
-	if (gradeBits.length ==) 0 {
+	if (gradeBits.length == 0) {
 		grade = "-";
 		if (gradeBits.length == 1) {
 			grade = gradeBits[0];
