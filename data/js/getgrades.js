@@ -57,7 +57,7 @@ function splitSemester(semesters){
 
 function splitClass(semesterNumber) {
 	let semester = window['semester'+semesterNumber]
-	window['S'+semesterNumber+'C'+j] = semester[j].split(" | ");
+	window['S'+semesterNumber+'C'+j] = semester[j].split("|");
 	window['S'+semesterNumber+'C'+j].name = $.trim(window['S'+semesterNumber+'C'+j][0]);
 	window['S'+semesterNumber+'C'+j].shift();
 	window['S'+semesterNumber+'C'+j].grade = getGrade (window['S'+semesterNumber+'C'+j]);
