@@ -29,7 +29,7 @@ function splitFile(grades,mode,semester){
 		splitSemester(semesters);
 	}
 	if (mode == "current") {
-		displaySemesterGrades(semestersCount-3);
+		displaySemesterGrades(semestersCount-1);
 	}
 	if (mode == "transcript") {
 		writeTranscript(semestersCount);
