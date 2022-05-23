@@ -9,5 +9,14 @@ async function getCurrentGrades(student) {
 }
 
 function populateCurrentGrades(grades){
-document.getElementById("test").innerHTML = grades;
+	const semesters = String(grades).split("#S");
+	var semestersCount = semesters.length;
+	for(i = 0; i < semestersCount; i++) {
+		splitSemester(i);
+	}
+	document.getElementById("test").innerHTML = semesters;
+}
+
+function splitSemester(number){
+	console.log("split semester " + number);
 }
