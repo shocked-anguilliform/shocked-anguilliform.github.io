@@ -35,7 +35,11 @@ function splitFile(grades,mode,semester){
 		writeTranscript(semestersCount);
 	}
 	if (mode == "semester") {
-		displaySemesterGrades(semester);
+		if (semester < semestersCount && semester >= 0) {
+			displaySemesterGrades(semester);
+		} else {
+			console.log("Error: No such semester");
+		}
 	}
 	console.log("done");
 	
@@ -58,6 +62,7 @@ function splitClass(semesterNumber) {
 	window['S'+semesterNumber+'C'+j].name = $.trim(window['S'+semesterNumber+'C'+j][0]);
 	window['S'+semesterNumber+'C'+j].shift();
 	window['S'+semesterNumber+'C'+j].grade = getGrade (window['S'+semesterNumber+'C'+j]);
+	window['S'+semesterNumber+'C'+j].oldgrade = getOldGrade (window['S'+semesterNumber+'C'+j]);
 	console.log(window['S'+semesterNumber+'C'+j].name + ": " + window['S'+semesterNumber+'C'+j]);
 }
 
@@ -75,6 +80,21 @@ function getGrade(gradeBits) {
 			grade = (gradeSum / gradeBits.length).toFixed(1);
 	}
 	console.log("Grade: " + grade);
+	return grade;
+}
+
+function getOldGrade(gradeBits) {
+	var grade;
+	if (gradeBits.length < 2) {
+		grade = "-";
+	} else {
+		var gradeSum = 0;
+		for (let i = 0; i < gradeBits.length-1; i++) {
+			gradeSum += parseFloat(gradeBits[i]);
+		}
+		grade = (gradeSum / (gradeBits.length-1)).toFixed(1);
+	}
+	console.log("Old grade: " + grade);
 	return grade;
 }
 
