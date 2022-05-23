@@ -12,18 +12,23 @@ function populateCurrentGrades(grades){
 	const semesters = String(grades).split("#S");
 	var semestersCount = semesters.length;
 	for(i = 0; i < semestersCount; i++) {
-		splitSemester(i, semesters);
+		splitSemester(semesters);
 	}
 	document.getElementById("test").innerHTML = semesters;
 }
 
-function splitSemester(number, semesters){
+function splitSemester(semesters){
 	window['semester'+i] = semesters[i].split("\n");
-	console.log("split semester " + number);
-	console.log("Result: " + window['semester'+i]);
+	
+	console.log("Split semester " + i);
 	console.log("Length: " + window['semester'+i].length);
+	for(j = 0; j < window['semester'+i].length; i++) {
+		splitClass(i);
+	}
 }
 
-function splitClass(number) {
-	
+function splitClass(SN) {
+	window['S'+SN+'C'+j] = window['semester'+SN].split(" | ");
+	console.log("Split semester " + i + ", class" + j);
+	console.log("Result (S" + SN + "C" + j + "):" + window['S'+SN+'C'+j]);
 }
