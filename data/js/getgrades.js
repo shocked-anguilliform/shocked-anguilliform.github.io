@@ -38,15 +38,15 @@ function splitClass(semesterNumber) {
 	window['S'+semesterNumber+'C'+j] = semester[j].split(" | ");
 	window['S'+semesterNumber+'C'+j].name = $.trim(window['S'+semesterNumber+'C'+j][0]);
 	window['S'+semesterNumber+'C'+j].shift();
-	//window['S'+semesterNumber+'C'+j].grade = getGrade (window['S'+semesterNumber+'C'+j]);
+	window['S'+semesterNumber+'C'+j].grade = getGrade (window['S'+semesterNumber+'C'+j]);
 	console.log(window['S'+semesterNumber+'C'+j].name + ": " + window['S'+semesterNumber+'C'+j]);
 }
-/*
+
 function getGrade(gradeBits) {
 	var grade;
-	if gradeBits.length == 0 {
+	if (gradeBits.length ==) 0 {
 		grade = "-";
-		if gradeBits.length == 1 {
+		if (gradeBits.length == 1) {
 			grade = gradeBits[0];
 			grade = gradeBits.reduce((a, b) => a + b);
 		}
@@ -54,4 +54,3 @@ function getGrade(gradeBits) {
 	console.log(grade);
 	return grade;
 }
-*/
