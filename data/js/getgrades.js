@@ -24,11 +24,12 @@ function splitFile(grades,mode){
 	for(i = 0; i < semestersCount; i++) {
 		splitSemester(semesters);
 	}
-	if (mode == "current) {
+	/*if (mode == "current) {
 		displayCurrentGrades();
 	} else {
 		writeTranscript();
-	}
+	}*/
+	console.log("done");
 	
 }
 
