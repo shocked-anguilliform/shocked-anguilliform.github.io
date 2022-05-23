@@ -3,5 +3,10 @@ function runFunction(){
 }
 
 function testFunction(){
-	document.getElementById("test").innerHTML = "Hello World";
+	let grades = "/data/grades/sample.txt"
+
+fetch (grades)
+.then(x => x.text())
+.then(y => document.getElementById("test").innerHTML = y);
+
 }
