@@ -24,11 +24,11 @@ function splitFile(grades,mode){
 	for(i = 0; i < semestersCount; i++) {
 		splitSemester(semesters);
 	}
-	/*if (mode == "current) {
-		displayCurrentGrades();
+	if (mode == "current") {
+		displaySemesterGrades(semestersCount-1);
 	} else {
-		writeTranscript();
-	}*/
+		writeTranscript(semestersCount);
+	}
 	console.log("done");
 	
 }
@@ -70,13 +70,12 @@ function getGrade(gradeBits) {
 	return grade;
 }
 
-function displayCurrentGrades() {
+function displaySemesterGrades(semester) {
 	document.getElementById("test").innerHTML = "";
-	let last = semestersCount-1;
-	for(i = 0; i < window['semester'+last].length; i++){
-		document.getElementById("test").innerHTML += window['S'+last+'C'+i].name + ": " + window['S'+last+'C'+i].grade + "<br>";
+	for(i = 0; i < window['semester'+semester].length; i++){
+		document.getElementById("test").innerHTML += window['S'+semester+'C'+i].name + ": " + window['S'+semester+'C'+i].grade + "<br>";
 	}
 }
 
-function writeTranscript() {
+function writeTranscript(semesters) {
 }
