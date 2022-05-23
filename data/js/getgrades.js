@@ -6,17 +6,21 @@ function getCurrentGrades(student) {
 	getFile(student,"current");
 }
 
+function getGradesBySemester(student,semester) {
+	getFile(student,"semester",semester);
+}
+
 function generateTranscript(student) {
 	getFile(student,"transcript");
 }
 
-async function getFile(student,mode) {
+async function getFile(student,mode,semester) {
   let gradesObject = await fetch("/data/grades/"+student+".txt");
   let gradesText = await gradesObject.text();
-  splitFile(gradesText,mode);
+  splitFile(gradesText,mode,semester);
 }
 
-function splitFile(grades,mode){
+function splitFile(grades,mode,semester){
 	console.clear();
 	console.log("Current mode: " + mode);
 	const semesters = String(grades).split("\n#S\n");
@@ -26,8 +30,12 @@ function splitFile(grades,mode){
 	}
 	if (mode == "current") {
 		displaySemesterGrades(semestersCount-1);
-	} else {
+	}
+	if (mode == "transcript") {
 		writeTranscript(semestersCount);
+	}
+	if (mode == "semester") {
+		displaySemesterGrades(semester);
 	}
 	console.log("done");
 	
