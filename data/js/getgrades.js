@@ -2,14 +2,23 @@ function runFunction(){
 	getCurrentGrades("sample");
 }
 
-async function getCurrentGrades(student) {
-  let gradesObject = await fetch("/data/grades/"+student+".txt");
-  let gradesText = await gradesObject.text();
-  populateCurrentGrades(gradesText);
+function getCurrentGrades(student) {
+	getFile(student,"current");
 }
 
-function populateCurrentGrades(grades){
+function generateTranscript(student) {
+	getFile(student,"transcript");
+}
+
+async function getFile(student,mode) {
+  let gradesObject = await fetch("/data/grades/"+student+".txt");
+  let gradesText = await gradesObject.text();
+  splitFile(gradesText,mode);
+}
+
+function splitFile(grades,mode){
 	console.clear();
+	console.log("Current mode: " + mode);
 	const semesters = String(grades).split("\n#S\n");
 	var semestersCount = semesters.length;
 	for(i = 0; i < semestersCount; i++) {
@@ -18,7 +27,7 @@ function populateCurrentGrades(grades){
 	document.getElementById("test").innerHTML = "";
 	let last = semestersCount-1;
 	for(i = 0; i < window['semester'+last].length; i++){
-		document.getElementById("test").innerHTML += window['S'+last+'C'+i].name + ": " + window['S'+last+'C'+i] + "<br>";
+		document.getElementById("test").innerHTML += window['S'+last+'C'+i].name + ": " + window['S'+last+'C'+i].grade + "<br>";
 	}
 }
 
@@ -46,11 +55,15 @@ function getGrade(gradeBits) {
 	var grade;
 	if (gradeBits.length == 0) {
 		grade = "-";
-		if (gradeBits.length == 1) {
+	} else if (gradeBits.length == 1) {
 			grade = gradeBits[0];
-			grade = gradeBits.reduce((a, b) => a + b);
-		}
+	} else {
+			var gradeSum = 0;
+			for (let i = 0; i < gradeBits.length; i++) {
+				gradeSum += parseFloat(gradeBits[i]);
+			}
+			grade = (gradeSum / gradeBits.length).toFixed(1);
 	}
-	console.log(grade);
+	console.log("Grade: " + grade);
 	return grade;
 }
