@@ -1,0 +1,10 @@
+/* Talia */
+#talia {
+	background-image: url(/data/images/TaliaPFP.jpg);
+	background-position: center 15%;
+}
+
+#talia span {
+	background-image: linear-gradient(0deg, #ff502a 0%, #fdf0ea 100%);
+	filter: drop-shadow(0 2px 2px #470018);
+}
