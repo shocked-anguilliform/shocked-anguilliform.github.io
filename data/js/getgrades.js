@@ -96,7 +96,7 @@ function getOldGrade(gradeBits) {
 }
 
 function displaySemesterGrades(semester) {
-	document.getElementById("test").innerHTML = "";
+	document.getElementById("gradeBox").innerHTML = "";
 	var change;
 	for(i = 0; i < window['semester'+semester].length; i++){
 		change = "";
@@ -109,7 +109,6 @@ function displaySemesterGrades(semester) {
 			}
 		}
 		
-		/*TESTING PURPOSES ONLY*/document.getElementById("test").innerHTML += window['S'+semester+'C'+i].name + ": " + window['S'+semester+'C'+i].grade + change +"<br>";
 		document.getElementById("gradeBox").innerHTML += window['S'+semester+'C'+i].name + ": " + window['S'+semester+'C'+i].grade + change +"<br>";
 	}
 }
