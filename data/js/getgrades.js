@@ -3,26 +3,24 @@ function runFunction(){
 }
 
 function getCurrentGrades(student) {
-	getFile(student,"current");
+	getGradeFile(student,"current");
 }
 
 function getGradesBySemester(student,semester) {
-	getFile(student,"semester",semester);
+	getGradeFile(student,"semester",semester);
 }
 
 function generateTranscript(student) {
-	getFile(student,"transcript");
+	getGradeFile(student,"transcript");
 }
 
-async function getFile(student,mode,semester) {
+async function getGradeFile(student,mode,semester) {
   let gradesObject = await fetch("/data/grades/"+student+".txt");
   let gradesText = await gradesObject.text();
-  splitFile(gradesText,mode,semester);
+  splitGradeFile(gradesText,mode,semester);
 }
 
-function splitFile(grades,mode,semester){
-	console.clear();
-	console.log("Mode: " + mode);
+function splitGradeFile(grades,mode,semester){
 	const semesters = String(grades).split("\n#S\n");
 	var semestersCount = semesters.length;
 	for(i = 0; i < semestersCount; i++) {
@@ -47,8 +45,6 @@ function splitFile(grades,mode,semester){
 
 function splitSemester(semesters){
 	window['semester'+i] = semesters[i].split("\n");
-	
-	console.log("Split semester " + i);
 	let classes = window['semester'+i].length;
 	for(j = 0; j < classes; j++) {
 		splitClass(i);
@@ -109,7 +105,7 @@ function displaySemesterGrades(semester) {
 			}
 		}
 		
-		document.getElementById("gradeBox").innerHTML += window['S'+semester+'C'+i].name + ": " + window['S'+semester+'C'+i].grade + change +"<br>";
+		document.getElementById("gradeBox").innerHTML += "<span class='className'>" + window['S'+semester+'C'+i].name + ": </span>" + window['S'+semester+'C'+i].grade + change +"<br>";
 	}
 }
 

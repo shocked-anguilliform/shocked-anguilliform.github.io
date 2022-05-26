@@ -12,9 +12,23 @@
 #gradeBox {
 	float: left;
     text-align: left;
-    background: #e91e63;
     font-size: 1.5rem;
     position: absolute;
     margin-left: calc(min(50rem*0.42 - 4rem, max(80vw*0.45 - 4rem, 10rem)) + 0.2rem);
     text-indent: 0;
+}
+
+.className {	
+}
+
+.up {
+    color:forestgreen;
+}
+
+.down {
+    color:mediumvioletred;
+}
+
+.up, .down {
+	line-height: 1em;
 }
