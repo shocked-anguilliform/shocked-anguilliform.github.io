@@ -4,4 +4,7 @@
     background-size: cover;
     border: 0.4rem solid #894c33;
     border-radius: 0.2rem;
+	position: relative;
+	top: calc(min(5vw, 2rem) - 2rem);
+	left: calc(min(5vw, 1.4rem) - 2rem);
 }
