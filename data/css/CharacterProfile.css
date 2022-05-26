@@ -1,10 +1,20 @@
-.profilePicture {
+#profilePicture {
 	width: min(50rem*0.42 - 4rem, max(80vw*0.45 - 4rem, 10rem));
     height: min(50rem*0.42 - 4rem, max(80vw*0.45 - 4rem, 10rem));
     background-size: cover;
     border: 0.4rem solid #894c33;
     border-radius: 0.2rem;
 	position: relative;
-	top: calc(min(5vw, 2rem) - 2rem);
-	left: calc(min(5vw, 1.4rem) - 2rem);
+	margin-left: -0.6rem;
+	float: left;
+}
+
+#gradeBox {
+	float: left;
+    text-align: left;
+    background: #e91e63;
+    font-size: 1.5rem;
+    position: absolute;
+    margin-left: calc(min(50rem*0.42 - 4rem, max(80vw*0.45 - 4rem, 10rem)) + 0.2rem);
+    text-indent: 0;
 }

@@ -109,7 +109,8 @@ function displaySemesterGrades(semester) {
 			}
 		}
 		
-		document.getElementById("test").innerHTML += window['S'+semester+'C'+i].name + ": " + window['S'+semester+'C'+i].grade + change +"<br>";
+		/*TESTING PURPOSES ONLY*/document.getElementById("test").innerHTML += window['S'+semester+'C'+i].name + ": " + window['S'+semester+'C'+i].grade + change +"<br>";
+		document.getElementById("gradeBox").innerHTML += window['S'+semester+'C'+i].name + ": " + window['S'+semester+'C'+i].grade + change +"<br>";
 	}
 }
 

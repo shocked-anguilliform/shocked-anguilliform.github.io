@@ -12,7 +12,7 @@
 			}
 		</style>
 	</head>
-	<body>
+	<body onload="getCurrentGrades('sample');">
 		<div class="headSpace">
 			<div class="navBar">
 				<a href="/">Home</a>
@@ -26,8 +26,8 @@
 			<span class="titleWord">Talia</span>
 		</div>
 		<div class="textBack">
-			<div class="profilePicture" style="background-image: url(/data/images/TaliaPFP.jpg);">
-			</div>
+			<div id="profilePicture" style="background-image: url(/data/images/TaliaPFP.jpg);"></div>
+			<div id="gradeBox"></div>
 		</div>
 		<div class="foot">
 		</div>
