@@ -1,0 +1,7 @@
+.profilePicture {
+	width: min(50rem*0.42 - 4rem, max(80vw*0.45 - 4rem, 10rem));
+    height: min(50rem*0.42 - 4rem, max(80vw*0.45 - 4rem, 10rem));
+    background-size: cover;
+    border: 0.4rem solid #894c33;
+    border-radius: 0.2rem;
+}
