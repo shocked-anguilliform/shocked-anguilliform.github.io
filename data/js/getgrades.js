@@ -105,7 +105,7 @@ function displaySemesterGrades(semester) {
 			}
 		}
 		
-		document.getElementById("gradeBox").innerHTML += "<span class='className'>" + window['S'+semester+'C'+i].name + ": </span>" + window['S'+semester+'C'+i].grade + change +"<br>";
+		document.getElementById("gradeBox").innerHTML += "\n<span class='className'>" + window['S'+semester+'C'+i].name + ": </span>" + window['S'+semester+'C'+i].grade + change +"<br>";
 	}
 }
 
