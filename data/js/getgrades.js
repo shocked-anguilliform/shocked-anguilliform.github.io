@@ -107,7 +107,7 @@ function displaySemesterGrades(semester) {
 	}
 	console.log(names.offsetWidth);
 	console.log(scores.offsetWidth);
-	int comboWidth = names.offsetWidth + scores.offsetWidth;
+	var comboWidth = names.offsetWidth + scores.offsetWidth;
 	var widthExpression =  "max(min(20rem, 80%), " + comboWidth + "px)"
 	console.log(widthExpression);
 	$("#GBBjs").css("min-width", widthExpression);
