@@ -100,13 +100,13 @@ function displaySemesterGrades(semester) {
 				change = ' <span class="down">⯆</span>';
 			}
 		}
-		let names = document.getElementById("nameBox");
-		let scores = document.getElementById("scoreBox");
+		var names = document.getElementById("nameBox");
+		var scores = document.getElementById("scoreBox");
 		names.innerHTML += "\n<span class='className'>" + window['S'+semester+'C'+i].name + ": </span><br>";
 		scores.innerHTML += "\n" + window['S'+semester+'C'+i].grade + change + "<br>";
-		console.log(names.offsetWidth);
-		console.log(scores.offsetWidth);
 	}
+	console.log(names.offsetWidth);
+	console.log(scores.offsetWidth);
 }
 
 function writeTranscript(semesters) {
