@@ -43,7 +43,7 @@ body {
    src: url(/data/fonts/GVTimeRegular.otf);
 }
 
-@font-face {
+@font-face {s
    font-family: MoonGarden;
    src: url(/data/fonts/MoonGarden.ttf);
 }

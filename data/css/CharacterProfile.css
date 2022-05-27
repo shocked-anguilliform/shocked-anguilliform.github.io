@@ -7,19 +7,47 @@
 	position: relative;
 	margin-left: -0.6rem;
 	float: left;
-}
+	margin-right: 2rem;}
 
-#gradeBox {
+#gradeBoxBox {
 	float: left;
     text-align: left;
-    font-size: 1.5rem;
-    position: absolute;
-    margin-left: calc(min(50rem*0.42 - 4rem, max(80vw*0.45 - 4rem, 10rem)) + 0.2rem);
+    font-size: 1.15rem;
+    
+	position: relative;
+    font-stretch: condensed;
     text-indent: 0;
+	white-space: nowrap;
+	padding-top: 1rem;height: min(50rem*0.42 - 4rem, max(80vw*0.45 - 4rem, 10rem));
+}
+
+.gradeBox {
+	top: 50%;
+	position: relative;
+	transform: translateY(calc(-50% - 4rem));
+	display:inline-block;
+}
+
+#nameBox {
+	float:left
+}
+
+#scoreBox {
+	float: right;
+}
+
+#gradeTitle {
+	position: relative;
+	font-size: 4rem;
+	font-family: 'CopperplateIda';
+	top: -0.5rem;
+	text-align: center;
 }
 
 .className {	
-}
+	font-weight: bold;
+	text-align: left;
+display: inline-flex;}
 
 .up {
     color:forestgreen;
@@ -31,4 +59,5 @@
 
 .up, .down {
 	line-height: 1em;
+	font-size: 1rem;
 }
