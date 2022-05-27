@@ -107,6 +107,8 @@ function displaySemesterGrades(semester) {
 	}
 	console.log(names.offsetWidth);
 	console.log(scores.offsetWidth);
+	console.log("min-width", "min-width: max(min(20rem, 80%)," + names.offsetWidth + scores.offsetWidth + ");");
+	$("#gradeBoxBox").css("min-width", "min-width: max(min(20rem, 80%)," + names.offsetWidth + scores.offsetWidth + ");");
 }
 
 function writeTranscript(semesters) {
