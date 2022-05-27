@@ -38,9 +38,7 @@ function splitGradeFile(grades,mode,semester){
 		} else {
 			console.log("Error: No such semester");
 		}
-	}
-	console.log("done");
-	
+	}	
 }
 
 function splitSemester(semesters){
@@ -102,8 +100,12 @@ function displaySemesterGrades(semester) {
 				change = ' <span class="down">⯆</span>';
 			}
 		}
-		document.getElementById("nameBox").innerHTML += "\n<span class='className'>" + window['S'+semester+'C'+i].name + ": </span><br>";
-		document.getElementById("scoreBox").innerHTML += "\n" + window['S'+semester+'C'+i].grade + change + "<br>";
+		let names = document.getElementById("nameBox");
+		let scores = document.getElementById("scoreBox");
+		names.innerHTML += "\n<span class='className'>" + window['S'+semester+'C'+i].name + ": </span><br>";
+		scores.innerHTML += "\n" + window['S'+semester+'C'+i].grade + change + "<br>";
+		console.log(names.offsetWidth);
+		console.log(scores.offsetWidth);
 	}
 }
 
