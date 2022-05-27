@@ -104,8 +104,9 @@ function displaySemesterGrades(semester) {
 		names.innerHTML += "\n<span class='className'>" + window['S'+semester+'C'+i].name + ": </span><br>";
 		scores.innerHTML += "\n" + window['S'+semester+'C'+i].grade + change + "<br>";
 	}
-	let comboWidth =  "max(min(20rem, 80%), " + names.offsetWidth + scores.offsetWidth + "px)";
-	$("#gradeBoxBox").css("min-width", comboWidth);
+	let comboWidth = names.offsetWidth + scores.offsetWidth;
+	let comboFormula = "max(min(20rem, 80%), " + comboWidth + "px)";
+	$("#gradeBoxBox").css("min-width", comboFormula);
 }
 
 function writeTranscript(semesters) {
