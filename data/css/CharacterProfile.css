@@ -9,10 +9,9 @@
 	float: left;
 }
 
-#gradeBoxBox {
+.gradeBoxBox {
 	float: left;
     left: max(calc(30% - 8.75rem), 0rem);
-	min-width: min(20rem, 80%);
 	text-align: left;
     font-size: 1.5rem;
 	position: relative;

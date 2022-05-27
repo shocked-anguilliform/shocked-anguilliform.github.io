@@ -107,9 +107,10 @@ function displaySemesterGrades(semester) {
 	}
 	console.log(names.offsetWidth);
 	console.log(scores.offsetWidth);
-	let comboWidth = names.offsetWidth + scores.offsetWidth;
-	console.log("min-width", "max(min(20rem, 80%), " + comboWidth + "px);");
-	$("#gradeBoxBox").css("min-width", "max(min(20rem, 80%), " + comboWidth + "px);");
+	int comboWidth = names.offsetWidth + scores.offsetWidth;
+	var widthExpression =  "max(min(20rem, 80%), " + comboWidth + "px)"
+	console.log(widthExpression);
+	$("#GBBjs").css("min-width", widthExpression);
 }
 
 function writeTranscript(semesters) {
