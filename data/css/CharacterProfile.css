@@ -7,19 +7,22 @@
 	position: relative;
 	margin-left: -0.6rem;
 	float: left;
-	margin-right: 2rem;}
+	margin-right: 2rem;
+}
 
 #gradeBoxBox {
-	float: right;
-    right: calc(11vw - 5.5rem);min-width: 20rem;text-align: left;
+	float: left;
+    left: max(calc(11vw - 5.5rem), 0rem);
+	min-width: min(20rem, 80%);
+	text-align: left;
     font-size: 1.5rem;
-    
 	position: relative;
     font-stretch: condensed;
     text-indent: 0;
 	white-space: nowrap;
+	height: 12rem;
 	padding-top: 1rem;min-height: min(50rem*0.42 - 4rem, max(80vw*0.45 - 4rem, 10rem));
-height: 12rem;}
+}
 
 .gradeBox {
 	top: 30%;
@@ -47,7 +50,8 @@ height: 12rem;}
 .className {	
 	font-weight: bold;
 	text-align: left;
-display: inline-flex;}
+	display: inline-flex;
+}
 
 .up {
     color:forestgreen;
