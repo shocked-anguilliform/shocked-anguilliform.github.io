@@ -112,4 +112,5 @@ function displaySemesterGrades(semester) {
 }
 
 function writeTranscript(semesters) {
+	console.log("not set up yet :(");
 }
