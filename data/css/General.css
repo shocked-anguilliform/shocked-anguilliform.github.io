@@ -28,6 +28,16 @@ body {
    font-variant: bold;
 }
 
+@font-face {
+   font-family: CopperplateIda;
+   src: url(/data/fonts/SundayMorning.otf);
+}
+
+@font-face {
+   font-family: CopperplateIda;
+   src: url(/data/fonts/VanillaDreamers.otf);
+}
+
 .hide{
 	display: none;
 }
