@@ -29,13 +29,29 @@ body {
 }
 
 @font-face {
-   font-family: CopperplateIda;
+   font-family: SundayMorning;
    src: url(/data/fonts/SundayMorning.otf);
 }
 
 @font-face {
-   font-family: CopperplateIda;
+   font-family: VanillaDreamers;
    src: url(/data/fonts/VanillaDreamers.otf);
+}
+
+@font-face {
+   font-family: GVTime;
+   src: url(/data/fonts/GVTimeRegular.otf);
+}
+
+@font-face {
+   font-family: MoonGarden;
+   src: url(/data/fonts/MoonGarden.ttf);
+}
+
+@font-face {
+   font-family: MoonGarden;
+   src: url(/data/fonts/MoonGardenBold.otf);
+   font-variant: bold;
 }
 
 .hide{
