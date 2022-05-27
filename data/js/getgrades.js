@@ -105,7 +105,7 @@ function displaySemesterGrades(semester) {
 		scores.innerHTML += "\n" + window['S'+semester+'C'+i].grade + change + "<br>";
 	}
 	let comboWidth = names.offsetWidth + scores.offsetWidth;
-	let comboFormula = "max(min(20rem, 80%), " + comboWidth + "px)";
+	let comboFormula = "max(min(20rem, 80%), " + comboWidth + "px + 0.25rem)";
 	$("#gradeBoxBox").css("min-width", comboFormula);
 }
 
