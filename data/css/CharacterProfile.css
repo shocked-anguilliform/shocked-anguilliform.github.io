@@ -31,7 +31,8 @@
 }
 
 #nameBox {
-	float:left;
+	float: left;
+	margin-right: 0.25rem;
 }
 
 #scoreBox {
