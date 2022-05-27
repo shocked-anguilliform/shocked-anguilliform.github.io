@@ -9,7 +9,7 @@
 	float: left;
 }
 
-.gradeBoxBox {
+#gradeBoxBox {
 	float: left;
     left: max(calc(30% - 8.75rem), 0rem);
 	text-align: left;

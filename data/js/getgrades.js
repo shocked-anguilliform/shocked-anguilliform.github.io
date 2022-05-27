@@ -89,9 +89,10 @@ function getOldGrade(gradeBits) {
 }
 
 function displaySemesterGrades(semester) {
-	var change;
+	var names = document.getElementById("nameBox");
+	var scores = document.getElementById("scoreBox");
 	for(i = 0; i < window['semester'+semester].length; i++){
-		change = "";
+		let change = "";
 		if (window['S'+semester+'C'+i].oldGrade != "-") {
 			if (window['S'+semester+'C'+i].oldGrade < window['S'+semester+'C'+i].grade) {
 				change = ' <span class="up">⯅</span> ';
@@ -100,17 +101,11 @@ function displaySemesterGrades(semester) {
 				change = ' <span class="down">⯆</span>';
 			}
 		}
-		var names = document.getElementById("nameBox");
-		var scores = document.getElementById("scoreBox");
 		names.innerHTML += "\n<span class='className'>" + window['S'+semester+'C'+i].name + ": </span><br>";
 		scores.innerHTML += "\n" + window['S'+semester+'C'+i].grade + change + "<br>";
 	}
-	console.log(names.offsetWidth);
-	console.log(scores.offsetWidth);
-	var comboWidth = names.offsetWidth + scores.offsetWidth;
-	var widthExpression =  "max(min(20rem, 80%), " + comboWidth + "px)"
-	console.log(widthExpression);
-	$("#GBBjs").css("min-width", widthExpression);
+	let comboWidth =  "max(min(20rem, 80%), " + names.offsetWidth + scores.offsetWidth + "px)";
+	$("#gradeBoxBox").css("min-width", comboWidth);
 }
 
 function writeTranscript(semesters) {
