@@ -14,6 +14,9 @@
 			.up, .down{
 				line-height: 1em;
 			}
+			.box {
+				display: inline-block;
+			}
         </style>
 	</head>
 	<body>
@@ -21,9 +24,9 @@
 	<button onclick="getGradesBySemester('sample','0')">Semester 1</button>
 	<button onclick="getGradesBySemester('sample','1')">Semester 2</button>
 	<button onclick="getGradesBySemester('sample','2')">Semester 3</button>
-	<div id="nameBox">
+	<div id="nameBox" class="box">
 	</div>
-	<div id="scorebox">
+	<div id="scoreBox" class="box">
 	</div>
 	</body>
 </html>
