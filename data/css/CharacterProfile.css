@@ -10,21 +10,21 @@
 	margin-right: 2rem;}
 
 #gradeBoxBox {
-	float: left;
-    text-align: left;
-    font-size: 1.15rem;
+	float: right;
+    right: calc(11vw - 5.5rem);min-width: 20rem;text-align: left;
+    font-size: 1.5rem;
     
 	position: relative;
     font-stretch: condensed;
     text-indent: 0;
 	white-space: nowrap;
-	padding-top: 1rem;height: min(50rem*0.42 - 4rem, max(80vw*0.45 - 4rem, 10rem));
-}
+	padding-top: 1rem;min-height: min(50rem*0.42 - 4rem, max(80vw*0.45 - 4rem, 10rem));
+height: 12rem;}
 
 .gradeBox {
-	top: 50%;
+	top: 30%;
 	position: relative;
-	transform: translateY(calc(-50% - 4rem));
+	transform: translateY(-50%);
 	display:inline-block;
 }
 
@@ -40,7 +40,7 @@
 	position: relative;
 	font-size: 4rem;
 	font-family: 'CopperplateIda';
-	top: -0.5rem;
+	top: -1.5rem;
 	text-align: center;
 }
 
