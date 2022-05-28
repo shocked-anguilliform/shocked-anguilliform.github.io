@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scrimblo | Magic School</title>
+		<link rel="stylesheet" href="/data/css/General.css">
+		<link rel="stylesheet" href="/data/css/CharacterProfile.css">
+		<script src="/data/js/jquery-3.6.0.min.js"></script>
+		<script src="/data/js/getgrades.js"></script>
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> (<i class="fa fa-home"></i>)--> 
+		<style>
+			body {
+				background-image: url('/data/images/Observitory.png');
+				background-position: 75% 35%;
+			}
+		</style>
+	</head>
+	<body onload="getCurrentGrades('sample');">
+		<div class="headSpace">
+			<div class="navBar">
+				<a href="/">Home</a>
+				<a href=".">Back</a>
+			</div>
+			<div class="titleBox dummyTitle">
+				<span class="titleWord">Scrimblo</span>
+			</div>
+		</div>
+        <div class="titleBox">
+			<span class="titleWord">Scrimblo</span>
+		</div>
+		<div class="textBack">
+			<div id="profilePicture" style="background-image: url(/data/images/TaliaPFP.jpg);"></div>
+			<div id="gradeBoxBox">
+				<div id="gradeTitle">Grades:</div>
+				<div class="gradeBox" id="nameBox">
+				</div>
+				<div class="gradeBox" id="scoreBox">
+				</div>
+			</div>
+			<div class="bio">
+				He's just a little bimbley scrimblo.
+			</div>
+		</div>
+		<div class="foot">
+		</div>
+	</body>
+</html>
