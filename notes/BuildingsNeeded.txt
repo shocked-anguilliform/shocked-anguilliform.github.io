@@ -1,21 +1,23 @@
-Library (0/1+)
-Commons (0/1+)
-Eateries (0/1+)
-Lecture halls (0/3+)
-Stores (0/1+)
-Stage, theatre/dance (0/1)
-Stage, music (0/1)
-Gardens (0/1)
-Office (0/1+)
-Storage (0/1+)
-Stables, horses (0/1)
-Carriage house (0/1)
-Stables, griffins/pegasi (0/1)
-Lab, alchemy (0/1)
-Lab, spellcraft (0/1)
-Workshop (0/1)
-Paintball (0/1)
-Arena (0/1)
-Shooting Range (0/1)
-Forge (0/1)
-Faculty housing (0/1+)
+Library (1/1+) B1
+Commons (1/1+) B2
+Eateries (1/1+) B3
+Lecture halls (5/3+) B4
+Stores (1/1+) B5
+Stage, theatre/dance (1/1) B6
+Stage, music (1/1) B7
+Gardens (1/1) B8
+Office (1/1+) B9
+Storage (3/1+) B10
+Stables, horses (1/1) B11
+Carriage house (1/1) B12
+Stables, griffins/pegasi (1/1) B14
+Lab, alchemy (1/1) B15
+Lab, spellcraft (1/1) B16
+Workshop (1/1) B17
+Paintball (1/1) B18
+Arena (1/1) B19
+Shooting Range (1/1) B20
+Forge (1/1) B21
+Faculty housing (1/1+) B22
+Glassblowing (1/1) B23
+Study Room (1/1+) B24
