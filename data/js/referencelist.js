@@ -33,7 +33,7 @@ function addEntries(entryFile){
 
 function splitEntry(entries){
 	const entry = entries[i].split("|");
-	content = writeHTML(entry[0], entry[1], entry[2]);
+	content = writeHTML($.trim(entry[0]), $.trim(entry[1]), $.trim(entry[2]));
 	document.getElementById("entryBox").innerHTML += content;
 }
 
