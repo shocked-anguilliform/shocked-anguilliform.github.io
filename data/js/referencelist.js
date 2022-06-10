@@ -34,6 +34,7 @@ function addEntries(entryFile){
 function splitEntry(entries){
 	const entry = entries[i].split("|");
 	console.log(entry[1].charAt(0));
+	console.log(entry[1].charAt(1));
 	if (entry[1].charAt(0) == "-") {
 		return;
 	}
