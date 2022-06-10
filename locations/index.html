@@ -3,8 +3,9 @@
 	<head>
 		<title>Locations | Magic School</title>
 		<link rel="stylesheet" href="/data/css/General.css">
-		<link rel="stylesheet" href="/data/css/MenuBubble.css">
-		<link rel="stylesheet" href="/data/css/MenuDataCharacters.css">
+		<link rel="stylesheet" href="/data/css/ReferenceList.css">
+		<script src="/data/js/jquery-3.6.0.min.js"></script>
+		<script src="/data/js/referencelist.js"></script>
 		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> (<i class="fa fa-home"></i>)--> 
 		<style>
 			body {
@@ -13,7 +14,7 @@
 			}
 		</style>
 	</head>
-	<body>
+	<body onload="getListItems('locations');">
 		<div class="headSpace">
 			<div class="navBar">
 				<a href="\">Home</a>
@@ -26,14 +27,16 @@
         <div class="titleBox">
 			<span class="titleWord">Locations</span>
 		</div>
-		<div class="menuContainer">
-			<!-- Sample Button
-			<a href="page">
-				<div class="menuButton" id="id">
-					<span>Text</span>
-				</div>
-			</a>
-			-->
+		<div id="blackout" onclick="hidePopup()"></div>
+		<div id="popup">
+			<button id="closeButton" onclick="hidePopup()">🞮</button>
+			<div id="variableImage"></div>
+			<h1 id="variableName"></h1>
+			<div id="variableText"></div>
+		</div>
+		<div id="entryBox">
+		</div>
+		<div class='foot'>
 		</div>
 	</body>
 </html>
