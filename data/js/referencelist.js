@@ -33,7 +33,11 @@ function addEntries(entryFile){
 
 function splitEntry(entries){
 	const entry = entries[i].split("|");
-	content = writeHTML($.trim(entry[0]), $.trim(entry[1]), $.trim(entry[2]));
+	let picture = $.trim(entry[1]);
+	if (!picture) {
+		picture = "noPicture.jpg";
+	}
+	content = writeHTML($.trim(entry[0]), picture, $.trim(entry[2]));
 	document.getElementById("entryBox").innerHTML += content;
 }
 
