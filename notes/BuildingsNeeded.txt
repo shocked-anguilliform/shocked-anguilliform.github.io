@@ -1,7 +1,7 @@
 Library (1/1+) B1
 Commons (1/1+) B2
 Eateries (1/1+) B3
-Lecture halls (5/3+) B4
+Classrooms (6/3+) B4
 Stores (1/1+) B5
 Stage, theatre/dance (1/1) B6
 Stage, music (1/1) B7

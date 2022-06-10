@@ -33,6 +33,9 @@ function addEntries(entryFile){
 
 function splitEntry(entries){
 	const entry = entries[i].split("|");
+	if entry[1].charAt(0) = "-" {
+		return;
+	}
 	let picture = $.trim(entry[1]);
 	if (!picture) {
 		picture = "noPicture.jpg";
