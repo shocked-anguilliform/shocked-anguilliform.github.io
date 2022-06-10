@@ -3,9 +3,9 @@
 	<head>
 		<title>NPCs | Magic School</title>
 		<link rel="stylesheet" href="/data/css/General.css">
-		<link rel="stylesheet" href="/data/css/MenuBubble.css">
-		<link rel="stylesheet" href="/data/css/MenuDataCharacters.css">
 		<link rel="stylesheet" href="/data/css/ReferenceList.css">
+		<script src="/data/js/jquery-3.6.0.min.js"></script>
+		<script src="/data/js/referencelist.js"></script>
 		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> (<i class="fa fa-home"></i>)--> 
 		<style>
 			body {
@@ -14,7 +14,7 @@
 			}
 		</style>
 	</head>
-	<body>
+	<body onload="getListItems('sample');">
 		<div class="headSpace">
 			<div class="navBar">
 				<a href="\">Home</a>
@@ -27,45 +27,16 @@
         <div class="titleBox">
 			<span class="titleWord">NPCs</span>
 		</div>
-		<div class="entryContainer">
-      <div class="entry">
-        <a>John McJohn Johnner</a>  
-      </div>
-      <div class="popup">
-        <div class="innerUp">John McJohn Johnner is a simple man who wants to live a simple life. He is a bagelmaker by trade, but dreams of the seas. He dreams of grand adventures, full of dangers and thrills. This may seem contradictory, but John McJohn Johnner believes this to be a simple life. John McJohn Johnner is an idiot.         </div>
-      </div>
+		<div id="blackout" onclick="hidePopup()"></div>
+		<div id="popup">
+			<button id="closeButton" onclick="hidePopup()">🞮</button>
+			<div id="variableImage"></div>
+			<h1 id="variableName"></h1>
+			<div id="variableText"></div>
 		</div>
-    <div class="entry">
-      <a>Bootlicker Percy</a>
+		<div id=entryBox">
 		</div>
-    <div class="entry">
-      <a>Peat-Stomper Henry</a>
+		<div class='foot'>
 		</div>
-    <div class="entry">
-      <a>The Man With The Mask</a>
-		</div>
-    <div class="entryContainer">
-      <div class="entry">
-        <a>Ukulele Pichu</a>  
-      </div>
-      <div class="popup">
-        <div class="innerUp">Ukulele Pichu (Japanese: ウクレレピチュー Ukulele Pichu) is a ukulele-playing Pichu that serves as the partner Pokémon to Ben or Summer in Pokémon Ranger: Guardian Signs. Its physical appearance is no different from an ordinary Pichu, other than the fact that it carries a ukulele on its back. The ukulele that it carries was made by Booker out of wood from the leftover parts of a boat, as mentioned early in the game, but after one of the Pokémon Pinchers breaks it, Booker makes a new, stronger one for it out of a special type of wood.
-         </div>
-      </div>
-		</div>
-    <div class="entry">
-      <a>Old Man Jenkins</a>
-		</div>
-    <div class="entry">
-      <a>Howard Homeward</a>
-		</div>
-    <div class="entry">
-      <a>Laura Ingles Wilder</a>
-		</div>
-    <div class="entry">
-      <a>Crawdad Dandy (Steve)</a>
-		</div>
-    <div class='foot'>
-    </div>
 	</body>
 </html>
