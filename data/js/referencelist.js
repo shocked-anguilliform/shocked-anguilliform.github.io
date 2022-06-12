@@ -36,6 +36,10 @@ function splitEntry(entries){
 	if (entry[0].charAt(0) == "-") {
 		return;
 	}
+	let name = $.trim(entry[0]);
+	if (!name) {
+		return;
+	}
 	let picture = $.trim(entry[1]);
 	if (!picture) {
 		picture = "noPicture.jpg";
