@@ -1,0 +1,7 @@
+svg {
+	width: 100%;
+}
+
+#Trails path:hover {
+	stroke-color: blue;
+}
