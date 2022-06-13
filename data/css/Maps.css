@@ -8,7 +8,7 @@ svg {
 }
 
 .mapContainer{
-	width:90% - 4rem);
+	width:calc(90% - 4rem);
 	padding:1.4rem 2rem 0rem 2rem;
 	min-height:max(70%, 100% - 25vw );
 	background: #bbbd;
@@ -22,5 +22,4 @@ svg {
 	border-color: #666d;
 	font-family: "lucida bright";
 	font-size:1.5rem;
-	text-indent: 2rem;
-}}
+}
