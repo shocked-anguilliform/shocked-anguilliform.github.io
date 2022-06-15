@@ -44,17 +44,17 @@ function splitEntry(entries){
 	if (!picture) {
 		picture = "noPicture.jpg";
 	}
-	content = writeHTML($.trim(entry[0]), picture, $.trim(entry[2]));
-	document.getElementById("entryBox").innerHTML += content;
-}
-
-function writeHTML(name, picture, article) {
-	if (entry[3]) {
+		if (entry[3]) {
 		id = $.trim(entry[3]);
 		idHTML = ' id="' + pictureID + '"';
 	} else {
 		idHTML = "";
 	}
+	content = writeHTML($.trim(entry[0]), picture, $.trim(entry[2]), idHTML);
+	document.getElementById("entryBox").innerHTML += content;
+}
+
+function writeHTML(name, picture, article, idHTML) {
 	content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<a>' + name + '</a>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>'
 	return content;
 }
