@@ -61,6 +61,7 @@ function writeHTML(name, picture, article, idHTML) {
 
 function checkInitial() {
 	const urlParams = new URLSearchParams(window.location.search);
-	const item = urlParams.get('item');
-	reveal (item);
+	const querryID = urlParams.get('item');
+	let source = document.getElementById("querryID")
+	reveal (source);
 }
