@@ -46,7 +46,7 @@ function splitEntry(entries){
 	}
 		if (entry[3]) {
 		id = $.trim(entry[3]);
-		idHTML = ' id="' + pictureID + '"';
+		idHTML = ' id="' + id + '"';
 	} else {
 		idHTML = "";
 	}
