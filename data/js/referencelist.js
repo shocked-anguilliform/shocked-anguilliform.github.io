@@ -28,7 +28,7 @@ function addEntries(entryFile){
 	for(i = 0; i < entriesCount; i++) {
 		splitEntry(entries);
 	}
-	//display code
+	checkInitial();
 }
 
 function splitEntry(entries){
@@ -49,6 +49,15 @@ function splitEntry(entries){
 }
 
 function writeHTML(name, picture, article) {
-	content = '<div class="entryContainer" onclick="reveal(this)">\n<div class="entry">\n<a>' + name + '</a>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>'
+	if (entry[3]) {
+		id = $.trim(entry[3]);
+		idHTML = ' id="' + pictureID + '"';
+	} else {
+		idHTML = "";
+	}
+	content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<a>' + name + '</a>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>'
 	return content;
+}
+
+function checkInitial() {
 }
