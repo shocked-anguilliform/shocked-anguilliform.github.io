@@ -1,4 +1,5 @@
 Sample Location || It's not real
--Sample Location || Not real and also you can't see it.
-Florida || I wish it wasn't real. Home of the legendary Florida man.
-Florida II || Florida Two is like normal Florida, but <b>HUGE</b><br>I mean <i>really big.</i>
+-Sample Location || Not real and also you can't see it. | SampleLocation
+Florida || I wish it wasn't real. Home of the legendary Florida man. | Florida
+Florida II || Florida Two is like normal Florida, but <b>HUGE</b><br>I mean <i>really big.</i> | Florida2
+Nameless | frog.jpg | This entry should have no ID

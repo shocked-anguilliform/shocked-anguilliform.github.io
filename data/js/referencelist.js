@@ -28,7 +28,7 @@ function addEntries(entryFile){
 	for(i = 0; i < entriesCount; i++) {
 		splitEntry(entries);
 	}
-	//display code
+	checkInitial();
 }
 
 function splitEntry(entries){
@@ -44,11 +44,24 @@ function splitEntry(entries){
 	if (!picture) {
 		picture = "noPicture.jpg";
 	}
-	content = writeHTML($.trim(entry[0]), picture, $.trim(entry[2]));
+		if (entry[3]) {
+		id = $.trim(entry[3]);
+		idHTML = ' id="' + id + '"';
+	} else {
+		idHTML = "";
+	}
+	content = writeHTML($.trim(entry[0]), picture, $.trim(entry[2]), idHTML);
 	document.getElementById("entryBox").innerHTML += content;
 }
 
-function writeHTML(name, picture, article) {
-	content = '<div class="entryContainer" onclick="reveal(this)">\n<div class="entry">\n<a>' + name + '</a>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>'
+function writeHTML(name, picture, article, idHTML) {
+	content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<a>' + name + '</a>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>'
 	return content;
+}
+
+function checkInitial() {
+	const urlParams = new URLSearchParams(window.location.search);
+	const querryID = urlParams.get('item');
+	let source = document.getElementById(querryID)
+	reveal (source);
 }
