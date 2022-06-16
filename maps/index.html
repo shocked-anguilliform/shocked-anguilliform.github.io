@@ -4,6 +4,8 @@
 		<title>Maps | Magic School</title>
 		<link rel="stylesheet" href="/data/css/General.css">
 		<link rel="stylesheet" href="/data/css/Maps.css">
+		<script src="https://d3js.org/d3.v7.min.js"></script>
+		<script src="/maps.js"></script>
 		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> (<i class="fa fa-home"></i>)--> 
 		<style>
 			body {
@@ -12,7 +14,7 @@
 			}
 		</style>
 	</head>
-	<body>
+	<body onload="initializeMap('island');">
 		<div class="headSpace">
 			<div class="navBar">
 				<a href="\">Home</a>
