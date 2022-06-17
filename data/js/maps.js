@@ -3,7 +3,7 @@ function initializeMap(fileName) {
 }
 
 async function getLocationFile(fileName) {
-  let locationsObject = await fetch("/data/grades/" + fileName + ".txt");
+  let locationsObject = await fetch("/data/mapData/" + fileName + ".txt");
   let locationsText = await locationsObject.text();
   splitLocationFile(locationsText);
 }
