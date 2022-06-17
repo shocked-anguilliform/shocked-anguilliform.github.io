@@ -16,6 +16,6 @@ function splitLocationFile(locationsFile) {
 }
 
 function appendEntries(locations) {
-entry = document.getElementById(locations[1]);
+entry = document.getElementById($.trim(locations[1]));
 console.log(entry);
 }
