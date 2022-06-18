@@ -3,9 +3,9 @@ svg {
 	height: unset;
 }
 
-#Trails path:hover {
+/*#Trails path:hover {
 	stroke: blue!important;
-}
+}*/
 
 .mapContainer{
 	width:calc(90% - 4rem);

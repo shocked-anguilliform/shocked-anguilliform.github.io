@@ -18,10 +18,15 @@ function splitLocationFile(locationsFile) {
 function appendEntries(locations) {
 const chunks = locations[i].split("|");
 entry = document.getElementById($.trim(chunks[0]));
-entry.onclick = function() {clickGoTo(entry.id);}
+entry.onclick = function() {clickReaction(entry.id);}
+entry.onmouseover = function() {mouseOverReaction(entry);}
 console.log(entry.id);
 }
 
-function clickGoTo(id) {
+function clickReaction(id) {
 	window.location.href = "/locations?item=" + id + "";
+}
+
+function mouseOverReaction(element) {
+	element.style.stroke = blue!important;
 }
