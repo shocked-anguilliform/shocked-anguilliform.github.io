@@ -3,3 +3,4 @@ Sample Location || It's not real
 Florida || I wish it wasn't real. Home of the legendary Florida man. | Florida
 Florida II || Florida Two is like normal Florida, but <b>HUGE</b><br>I mean <i>really big.</i> | Florida2
 Nameless | frog.jpg | This entry should have no ID
+Two Step Road || This road has two steps | TwoStepRoad

@@ -18,10 +18,10 @@ function splitLocationFile(locationsFile) {
 function appendEntries(locations) {
 const chunks = locations[i].split("|");
 entry = document.getElementById($.trim(chunks[0]));
-entry.onclick = function() {clickGoTo();}
+entry.onclick = function() {clickGoTo(entry.id);}
 console.log(entry.id);
 }
 
-function clickGoTo () {
-	window.location.href = "/locations?item=Florida";
+function clickGoTo (id) {
+	window.location.href = "/locations?item=" + id + "";
 }
