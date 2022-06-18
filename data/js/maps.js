@@ -28,5 +28,5 @@ function clickReaction(id) {
 }
 
 function mouseOverReaction(element) {
-	element.style.stroke = blue!important;
+	element.style.stroke = "blue!important";
 }
