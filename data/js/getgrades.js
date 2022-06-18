@@ -1,7 +1,3 @@
-function runFunction(){
-	getCurrentGrades("sample");
-}
-
 function getCurrentGrades(student) {
 	getGradeFile(student,"current");
 }
@@ -27,7 +23,7 @@ function splitGradeFile(grades,mode,semester){
 		splitSemester(semesters);
 	}
 	if (mode == "current") {
-		displaySemesterGrades(semestersCount-1);
+		displaySemesterGrades(semestersCount - 1);
 	}
 	if (mode == "transcript") {
 		writeTranscript(semestersCount);
@@ -60,18 +56,20 @@ function splitClass(semesterNumber) {
 
 function getGrade(gradeBits) {
 	var grade;
-	if (gradeBits.length == 0) {
-		grade = "-";
-	} else if (gradeBits.length == 1) {
+	switch(gradeBits.length) {
+		case 0:
+			grade = "-";		
+			break;
+		case 1:
 			grade = gradeBits[0];
-	} else {
+			break;
+		default:
 			var gradeSum = 0;
 			for (let i = 0; i < gradeBits.length; i++) {
 				gradeSum += parseFloat(gradeBits[i]);
 			}
 			grade = (gradeSum / gradeBits.length).toFixed(1);
 	}
-	return grade;
 }
 
 function getOldGrade(gradeBits) {

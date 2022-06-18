@@ -22,6 +22,6 @@ entry.onclick = function() {clickGoTo(entry.id);}
 console.log(entry.id);
 }
 
-function clickGoTo (id) {
+function clickGoTo(id) {
 	window.location.href = "/locations?item=" + id + "";
 }
