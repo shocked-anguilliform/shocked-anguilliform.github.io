@@ -63,5 +63,7 @@ function checkInitial() {
 	const urlParams = new URLSearchParams(window.location.search);
 	const querryID = urlParams.get('item');
 	let source = document.getElementById(querryID)
-	reveal (source);
+	if (source) {
+		reveal (source);
+	}
 }
