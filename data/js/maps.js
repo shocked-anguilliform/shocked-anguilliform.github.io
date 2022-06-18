@@ -23,5 +23,5 @@ console.log(entry.id);
 }
 
 function clickGoTo () {
-	window.location.href = "\locations?item=Florida";
+	window.location.href = "/locations?item=Florida";
 }
