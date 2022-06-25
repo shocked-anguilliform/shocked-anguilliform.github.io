@@ -20,7 +20,7 @@ function appendEntries(locations) {;
 		const chunks = locations[i].split("|");
 		if (chunks[0].charAt(0) == "-") {
 			console.log($.trim(chunks[0]).replace("-", ""));
-			document.getElementById($.trim(chunks[0]).substring(1).style.display = "none";
+			document.getElementById($.trim(chunks[0]).substring(1)).style.display = "none";
 		} else {
 			const chunks = locations[i].split("|");
 			entry = document.getElementById($.trim(chunks[0]));
