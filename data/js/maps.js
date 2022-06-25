@@ -15,12 +15,23 @@ function splitLocationFile(locationsFile) {
 	}
 }
 
-function appendEntries(locations) {
-const chunks = locations[i].split("|");
-entry = document.getElementById($.trim(chunks[0]));
-entry.onclick = function() {clickReaction(entry.id);}
-entry.onmouseover = function() {mouseOverReaction(entry);}
-console.log(entry.id);
+function appendEntries(locations) {;
+	if (locations[i]) {
+		const chunks = locations[i].split("|");
+		if (chunks[0].charAt(0) == "-" {
+			console.log($.trim(chunks[0]).replace("-", ""));
+			document.getElementById($.trim(chunks[0]).replace("-", "")).style.display = "none";
+		} else {
+			const chunks = locations[i].split("|");
+			entry = document.getElementById($.trim(chunks[0]));
+			entry.onclick = function() {clickReaction(entry.id);}
+			entry.onmouseover = function() {mouseOverReaction(entry);}
+			console.log(entry.id);
+		}
+	} else {
+			console.log("error: no such element");
+	}
+	
 }
 
 function clickReaction(id) {
