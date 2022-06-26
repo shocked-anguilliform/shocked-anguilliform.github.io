@@ -31,10 +31,7 @@ function appendEntries(locations) {;
 			let oldOHTML = entry.outerHTML;
 			entry.outerHTML = '<a href="/locations?item=' + entry.id + '">\n' + oldOHTML + '\n</a>'
 			let entryParent = document.getElementById($.trim(chunks[0])).parentNode;
-			/*entryParent.addEventListener("mouseover", raiseElement);*/
-			console.log(entryParent);
-			console.log(entry.id);
-			console.log(entry);
+			entryParent.addEventListener("mouseover", raiseElement);
 		}
 	}
 }
