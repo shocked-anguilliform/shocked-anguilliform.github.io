@@ -37,14 +37,16 @@ function appendEntries(locations) {;
 				d3.select(this.parentNode.parentNode).raise();
 				console.log(d3.select(this.parentNode.parentNode));
 			};*/
-			object.addEventListener("mouseover", 
-				console.log("mouse on");
-				d3.select(this.parentNode).raise();
-				console.log(d3.select(this.parentNode));
-				d3.select(this.parentNode.parentNode).raise();
-				console.log(d3.select(this.parentNode.parentNode));
-			);
+			entry.addEventListener("mouseover", raiseElement);
 			console.log(entry.id);
 		}
 	}
+}
+
+function raiseElement() {
+	console.log("mouse on");
+	d3.select(this.parentNode).raise();
+	console.log(d3.select(this.parentNode));
+	d3.select(this.parentNode.parentNode).raise();
+	console.log(d3.select(this.parentNode.parentNode));
 }
