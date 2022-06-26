@@ -30,17 +30,11 @@ function appendEntries(locations) {;
 			}
 			let oldOHTML = entry.outerHTML;
 			entry.outerHTML = '<a href="/locations?item=' + entry.id + '">\n' + oldOHTML + '\n</a>'
-			/*entry.onmouseover = function() {
-				console.log("mouse on");
-				d3.select(this.parentNode).raise();
-				console.log(d3.select(this.parentNode));
-				d3.select(this.parentNode.parentNode).raise();
-				console.log(d3.select(this.parentNode.parentNode));
-			};*/
 			let entryParent = entry.parentNode;
-			entryParent.addEventListener("mouseover", raiseElement);
+			/*entryParent.addEventListener("mouseover", raiseElement);*/
 			console.log(entry.parentNode);
 			console.log(entry.id);
+			console.log(entry);
 		}
 	}
 }
