@@ -24,7 +24,9 @@ function appendEntries(locations) {;
 		} else {
 			const chunks = locations[i].split("|");
 			entry = document.getElementById($.trim(chunks[0]));
-			entry.onclick = function() {window.location.href = "/locations?item=" + entry.id;}
+			let clickReaction = 'window.location.href = "/locations?item=" + entry.id;';
+			console.log(clickReaction);
+			/*entry.onclick = function() {window.location.href = "/locations?item=" + entry.id;}*/
 			entry.onmouseover = function() {mouseOverReaction(entry);}
 			console.log(entry.id);
 		}
@@ -34,9 +36,9 @@ function appendEntries(locations) {;
 	
 }
 
-function clickReaction(id) {
+?*function clickReaction(id) {
 	window.location.href = "/locations?item=" + id + "";
-}
+}*/
 
 function mouseOverReaction(element) {
 	element.style.stroke = "blue!important";
