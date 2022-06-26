@@ -37,7 +37,8 @@ function appendEntries(locations) {;
 				d3.select(this.parentNode.parentNode).raise();
 				console.log(d3.select(this.parentNode.parentNode));
 			};*/
-			entry.addEventListener("mouseover", raiseElement);
+			entry.parentNode.addEventListener("mouseover", raiseElement);
+			console.log(entry.parentNode);
 			console.log(entry.id);
 		}
 	}
@@ -45,8 +46,8 @@ function appendEntries(locations) {;
 
 function raiseElement() {
 	console.log("mouse on");
-	d3.select(this.parentNode).raise();
+	d3.select(this).raise();
 	console.log(d3.select(this.parentNode));
-	d3.select(this.parentNode.parentNode).raise();
+	d3.select(this.parentNode).raise();
 	console.log(d3.select(this.parentNode.parentNode));
 }
