@@ -36,7 +36,7 @@ function appendEntries(locations) {;
 				console.log(d3.select(this.parentNode));
 				d3.select(this.parentNode.parentNode).raise();
 				console.log(d3.select(this.parentNode.parentNode));
-			}
+			};
 			console.log(entry.id);
 		}
 	}
