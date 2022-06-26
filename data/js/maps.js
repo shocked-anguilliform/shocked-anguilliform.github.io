@@ -22,7 +22,7 @@ function appendEntries(locations) {;
 			console.log($.trim(chunks[0]).replace("-", ""));
 			document.getElementById($.trim(chunks[0]).substring(1)).style.display = "none";
 		} else {
-			let const chunks = locations[i].split("|");
+			const chunks = locations[i].split("|");
 			entry = document.getElementById($.trim(chunks[0]));
 			if(!entry) {
 				console.log("error: no such element");
