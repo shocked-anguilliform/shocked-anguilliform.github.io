@@ -24,16 +24,18 @@ function appendEntries(locations) {;
 		} else {
 			const chunks = locations[i].split("|");
 			entry = document.getElementById($.trim(chunks[0]));
-			let clickReaction = 'window.location.href = "/locations?item=' + entry.id + ';';
-			console.log(clickReaction);
-			/*entry.onclick = function() {window.location.href = "/locations?item=" + entry.id;}*/
+			if(!entry) {
+				console.log("error: no such location");
+				return;
+			}
+			/*let clickReaction = 'window.location.href = "/locations?item=' + entry.id + ';';
+			console.log(clickReaction);*/
+			let oldOHTML = entry.outerHTML;
+			entry.outerHTML = '<a href="/locations?item=' + entry.id + '">/n' + oldOHTML + '/n</a>'
 			entry.onmouseover = function() {mouseOverReaction(entry);}
 			console.log(entry.id);
 		}
-	} else {
-			console.log("error: no such element");
 	}
-	
 }
 
 /*function clickReaction(id) {
