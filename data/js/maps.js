@@ -37,7 +37,8 @@ function appendEntries(locations) {;
 				d3.select(this.parentNode.parentNode).raise();
 				console.log(d3.select(this.parentNode.parentNode));
 			};*/
-			entry.parentNode.addEventListener("mouseover", raiseElement);
+			let entryParent = entry.parentNode;
+			entryParent.addEventListener("mouseover", raiseElement);
 			console.log(entry.parentNode);
 			console.log(entry.id);
 		}
@@ -46,6 +47,10 @@ function appendEntries(locations) {;
 
 function raiseElement() {
 	console.log("mouse on");
+	console.log(this);
+	try {
+		d3.this.raise;
+	}
 	d3.select(this).raise();
 	console.log(d3.select(this.parentNode));
 	d3.select(this.parentNode).raise();
