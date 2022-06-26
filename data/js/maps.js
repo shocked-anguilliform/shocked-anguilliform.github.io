@@ -50,6 +50,8 @@ function raiseElement() {
 	console.log(this);
 	try {
 		d3.this.raise;
+	} catch (err) {
+		console.error(err);
 	}
 	d3.select(this).raise();
 	console.log(d3.select(this.parentNode));
