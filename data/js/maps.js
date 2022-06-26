@@ -37,13 +37,6 @@ function appendEntries(locations) {;
 }
 
 function raiseElement() {
-	console.log("mouse on");
-	console.log(this);
-	try {
-		d3.this.raise;
-	} catch (err) {
-		console.error(err);
-	}
 	d3.select(this).raise();
 	d3.select(this.parentNode).raise();
 }
