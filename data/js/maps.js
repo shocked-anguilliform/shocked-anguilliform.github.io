@@ -24,7 +24,7 @@ function appendEntries(locations) {;
 		} else {
 			const chunks = locations[i].split("|");
 			entry = document.getElementById($.trim(chunks[0]));
-			let clickReaction = 'window.location.href = "/locations?item=" + entry.id;';
+			let clickReaction = 'window.location.href = "/locations?item=' + entry.id + ';';
 			console.log(clickReaction);
 			/*entry.onclick = function() {window.location.href = "/locations?item=" + entry.id;}*/
 			entry.onmouseover = function() {mouseOverReaction(entry);}
