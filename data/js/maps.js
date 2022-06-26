@@ -36,7 +36,7 @@ function appendEntries(locations) {;
 	
 }
 
-?*function clickReaction(id) {
+/*function clickReaction(id) {
 	window.location.href = "/locations?item=" + id + "";
 }*/
 
