@@ -28,20 +28,13 @@ function appendEntries(locations) {;
 				console.log("error: no such element");
 				return;
 			}
-			/*let clickReaction = 'window.location.href = "/locations?item=' + entry.id + ';';
-			console.log(clickReaction);*/
 			let oldOHTML = entry.outerHTML;
 			entry.outerHTML = '<a href="/locations?item=' + entry.id + '">\n' + oldOHTML + '\n</a>'
-			entry.onmouseover = function() {mouseOverReaction(entry);}
+			entry.onmouseover = function() {
+				d3.select(this.parentNode).raise();
+				d3.select(this.parentNode.parentNode).raise();
+			}
 			console.log(entry.id);
 		}
 	}
-}
-
-/*function clickReaction(id) {
-	window.location.href = "/locations?item=" + id + "";
-}*/
-
-function mouseOverReaction(element) {
-	element.style.stroke = "blue!important";
 }
