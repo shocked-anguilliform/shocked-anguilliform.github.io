@@ -22,7 +22,7 @@ function appendEntries(locations) {;
 			console.log($.trim(chunks[0]).replace("-", ""));
 			document.getElementById($.trim(chunks[0]).substring(1)).style.display = "none";
 		} else {
-			const chunks = locations[i].split("|");
+			let const chunks = locations[i].split("|");
 			entry = document.getElementById($.trim(chunks[0]));
 			if(!entry) {
 				console.log("error: no such element");
@@ -30,8 +30,8 @@ function appendEntries(locations) {;
 			}
 			let oldOHTML = entry.outerHTML;
 			entry.outerHTML = '<a href="/locations?item=' + entry.id + '">\n' + oldOHTML + '\n</a>'
-			let entryParent = document.getElementById($.trim(chunks[0])).parentNode;
-			entryParent.addEventListener("mouseover", raiseElement);
+			let entryA = document.getElementById($.trim(chunks[0])).parentNode;
+			entryA.addEventListener("mouseover", raiseElement);
 		}
 	}
 }
@@ -45,7 +45,5 @@ function raiseElement() {
 		console.error(err);
 	}
 	d3.select(this).raise();
-	console.log(d3.select(this.parentNode));
 	d3.select(this.parentNode).raise();
-	console.log(d3.select(this.parentNode.parentNode));
 }
