@@ -25,13 +25,13 @@ function appendEntries(locations) {;
 			const chunks = locations[i].split("|");
 			entry = document.getElementById($.trim(chunks[0]));
 			if(!entry) {
-				console.log("error: no such location");
+				console.log("error: no such element");
 				return;
 			}
 			/*let clickReaction = 'window.location.href = "/locations?item=' + entry.id + ';';
 			console.log(clickReaction);*/
 			let oldOHTML = entry.outerHTML;
-			entry.outerHTML = '<a href="/locations?item=' + entry.id + '">/n' + oldOHTML + '/n</a>'
+			entry.outerHTML = '<a href="/locations?item=' + entry.id + '">\n' + oldOHTML + '\n</a>'
 			entry.onmouseover = function() {mouseOverReaction(entry);}
 			console.log(entry.id);
 		}
