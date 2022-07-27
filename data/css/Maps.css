@@ -7,7 +7,7 @@ svg {
 	stroke: blue!important;
 }
 
-.mapContainer{
+.mapContainer {
 	width:calc(90% - 4rem);
 	padding:1.4rem 2rem 0rem 2rem;
 	min-height:max(70%, 100% - 25vw );
@@ -22,4 +22,12 @@ svg {
 	border-color: #666d;
 	font-family: "lucida bright";
 	font-size:1.5rem;
+}
+
+#titlePopUp {
+	position: absolute;
+	display: none;
+	background: white;
+	color: red;
+	font-size: 2rem;
 }

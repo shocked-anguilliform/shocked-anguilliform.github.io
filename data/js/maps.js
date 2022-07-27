@@ -1,4 +1,5 @@
 function initializeMap(fileName) {
+	body.addEventListener("onmousemove", getCursorPosition(event));
 	getLocationFile(fileName);
 }
 
@@ -31,12 +32,22 @@ function appendEntries(locations) {;
 			let oldOHTML = entry.outerHTML;
 			entry.outerHTML = '<a href="/locations?item=' + entry.id + '">\n' + oldOHTML + '\n</a>'
 			let entryA = document.getElementById($.trim(chunks[0])).parentNode;
-			entryA.addEventListener("mouseover", raiseElement);
+			entryA.addEventListener("mouseover", hoverOn);
 		}
 	}
 }
 
-function raiseElement() {
+function hoverOn() {
 	d3.select(this).raise();
 	d3.select(this.parentNode).raise();
+	let titlePopUp = document.getElementById(titlePopUp);
+	titlePopUp.innerHTML = this.id;
+	titlePopUp.style.left = xCursorPosition;
+	titlePopUp.style.top = yCursorPosition;
+	titlePopUp.style.display = block;
+}
+
+function getCursorPosition(event) {
+  var xCursorPosition = event.clientX;
+  var yCursorPosition = event.clientY;
 }
