@@ -40,11 +40,11 @@ function appendEntries(locations) {;
 function hoverOn() {
 	d3.select(this).raise();
 	d3.select(this.parentNode).raise();
-	let titlePopUp = document.getElementById(titlePopUp);
-	titlePopUp.innerHTML = this.id;
-	titlePopUp.style.left = xCursorPosition;
-	titlePopUp.style.top = yCursorPosition;
-	titlePopUp.style.display = block;
+	let titleBox = document.getElementById(titlePopUp);
+	titleBox.innerHTML = this.id;
+	titleBox.style.left = xCursorPosition;
+	titleBox.style.top = yCursorPosition;
+	titleBox.style.display = block;
 }
 
 function getCursorPosition(event) {
