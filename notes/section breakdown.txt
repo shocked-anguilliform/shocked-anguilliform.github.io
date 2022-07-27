@@ -1,0 +1,63 @@
+CRE 14 sections
+
+CRE/CSM 3 sections
+
+ALC 14 sections + 2 FAC sections
+
+ABJ 7 sections
+
+CNJ 12 sections
+
+DIV 7 sections
+
+ENC 5 sections
+
+EVO 6 sections
+
+ILS 6 sections
+
+NCR 4 sections
+
+TSM 6 sections
+
+COS 8 sections
+
+ELM 12 sections
+
+NAT 11 sections
+
+ENS 11 Sections
+
+ADV 8 sections
+
+LFM 4 sections
+
+FAC (spellcraft) 2 secctions
+
+FAC (magical sparring) 2 sections
+
+ART (music) 3 sections
+
+ART (painting) 5 sections
+
+ART (glassblowing) 2 sections + 1 FAC section
+
+ART (dance) 1 section
+
+ART (showmanship) 1 section
+
+ART (embroidery) 1 section
+
+ART (satire) 1 section
+
+ART (carpentry) 3 sections
+
+ART (smithing) 5 sections + 2 FAC sections
+
+NMS 10 sections (maybe more later)
+
+ATF (not finished)
+
+EXC (theatre) 1 section
+
+EXC (griffon riding) 1 section
