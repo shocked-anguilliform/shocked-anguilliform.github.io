@@ -1,4 +1,10 @@
 function initializeMap(fileName) {
+	mapBoxes = querySelectorAll(".mapContainer");
+	console.log(mapBoxes);
+	mapBoxes.forEach(box => {
+		box.addEventListener("mousemove", getCursorPosition(event));
+		console.log(box);
+	});
 	document.body.addEventListener("mousemove", getCursorPosition(event));
 	window.addEventListener("mousemove", getCursorPosition2(event));
 	getLocationFile(fileName);
