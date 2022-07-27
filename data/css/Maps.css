@@ -30,4 +30,5 @@ svg {
 	background: white;
 	color: red;
 	font-size: 2rem;
+	z-index: 1;
 }
