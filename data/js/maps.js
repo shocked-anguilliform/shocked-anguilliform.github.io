@@ -44,7 +44,7 @@ function hoverOn() {
 	titleBox.innerHTML = this.id;
 	titleBox.style.left = window.xCursorPosition;
 	titleBox.style.top = window.yCursorPosition;
-	titleBox.style.display = block;
+	titleBox.style.display = "block";
 }
 
 function getCursorPosition(event) {
