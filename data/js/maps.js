@@ -41,7 +41,7 @@ function hoverOn() {
 	d3.select(this).raise();
 	d3.select(this.parentNode).raise();
 	let titleBox = document.getElementById("titlePopUp");
-	titleBox.innerHTML = this.id;
+	titleBox.innerHTML = this.children[0].id;
 	titleBox.style.left = window.xCursorPosition;
 	titleBox.style.top = window.yCursorPosition;
 	titleBox.style.display = "block";
