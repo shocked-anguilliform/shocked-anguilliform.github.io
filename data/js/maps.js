@@ -42,12 +42,12 @@ function hoverOn() {
 	d3.select(this.parentNode).raise();
 	let titleBox = document.getElementById("titlePopUp");
 	titleBox.innerHTML = this.id;
-	titleBox.style.left = xCursorPosition;
-	titleBox.style.top = yCursorPosition;
+	titleBox.style.left = window.xCursorPosition;
+	titleBox.style.top = window.yCursorPosition;
 	titleBox.style.display = block;
 }
 
 function getCursorPosition(event) {
-  var xCursorPosition = event.clientX;
-  var yCursorPosition = event.clientY;
+  window.xCursorPosition = event.clientX;
+  window.yCursorPosition = event.clientY;
 }
