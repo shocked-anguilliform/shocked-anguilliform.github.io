@@ -1,5 +1,5 @@
 function initializeMap(fileName) {
-	document.body.addEventListener("onmousemove", getCursorPosition(event));
+	document.body.addEventListener("mousemove", getCursorPosition(event));
 	getLocationFile(fileName);
 }
 
