@@ -40,7 +40,7 @@ function appendEntries(locations) {;
 function hoverOn() {
 	d3.select(this).raise();
 	d3.select(this.parentNode).raise();
-	let titleBox = document.getElementById(titlePopUp);
+	let titleBox = document.getElementById("titlePopUp");
 	titleBox.innerHTML = this.id;
 	titleBox.style.left = xCursorPosition;
 	titleBox.style.top = yCursorPosition;
