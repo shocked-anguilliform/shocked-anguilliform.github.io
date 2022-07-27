@@ -1,5 +1,6 @@
 function initializeMap(fileName) {
 	document.body.addEventListener("mousemove", getCursorPosition(event));
+	window.addEventListener("mousemove", getCursorPosition2(event));
 	getLocationFile(fileName);
 }
 
@@ -50,4 +51,11 @@ function hoverOn() {
 function getCursorPosition(event) {
   window.xCursorPosition = event.clientX;
   window.yCursorPosition = event.clientY;
+  console.log("ping");
+}
+
+function getCursorPosition2(event) {
+  window.xCursorPosition = event.clientX;
+  window.yCursorPosition = event.clientY;
+  console.log("pong");
 }
