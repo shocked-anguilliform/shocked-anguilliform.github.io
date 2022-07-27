@@ -1,5 +1,5 @@
 function initializeMap(fileName) {
-	mapBoxes = querySelectorAll(".mapContainer");
+	mapBoxes = document.querySelectorAll(".mapContainer");
 	console.log(mapBoxes);
 	mapBoxes.forEach(box => {
 		box.addEventListener("mousemove", getCursorPosition(event));
