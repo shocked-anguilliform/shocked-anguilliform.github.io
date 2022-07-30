@@ -42,11 +42,11 @@ function hoverOn() {
 	d3.select(this).raise();
 	d3.select(this.parentNode).raise();
 	window.titleBox.innerHTML = this.children[0].id;
-	window.titleBox.style.display = "block";
+	window.titleBox.style.visibility = "visable";
 }
 
 function hoverOff() {
-	window.titleBox.style.display = "none";
+	window.titleBox.style.visibility = "hidden";
 }
 
 function movePopUp(event) {

@@ -26,7 +26,8 @@ svg {
 
 #titlePopUp {
 	position: absolute;
-	display: none;
+	visibility: hidden;
+	transition: visibility 0.2s;
 	background: white;
 	color: red;
 	font-size: 2rem;
