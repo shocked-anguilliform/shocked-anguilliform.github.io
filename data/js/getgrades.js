@@ -70,6 +70,7 @@ function getGrade(gradeBits) {
 			}
 			grade = (gradeSum / gradeBits.length).toFixed(1);
 	}
+	return grade;
 }
 
 function getOldGrade(gradeBits) {
