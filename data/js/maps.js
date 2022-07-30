@@ -1,6 +1,5 @@
 function initializeMap(fileName) {
 	getLocationFile(fileName);
-	window.titleBox = document.getElementById("titlePopUp");
 }
 
 async function getLocationFile(fileName) {
@@ -41,18 +40,21 @@ function appendEntries(locations) {;
 function hoverOn() {
 	d3.select(this).raise();
 	d3.select(this.parentNode).raise();
-	window.titleBox.innerHTML = this.children[0].id;
-	window.titleBox.style.visibility = "visable";
+	let titleBox = document.getElementById("titlePopUp");
+	titleBox.innerHTML = this.children[0].id;
+	titleBox.style.visibility = "visable";
 }
 
 function hoverOff() {
-	window.titleBox.style.visibility = "hidden";
+	let titleBox = document.getElementById("titlePopUp");
+	titleBox.style.visibility = "hidden";
 }
 
 function movePopUp(event) {
+	let titleBox = document.getElementById("titlePopUp");
 	getCursorPosition(event);
-	window.titleBox.style.left = window.xCursorPosition + "px";
-	window.titleBox.style.top = window.yCursorPosition + "px";
+	titleBox.style.left = window.xCursorPosition + "px";
+	titleBox.style.top = window.yCursorPosition + "px";
 }
 	
 function getCursorPosition(event) {
