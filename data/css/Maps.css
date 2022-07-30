@@ -31,4 +31,5 @@ svg {
 	color: red;
 	font-size: 2rem;
 	z-index: 1;
+	transform: translate(-50%, -120%);
 }

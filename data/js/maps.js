@@ -1,12 +1,6 @@
 function initializeMap(fileName) {
-	mapBoxes = document.querySelectorAll(".mapContainer");
-	console.log(mapBoxes);
-	mapBoxes.forEach(box => {
-		box.addEventListener("mousemove", getCursorPosition(event));
-		console.log(box);
-	});
-	document.body.addEventListener("mousemove", getCursorPosition(event));
 	getLocationFile(fileName);
+	window.titleBox = document.getElementById("titlePopUp");
 }
 
 async function getLocationFile(fileName) {
@@ -39,6 +33,7 @@ function appendEntries(locations) {;
 			entry.outerHTML = '<a href="/locations?item=' + entry.id + '">\n' + oldOHTML + '\n</a>'
 			let entryA = document.getElementById($.trim(chunks[0])).parentNode;
 			entryA.addEventListener("mouseover", hoverOn);
+			entryA.addEventListener("mouseout", hoverOff);
 		}
 	}
 }
@@ -46,15 +41,21 @@ function appendEntries(locations) {;
 function hoverOn() {
 	d3.select(this).raise();
 	d3.select(this.parentNode).raise();
-	let titleBox = document.getElementById("titlePopUp");
-	titleBox.innerHTML = this.children[0].id;
-	titleBox.style.left = window.xCursorPosition + "px";
-	titleBox.style.top = window.yCursorPosition + "px";
-	titleBox.style.display = "block";
+	window.titleBox.innerHTML = this.children[0].id;
+	window.titleBox.style.display = "block";
 }
 
+function hoverOn() {
+	window.titleBox.style.display = "none";
+}
+
+function movePopUp(event) {
+	getCursorPosition(event);
+	window.titleBox.style.left = window.xCursorPosition + "px";
+	window.titleBox.style.top = window.yCursorPosition + "px";
+}
+	
 function getCursorPosition(event) {
 	window.xCursorPosition = event.clientX;
 	window.yCursorPosition = event.clientY;
-	console.log("ping");
 }
