@@ -43,11 +43,13 @@ function hoverOn() {
 	let titleBox = document.getElementById("titlePopUp");
 	titleBox.innerHTML = this.children[0].id;
 	titleBox.style.visibility = "visable";
+	titleBox.style.opacity = "1";
 }
 
 function hoverOff() {
 	let titleBox = document.getElementById("titlePopUp");
 	titleBox.style.visibility = "hidden";
+	titleBox.style.opacity = "0";
 }
 
 function movePopUp(event) {
