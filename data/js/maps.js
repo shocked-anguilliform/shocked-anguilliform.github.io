@@ -45,7 +45,7 @@ function hoverOn() {
 	window.titleBox.style.display = "block";
 }
 
-function hoverOn() {
+function hoverOff() {
 	window.titleBox.style.display = "none";
 }
 
