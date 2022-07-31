@@ -30,8 +30,8 @@ function appendEntries(locations) {
 			console.log(entry.id);
 			console.log(chunks[1]);
 			if (chunks[1]) {
-				window['Elm' + entry.id] = chunks[1];
-				console.log(window[entry.id]);
+				window['Elm' + entry.id] = $.trim(chunks[1]);
+				console.log(window['Elm' + entry.id]);
 			} else {
 				window['Elm' + entry.id].name = "???";
 				console.log('error: nameless entry "' + entry.id + '"');
