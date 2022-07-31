@@ -43,7 +43,7 @@ function hoverOn() {
 	let titleBox = document.getElementById("titlePopUp");
 	titleBox.innerHTML = this.children[0].id;
 	titleBox.style.transition = "visibility 0s, opacity 0s";
-	titleBox.style.visibility = "visable";
+	titleBox.style.visibility = "visible";
 	titleBox.style.opacity = "1";
 }
 
