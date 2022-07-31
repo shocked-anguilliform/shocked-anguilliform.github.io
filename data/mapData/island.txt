@@ -1,67 +1,67 @@
-TwoStepRoad | sampletext
-WhistlersCrossing
-ShadedSnarl
-PrincesPeril
-MarlinWay
-CopperquilRun
-TalonTrot
-GaligosTrail
-ForsakenSteps
-SkyreachPass
-RavelrootTrail
-BygoneBourn
-DustysTrail
-TheOvergrove
-BrokenBranchBend
-AmerynsCradle
-SeasculptAscent
-GleamwaterGyre
-NestledCrook
-UnderbitePath
-OutpostTrail
-AmplegreenTrail
-SunderedTangle
-UnnamedTrail
-ShrinePath
-OndorSteps
-HopskipBound
-FarieDragonLane
-OverlookPath
-UnnamedTrail2
-HagsStroll
-WanderingWay
-BayWalk
-CabinArea
-HwenRoad
-MeadowRoad
-DockRoad
-RadstoneRoad
-MagelightRoad
-WestPointText
-HighTdeIslandText
-SchoolDocks
-LostMeadow
-TheTower
-LongMeadow
-SmireyDocks
-SkyviewSkerryText
-SmireyIsleText
-WamedayBayText
-SeaweedCoveText
-MonsterRock
-OldOrchard
-GreyMirror
-BayOfManyCrabsText
-LostLilyIslandText
-TowerOverlook
-PointRockText
-SweetFishBayText
-NorthPointOverlook
-OndorRun
-BrambleBastion
-PrancingPrairie
-Llaffan
-SunspeckledSanctuary
-WestraAcademy
-Hwen
-StoneskipJaunt
+TwoStepRoad | Two Step Road
+WhistlersCrossing | Whistler's Crossing
+ShadedSnarl | Shaded Snarl
+PrincesPeril | Prince's Peril
+MarlinWay | Marlin Way
+CopperquilRun | Copperquil Run
+TalonTrot | Talon Trot
+GaligosTrail | Galigos Trail
+ForsakenSteps | Forsaken Steps
+SkyreachPass | Skyreach Pass
+RavelrootTrail | Ravelroot Trail
+BygoneBourn | Bygone Bourn
+DustysTrail | Dusty's Trail
+TheOvergrove | The Overgrove
+BrokenBranchBend | Broken Branch Bend
+AmerynsCradle | Ameryns Cradle
+SeasculptAscent | Seasculpt Ascent
+GleamwaterGyre | Gleamwater Gyre
+NestledCrook | Nestled Crook
+UnderbitePath | Underbite Path
+OutpostTrail | Outpost Trail
+AmplegreenTrail | Amplegreen Trail
+SunderedTangle | Sundered Tangle
+UnnamedTrail | Unnamed Trail
+ShrinePath | Shrine Path
+OndorSteps | Ondor Steps
+HopskipBound | Hopskip Bound
+FarieDragonLane | Farie Dragon Lane
+OverlookPath | Overlook Path
+UnnamedTrail2 | Unnamed Trail
+HagsStroll | Hag's Stroll
+WanderingWay | Wandering Way
+BayWalk | Bay Walk
+CabinArea | Cabin Area
+HwenRoad | Hwen Road
+MeadowRoad | Meadow Road
+DockRoad | Dock Road
+RadstoneRoad | Radstone Road
+MagelightRoad | Magelight Road
+WestPointText | West Point
+HighTdeIslandText | High Tide Island
+SchoolDocks | School Docks
+LostMeadow | Lost Meadow
+TheTower | The Tower
+LongMeadow | Long Meadow
+SmireyDocks | Smirey Docks
+SkyviewSkerryText | Skyview Skerry
+SmireyIsleText | Smirey Isle
+WamedayBayText | Wameday Bay
+SeaweedCoveText | Seaweed Cove
+MonsterRock | Monster Rock
+OldOrchard | The Old Orchard
+GreyMirror | Grey Mirror
+BayOfManyCrabsText | Bay Of Many Crabs
+LostLilyIslandText | Lost Lily Island
+TowerOverlook | Tower Overlook
+PointRockText | Point Rock
+SweetFishBayText | Sweetfish Bay
+NorthPointOverlook | North Point Overlook
+OndorRun | Ondor Run
+BrambleBastion | Bramble Bastion
+PrancingPrairie | Prancing Prairie
+Llaffan | Llaffan
+SunspeckledSanctuary | Sunspeckled Sanctuary
+WestraAcademy | Westra Academy
+Hwen | Hwen
+StoneskipJaunt | Stoneskip Jaunt

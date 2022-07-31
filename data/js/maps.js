@@ -15,11 +15,10 @@ function splitLocationFile(locationsFile) {
 	}
 }
 
-function appendEntries(locations) {;
+function appendEntries(locations) {
 	if (locations[i]) {
 		const chunks = locations[i].split("|");
 		if (chunks[0].charAt(0) == "-") {
-			console.log($.trim(chunks[0]).replace("-", ""));
 			document.getElementById($.trim(chunks[0]).substring(1)).style.display = "none";
 		} else {
 			const chunks = locations[i].split("|");
@@ -27,6 +26,12 @@ function appendEntries(locations) {;
 			if(!entry) {
 				console.log("error: no such element");
 				return;
+			}
+			if (chunks[1]) {
+				window[entry.id].name = chunks[1];	
+			} else {
+				window[entry.id].name = "???";
+				console.log('error: nameless entry "' + entry.id + '"');
 			}
 			let oldOHTML = entry.outerHTML;
 			entry.outerHTML = '<a href="/locations?item=' + entry.id + '">\n' + oldOHTML + '\n</a>'
@@ -41,7 +46,7 @@ function hoverOn() {
 	d3.select(this).raise();
 	d3.select(this.parentNode).raise();
 	let titleBox = document.getElementById("titlePopUp");
-	titleBox.innerHTML = this.children[0].id;
+	titleBox.innerHTML = window[this.children[0].id].name;
 	titleBox.style.transition = "visibility 0s, opacity 0s";
 	titleBox.style.visibility = "visible";
 	titleBox.style.opacity = "1";

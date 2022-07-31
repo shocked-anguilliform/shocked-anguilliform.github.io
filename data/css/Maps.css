@@ -28,9 +28,14 @@ svg {
 	position: fixed;
 	visibility: hidden;
 	transition: visibility 0.2s, opacity 0.2s;
-	background: white;
-	color: red;
-	font-size: 2rem;
+	padding: 0.2rem;
+	background: #bbbd;
+	border-radius: 0.25rem;
+	border-style: solid;
+	border-color: #666d;
+	font-family: "lucida bright";
+	font-size:1.5rem;
+	text-indent: 2rem;
 	z-index: 1;
-	transform: translate(-50%, -120%);
+	transform: translate(-50%, calc( - (100% + 0.4rem));
 }
