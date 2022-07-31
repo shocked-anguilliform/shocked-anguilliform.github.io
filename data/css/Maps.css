@@ -37,6 +37,7 @@ svg {
 	font-size:1.5rem;
 	z-index: 1;
 	transform: translate(-50%, calc( -100% - 0.4rem));
+	white-space: nowrap;
 }
 
 #titlePopUp a{
