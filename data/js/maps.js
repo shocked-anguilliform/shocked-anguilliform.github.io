@@ -30,6 +30,7 @@ function appendEntries(locations) {
 			console.log(entry.id);
 			console.log(chunks[1]);
 			if (chunks[1]) {
+				window['Elm' + entry.id] = entry.id;
 				window['Elm' + entry.id].name = chunks[1];
 				console.log(window[entry.id].name);
 			} else {
