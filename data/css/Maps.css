@@ -29,13 +29,12 @@ svg {
 	visibility: hidden;
 	transition: visibility 0.2s, opacity 0.2s;
 	padding: 0.2rem;
-	background: #bbbd;
+	background: #bbba;
 	border-radius: 0.25rem;
 	border-style: solid;
-	border-color: #666d;
+	border-color: #666a;
 	font-family: "lucida bright";
 	font-size:1.5rem;
-	text-indent: 2rem;
 	z-index: 1;
 	transform: translate(-50%, calc( -100% - 0.4rem));
 }
