@@ -37,5 +37,5 @@ svg {
 	font-size:1.5rem;
 	text-indent: 2rem;
 	z-index: 1;
-	transform: translate(-50%, calc( - (100% + 0.4rem));
+	transform: translate(-50%, calc( -100% - 0.4rem));
 }
