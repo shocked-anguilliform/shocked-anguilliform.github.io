@@ -50,7 +50,7 @@ function hoverOn() {
 	d3.select(this.parentNode).raise();
 	let titleBox = document.getElementById("titlePopUp");
 	console.log('Elm' + this.children[0].id);
-	titleBox.innerHTML = window['Elm' + this.children[0].id];
+	titleBox.innerHTML = "<a>" + window['Elm' + this.children[0].id] + "</a>";
 	titleBox.style.transition = "visibility 0s, opacity 0s";
 	titleBox.style.visibility = "visible";
 	titleBox.style.opacity = "1";

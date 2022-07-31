@@ -29,12 +29,16 @@ svg {
 	visibility: hidden;
 	transition: visibility 0.2s, opacity 0.2s;
 	padding: 0.2rem;
-	background: #bbba;
+	background: #bbbb;
 	border-radius: 0.25rem;
 	border-style: solid;
-	border-color: #666a;
+	border-color: #666b;
 	font-family: "lucida bright";
 	font-size:1.5rem;
 	z-index: 1;
 	transform: translate(-50%, calc( -100% - 0.4rem));
+}
+
+#titlePopUp a{
+	filter: drop-shadow(0 0 0.1rem #bbb) drop-shadow(0 0 0.1rem #bbb);
 }
