@@ -44,7 +44,7 @@ function appendEntries(locations) {
 
 function hoverOn() {
 	d3.select(this).raise();
-	d3.select(this.parentNode).raise();
+	/*d3.select(this.parentNode).raise();*/
 	let titleBox = document.getElementById("titlePopUp");
 	titleBox.innerHTML = "<a>" + window['Elm' + this.children[0].id] + "</a>";
 	titleBox.style.transition = "visibility 0s, opacity 0s";
