@@ -30,9 +30,8 @@ function appendEntries(locations) {
 			console.log(entry.id);
 			console.log(chunks[1]);
 			if (chunks[1]) {
-				window['Elm' + entry.id] = entry.id;
-				window['Elm' + entry.id].name = chunks[1];
-				console.log(window[entry.id].name);
+				window['Elm' + entry.id] = chunks[1];
+				console.log(window[entry.id]);
 			} else {
 				window['Elm' + entry.id].name = "???";
 				console.log('error: nameless entry "' + entry.id + '"');
@@ -51,7 +50,7 @@ function hoverOn() {
 	d3.select(this.parentNode).raise();
 	let titleBox = document.getElementById("titlePopUp");
 	console.log('Elm' + this.children[0].id);
-	titleBox.innerHTML = window['Elm' + this.children[0].id].name;
+	titleBox.innerHTML = window['Elm' + this.children[0].id];
 	titleBox.style.transition = "visibility 0s, opacity 0s";
 	titleBox.style.visibility = "visible";
 	titleBox.style.opacity = "1";
