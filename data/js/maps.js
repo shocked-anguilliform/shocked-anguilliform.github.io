@@ -42,12 +42,14 @@ function hoverOn() {
 	d3.select(this.parentNode).raise();
 	let titleBox = document.getElementById("titlePopUp");
 	titleBox.innerHTML = this.children[0].id;
+	titleBox.style.transition = "visibility 0s, opacity 0s";
 	titleBox.style.visibility = "visable";
 	titleBox.style.opacity = "1";
 }
 
 function hoverOff() {
 	let titleBox = document.getElementById("titlePopUp");
+	titleBox.style.transition = "visibility 0.2s, opacity 0.2s";
 	titleBox.style.visibility = "hidden";
 	titleBox.style.opacity = "0";
 }
