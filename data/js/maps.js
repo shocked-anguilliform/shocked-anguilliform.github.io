@@ -27,8 +27,11 @@ function appendEntries(locations) {
 				console.log("error: no such element");
 				return;
 			}
+			console.log(entry.id);
+			console.log(chunks[1]);
 			if (chunks[1]) {
-				window[entry.id].name = chunks[1];	
+				window[entry.id].name = chunks[1];
+				console.log(window[entry.id].name);
 			} else {
 				window[entry.id].name = "???";
 				console.log('error: nameless entry "' + entry.id + '"');
@@ -46,6 +49,7 @@ function hoverOn() {
 	d3.select(this).raise();
 	d3.select(this.parentNode).raise();
 	let titleBox = document.getElementById("titlePopUp");
+	console.log(this.children[0].id);
 	titleBox.innerHTML = window[this.children[0].id].name;
 	titleBox.style.transition = "visibility 0s, opacity 0s";
 	titleBox.style.visibility = "visible";
