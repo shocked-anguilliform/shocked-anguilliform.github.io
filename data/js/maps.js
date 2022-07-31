@@ -27,11 +27,8 @@ function appendEntries(locations) {
 				console.log("error: no such element");
 				return;
 			}
-			console.log(entry.id);
-			console.log(chunks[1]);
 			if (chunks[1]) {
 				window['Elm' + entry.id] = $.trim(chunks[1]);
-				console.log(window['Elm' + entry.id]);
 			} else {
 				window['Elm' + entry.id].name = "???";
 				console.log('error: nameless entry "' + entry.id + '"');
@@ -49,7 +46,6 @@ function hoverOn() {
 	d3.select(this).raise();
 	d3.select(this.parentNode).raise();
 	let titleBox = document.getElementById("titlePopUp");
-	console.log('Elm' + this.children[0].id);
 	titleBox.innerHTML = "<a>" + window['Elm' + this.children[0].id] + "</a>";
 	titleBox.style.transition = "visibility 0s, opacity 0s";
 	titleBox.style.visibility = "visible";
