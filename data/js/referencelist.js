@@ -50,7 +50,11 @@ function splitEntry(entries){
 	} else {
 		idHTML = "";
 	}
-	content = writeHTML($.trim(entry[0]), picture, $.trim(entry[2]), idHTML);
+	var article = $.trim.(entry[2]);
+	if (article.charAt(0) == "-") {
+		article = "???";
+	}
+	content = writeHTML($.trim(entry[0]), picture, article, idHTML);
 	document.getElementById("entryBox").innerHTML += content;
 }
 
