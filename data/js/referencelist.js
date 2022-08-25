@@ -41,7 +41,7 @@ function splitEntry(entries){
 		return;
 	}
 	let picture = $.trim(entry[1]);
-	if (!picture) {
+	if (!picture || picture.charAt(0) == "-") {
 		picture = "noPicture.jpg";
 	}
 		if (entry[3]) {
@@ -50,7 +50,7 @@ function splitEntry(entries){
 	} else {
 		idHTML = "";
 	}
-	var article = $.trim.(entry[2]);
+	var article = $.trim(entry[2]);
 	if (article.charAt(0) == "-") {
 		article = "???";
 	}
