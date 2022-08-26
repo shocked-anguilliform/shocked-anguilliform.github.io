@@ -4,7 +4,7 @@ Shaded Snarl || - | ShadedSnarl
 Prince's Peril || - | PrincesPeril
 Marlin Way || - | MarlinWay
 Copperquil Run || - | CopperquilRun
-Talon Trot || - | TalonTrot
+Talontrot Run || - | TalonTrot
 Galigos Trail || - | GaligosTrail
 Forsaken Steps || - | ForsakenSteps
 Skyreach Pass || - | SkyreachPass
@@ -16,7 +16,7 @@ Broken Branch Bend || - | BrokenBranchBend
 Ameryns Cradle || - | AmerynsCradle
 Seasculpt Ascent || - | SeasculptAscent
 Gleamwater Gyre || - | GleamwaterGyre
-Nestled Crook || - | NestledCrook
+Nestled Crook |NestledCrook.png| - | NestledCrook
 Underbite Path || - | UnderbitePath
 Outpost Trail || - | OutpostTrail
 Amplegreen Trail || - | AmplegreenTrail
