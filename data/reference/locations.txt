@@ -16,7 +16,7 @@ Broken Branch Bend || - | BrokenBranchBend
 Ameryns Cradle || - | AmerynsCradle
 Seasculpt Ascent || - | SeasculptAscent
 Gleamwater Gyre || - | GleamwaterGyre
-Nestled Crook |NestledCrook.png| - | NestledCrook
+Nestled Crook | NestledCrook.png | - | NestledCrook
 Underbite Path || - | UnderbitePath
 Outpost Trail || - | OutpostTrail
 Amplegreen Trail || - | AmplegreenTrail
