@@ -1,24 +1,25 @@
 Two Step Road || This road has two steps | TwoStepRoad
-Whistler's Crossing || - | WhistlersCrossing
-Shaded Snarl || - | ShadedSnarl
+Whistler's Crossing | WhistlersCrossing.png | - | WhistlersCrossing
+Shaded Snarl | ShadedSnarl.png | - | ShadedSnarl
 Prince's Peril || - | PrincesPeril
-Marlin Way || - | MarlinWay
-Copperquil Run || - | CopperquilRun
-Talontrot Run || - | TalontrotRun
-Galigos Trail || - | GaligosTrail
+Marlin Way | MarlinWay.png | - | MarlinWay
+Copperquill Run | CopperquillRun.png | - | CopperquillRun
+Talontrot Trail | TalontrotTrail.png | - | TalontrotTrail
+Galigos Trail | GaligosTrail.png | - | GaligosTrail
 Forsaken Steps || - | ForsakenSteps
-Skyreach Pass || - | SkyreachPass
-Ravelroot Trail || - | RavelrootTrail
+Mistral Pass | MistralPass.png | - | MistralPass
+Ravelroot Trail | RavelrootTrail.png | - | RavelrootTrail
 Bygone Bourn || - | BygoneBourn
 Dusty's Trail || - | DustysTrail
-The Overgrove || - | TheOvergrove
-Broken Branch Bend || - | BrokenBranchBend
+The Overgrove | TheOvergrove.png | - | TheOvergrove
+Broken Branch Bend | BrokenBranchBend.png | - | BrokenBranchBend
 Ameryns Cradle || - | AmerynsCradle
 Seasculpt Ascent || - | SeasculptAscent
 Gleamwater Gyre || - | GleamwaterGyre
 Nestled Crook | NestledCrook.png | Winding through the overwrapping canopy is a narrow, quiet path. Various plants cradle the crooks edges with curled leaves. A rustling overhead catches your attention. Glancing up, you see a small furry creature leaping into the branches away from you. It stops and looks back at you curiously with large yellow eyes and a piece of fruit held in its mouth. | NestledCrook
-Underbite Path || - | UnderbitePath
-Outpost Trail || - | OutpostTrail
+Glimmer Tides | GlimmerTides.png | - | GlimmerTides
+Underbite Path | UnderbitePath.png | - | UnderbitePath
+Outpost Trail | OutpostTrail.png | - | OutpostTrail
 Amplegreen Trail || - | AmplegreenTrail
 Sundered Tangle || - | SunderedTangle
 Unnamed Trail || - | UnnamedTrail
@@ -30,7 +31,8 @@ Overlook Path || - | OverlookPath
 Unnamed Trail || - | UnnamedTrail2
 Hag's Stroll || - | HagsStroll
 Wandering Way || - | WanderingWay
-Bay Walk || - | BayWalk
+Bay Walk | BayWalk.png | - | BayWalk
+Lowood Path | LowoodPath.png | - | LowoodPath
 Cabin Area || - | CabinArea
 Hwen Road || - | HwenRoad
 Meadow Road || - | MeadowRoad
