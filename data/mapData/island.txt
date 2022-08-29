@@ -3,11 +3,11 @@ WhistlersCrossing | Whistler's Crossing
 ShadedSnarl | Shaded Snarl
 PrincesPeril | Prince's Peril
 MarlinWay | Marlin Way
-CopperquilRun | Copperquil Run
-TalonTrot | Talon Trot
+CopperquillRun | Copperquill Run
+TalontrotTrail | Talontrot Trail
 GaligosTrail | Galigos Trail
 ForsakenSteps | Forsaken Steps
-SkyreachPass | Skyreach Pass
+MistralPass | Mistral Pass
 RavelrootTrail | Ravelroot Trail
 BygoneBourn | Bygone Bourn
 DustysTrail | Dusty's Trail
