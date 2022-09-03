@@ -100,6 +100,6 @@ function checkInitial() {
 		$('html, body').animate({
 			scrollTop: $("#" + querryID).offset().top,
 			easing: 'ease-in-out'
-		}, 500);
+		}, 1250);
 	}
 }
