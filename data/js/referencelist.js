@@ -36,9 +36,9 @@ async function getListItems(list) {
 function addEntries(entryFile){
 	const entries = String(entryFile).split("\n");
 	let entriesCount = entries.length;
-	window[subsection] = document.createElement('div');
-	console.log(window[subsection]);
-	document.getElementById("entryBox").appendChild(window[subsection]);
+	window["subsection"] = document.createElement('div');
+	console.log(window["subsection"]);
+	document.getElementById("entryBox").appendChild(window["subsection"]);
 	for (i = 0; i < entriesCount; i++) {
 		splitEntry(entries);
 	}
@@ -60,8 +60,8 @@ function splitEntry(entries){
 			console.log("section " + sectionId +" reached");
 			content = '</div>\n<div class="entryHeader" id="' + sectionId + '" onclick="sectionToggle(this, \'' + sectionId + 'Drop\')">\n<span>' + name + '</span>\n<span>⯅</span>\n<div>' + name + ' <span>⯆</span></div>\n</div>\n<div id="' + sectionId + 'Drop">\n</div>\n'
 			document.getElementById("entryBox").innerHTML += content;
-			window[subsection] = document.getElementById(sectionId + "drop");
-			console.log(window[subsection]);
+			window["subsection"] = document.getElementById(sectionId + "drop");
+			console.log(window["subsection"]);
 			break;
 		default:
 			let picture = $.trim(entry[1]);
@@ -79,7 +79,7 @@ function splitEntry(entries){
 				article = "???";
 			}
 			content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<div>' + name + '</div>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>\n'
-			window[subsection].innerHTML += content;
+			window["subsection"].innerHTML += content;
 	}
 }
 
