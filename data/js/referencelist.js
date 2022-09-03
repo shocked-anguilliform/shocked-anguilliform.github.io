@@ -58,14 +58,12 @@ function splitEntry(entries){
 			name = name.slice(1);
 			sectionId = name.split(" ").join("");
 			console.log("section " + sectionId +" reached");
-			content = '</div>\n<div class="entryHeader" id="' + sectionId + '" onclick="sectionToggle(this, \'' + sectionId + 'Drop\')">\n<span>' + name + '</span>\n<span>⯅</span>\n<div>' + name + ' <span>⯆</span></div>\n</div>\n<div id="' + sectionId + 'Drop">\n</div>\n'
+			content = '</div>\n<div class="entryHeader" id="' + sectionId + '" onclick="sectionToggle(this, \'' + sectionId + 'Drop\')">\n<span>' + name + '</span>\n<span>⯅</span>\n<div>' + name + ' <span>⯆</span></div>\n</div>\n'
 			document.getElementById("entryBox").innerHTML += content;
-			console.log(document.getElementById(sectionId + "drop"));
-			let subsectionId = sectionId + "drop";
-			console.log(subsectionId);
-			console.log(document.getElementById(subsectionId));
-			window["subsection"] = document.getElementById(sectionId + "drop");
+			window["subsection"] = document.createElement('div');
+			window["subsection"].id = sectionId + "Drop";
 			console.log(window["subsection"]);
+			document.getElementById("entryBox").appendChild(window["subsection"]);
 			break;
 		default:
 			let picture = $.trim(entry[1]);
