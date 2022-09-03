@@ -6,7 +6,7 @@
   border-radius: 1.5rem;
 }
 
-.entry, .entryContainer {
+.entry, .entryContainer, .entryHeader {
 	top: -2.5rem;
 	position: relative;
 	width: min(46rem, 50% - max(30vw - 14rem, 3rem) - 1rem);
@@ -40,25 +40,28 @@
 	padding: 0.7rem 1rem 0.1rem 1rem;
 }	
 
-.entryContainer:hover{
+.entryContainer:hover	{
 	z-index: 1;
 	color: #4952a6; 
 }
 
-.entryContainer:hover .tooltip{
+.entryContainer:hover .tooltip	{
 	visibility: visible; 
 }
 
 
-.entryContainer{
+.entryContainer	{
 	cursor: pointer;
-	left: max(15vw - 7rem, 1.5rem);
 }
 
-.entryContainer .entry{
+.entryContainer .entry, .entryHeader .entry	{
 	top: 0;
 	width: 100%;
 	left: 0;
+}
+
+.entryContainer, .entryHeader {
+	left: max(15vw - 7rem, 1.5rem);
 }
 
 .foot {

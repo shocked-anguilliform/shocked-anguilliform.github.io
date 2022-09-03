@@ -43,6 +43,8 @@ function splitEntry(entries){
 		case "#":
 			sectionId = name.split(" ").join("").slice(1);
 			console.log("section " + sectionId +" reached");
+			content = '<div class="entryHeader" id="' + sectionID + '">\n<div class="entry">\n<a>' + sectionID + '</a>\n</div>\n</div>'
+			document.getElementById("entryBox").innerHTML += content;
 			break;
 		default:
 			let picture = $.trim(entry[1]);
