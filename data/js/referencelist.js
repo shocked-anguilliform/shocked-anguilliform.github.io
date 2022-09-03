@@ -99,7 +99,6 @@ function checkInitial() {
 		reveal(source);
 		$('html, body').animate({
 			scrollTop: $("#" + querryID).offset().top
-		}, 2000)};
-
+		}, 2000);
 	}
 }
