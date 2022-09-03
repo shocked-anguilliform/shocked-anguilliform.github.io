@@ -41,9 +41,10 @@ function splitEntry(entries){
 		case "-":
 			break;
 		case "#":
-			sectionId = name.split(" ").join("").slice(1);
+			name = name.slice(1);
+			sectionId = name.split(" ").join("");
 			console.log("section " + sectionId +" reached");
-			content = '<div class="entryHeader" id="' + sectionId + '">\n<div class="entry">\n<a>' + name.slice(1) + '</a>\n</div>\n</div>'
+			content = '<div class="entryHeader" id="' + sectionId + '">\n<div class="entry">\n<a>' + name + '</a>\n</div>\n</div>'
 			document.getElementById("entryBox").innerHTML += content;
 			break;
 		default:
