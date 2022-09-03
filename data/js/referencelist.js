@@ -98,6 +98,7 @@ function checkInitial() {
 	if (source) {
 		reveal(source);
 		centered = $("#" + querryID).offset().top - window.innerHeight / 2;
+		console.log(centered);
 		$('html, body').animate({
 			scrollTop: centered,
 			easing: 'ease-in-out'
