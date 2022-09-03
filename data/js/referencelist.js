@@ -20,6 +20,10 @@ function hidePopup() {
 	document.getElementById("blackout").style.display = "none";
 }
 
+function elemLink(targetId) {
+	reveal(document.getElementById(targetId);
+}
+
 function sectionToggle(source, targetId) {
 	console.log(source);
 	let target = document.getElementById(targetId);
