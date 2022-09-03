@@ -99,7 +99,7 @@ function checkInitial() {
 		reveal(source);
 		centered = $("#" + querryID).offset().top - window.innerHeight / 2;
 		$('html, body').animate({
-			scrollTop: $("#" + centered,
+			scrollTop: centered,
 			easing: 'ease-in-out'
 		}, 1250);
 	}
