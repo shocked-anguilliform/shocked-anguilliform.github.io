@@ -90,6 +90,22 @@ function splitEntry(entries){
 			if (!article || article.charAt(0) == "-") {
 				article = "???";
 			}
+			while article.includes("@") {
+				console.log(article);
+				let firstStart = article.indexOf("@");
+				if article.includes("]") {
+					let firstClose = article.indexOf("]");
+				} else {
+					break;
+				}
+				let preLink = article.slice(0, firstStart - 1);
+				console.log(preLink);
+				let linkSec = article.slice(firstStart, firstClose);
+				console.log(linkSec);
+				let postLink = article.slice(firstClose);
+				console.log(postLink);
+				article = preLink + postLink;
+			}
 			content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<div>' + name + '</div>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>\n'
 			window["subsection"].innerHTML += content;
 	}
