@@ -66,7 +66,7 @@ function splitEntry(entries){
 			document.getElementById("entryBox").innerHTML += content;
 			window["subsection"] = document.createElement('div');
 			window["subsection"].id = sectionId + "Drop";
-			indow["subsection"].style.display = "none";
+			window["subsection"].style.display = "none";
 			console.log(window["subsection"]);
 			document.getElementById("entryBox").appendChild(window["subsection"]);
 			break;
