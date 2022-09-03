@@ -97,5 +97,9 @@ function checkInitial() {
 	let source = document.getElementById(querryID)
 	if (source) {
 		reveal(source);
+		$('html, body').animate({
+			scrollTop: $("#" + querryID).offset().top
+		}, 2000)};
+
 	}
 }
