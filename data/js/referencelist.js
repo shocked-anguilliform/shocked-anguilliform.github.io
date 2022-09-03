@@ -41,7 +41,8 @@ function splitEntry(entries){
 		case "-":
 			break;
 		case "#":
-			console.log("section" + entry[0] +"reached");
+			sectionId = name.split(" ").join("").slice(1);
+			console.log("section " + sectionId +" reached");
 			break;
 		default:
 			let picture = $.trim(entry[1]);
@@ -58,14 +59,9 @@ function splitEntry(entries){
 			if (!article || article.charAt(0) == "-") {
 				article = "???";
 			}
-			content = writeHTML(name, picture, article, idHTML);
+			content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<a>' + name + '</a>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>'
 			document.getElementById("entryBox").innerHTML += content;
 	}
-}
-
-function writeHTML(name, picture, article, idHTML) {
-	content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<a>' + name + '</a>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>'
-	return content;
 }
 
 function checkInitial() {
