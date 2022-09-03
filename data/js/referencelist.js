@@ -11,6 +11,11 @@ function reveal(source) {
   document.getElementById("variableText").innerHTML = parts.text;
 }
 
+function hidePopup() {
+  document.getElementById("popup").style.display = "none";
+  document.getElementById("blackout").style.display = "none";
+}
+
 function sectionToggle(source, targetId) {
 	let target = document.getElementById(targetId);
 	if (target.style.display == "none") {
@@ -22,11 +27,6 @@ function sectionToggle(source, targetId) {
 	}
 }
 
-function hidePopup() {
-  document.getElementById("popup").style.display = "none";
-  document.getElementById("blackout").style.display = "none";
-}
-
 async function getListItems(list) {
   let listObject = await fetch("/data/reference/" + list + ".txt");
   let listText = await listObject.text();
@@ -35,12 +35,13 @@ async function getListItems(list) {
 
 function addEntries(entryFile){
 	const entries = String(entryFile).split("\n");
-	var entriesCount = entries.length;
-	document.getElementById("entryBox").innerHTML += "<div>\n";
-	for(i = 0; i < entriesCount; i++) {
+	let entriesCount = entries.length;
+	var defSub = document.createElement('div');
+	console.log(defSub);
+	document.getElementById("entryBox").appendChild(defSub);
+	for (i = 0; i < entriesCount; i++) {
 		splitEntry(entries);
 	}
-	document.getElementById("entryBox").innerHTML += "</div>";
 	checkInitial();
 }
 
@@ -57,8 +58,10 @@ function splitEntry(entries){
 			name = name.slice(1);
 			sectionId = name.split(" ").join("");
 			console.log("section " + sectionId +" reached");
-			content = '</div>\n<div class="entryHeader" id="' + sectionId + '" onclick="sectionToggle(this, \'' + sectionId + 'Drop\')">\n<span>' + name + '</span>\n<span>⯅</span>\n<div>' + name + ' <span>⯆</span></div>\n</div>\n<div id="' + sectionId + 'Drop">\n'
+			content = '</div>\n<div class="entryHeader" id="' + sectionId + '" onclick="sectionToggle(this, \'' + sectionId + 'Drop\')">\n<span>' + name + '</span>\n<span>⯅</span>\n<div>' + name + ' <span>⯆</span></div>\n</div>\n<div id="' + sectionId + 'Drop">\n</div>\n'
 			document.getElementById("entryBox").innerHTML += content;
+			defSub = document.getElementById(sectionId + "drop");
+			console.log(defSub);
 			break;
 		default:
 			let picture = $.trim(entry[1]);
@@ -76,7 +79,7 @@ function splitEntry(entries){
 				article = "???";
 			}
 			content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<div>' + name + '</div>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>\n'
-			document.getElementById("entryBox").innerHTML += content;
+			defSub.innerHTML += content;
 	}
 }
 
