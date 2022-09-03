@@ -64,15 +64,15 @@
 	left: max(15vw - 7rem, 1.5rem);
 }
 
-.entryHeader:first-child {
+.entryHeader span:first-child {
 	font-size: max(min(1.5rem, 3vw) + 1.5rem, 2rem);
 }
 
-.entryHeader:nth-child(2) {
+.entryHeader span:nth-child(2) {
 	font-size: max(min(1.5rem, 3vw), 0.5rem);
 }
 
-.entryHeader:first-child, .entryHeader:nth-child(2) {
+.entryHeader span {
 	font-family: "CopperplateIda";
 	paint-order: stroke;
 	-webkit-text-stroke: 5px #282828;
