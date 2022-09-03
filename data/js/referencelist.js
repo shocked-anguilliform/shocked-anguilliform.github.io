@@ -1,19 +1,23 @@
 function reveal(source) {
-  let children = source.children;
-  const parts = {};
-  parts.name = children[0].children[0].innerHTML;
-  parts.picture = children[1].children[0].outerHTML;
-  parts.text = children[1].children[1].innerHTML;
-  document.getElementById("popup").style.display = "block";
-  document.getElementById("blackout").style.display = "block";
-  document.getElementById("variableImage").innerHTML = parts.picture;
-  document.getElementById("variableName").innerHTML = parts.name;
-  document.getElementById("variableText").innerHTML = parts.text;
+	let parent = source.parentNode;
+	if (parent.style.display == "none" {
+		sectionToggle(parent.previousSibling, parent.id);
+	}
+	let children = source.children;
+	const parts = {};
+	parts.name = children[0].children[0].innerHTML;
+	parts.picture = children[1].children[0].outerHTML;
+	parts.text = children[1].children[1].innerHTML;
+	document.getElementById("popup").style.display = "block";
+	document.getElementById("blackout").style.display = "block";
+	document.getElementById("variableImage").innerHTML = parts.picture;
+	document.getElementById("variableName").innerHTML = parts.name;
+	document.getElementById("variableText").innerHTML = parts.text;
 }
 
 function hidePopup() {
-  document.getElementById("popup").style.display = "none";
-  document.getElementById("blackout").style.display = "none";
+	document.getElementById("popup").style.display = "none";
+	document.getElementById("blackout").style.display = "none";
 }
 
 function sectionToggle(source, targetId) {
@@ -28,9 +32,9 @@ function sectionToggle(source, targetId) {
 }
 
 async function getListItems(list) {
-  let listObject = await fetch("/data/reference/" + list + ".txt");
-  let listText = await listObject.text();
-  addEntries(listText);
+	let listObject = await fetch("/data/reference/" + list + ".txt");
+	let listText = await listObject.text();
+	addEntries(listText);
 }
 
 function addEntries(entryFile){
