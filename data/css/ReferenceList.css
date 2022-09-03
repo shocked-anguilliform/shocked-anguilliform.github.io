@@ -54,7 +54,7 @@
 	cursor: pointer;
 }
 
-.entryContainer .entry, .entryHeader .entry	{
+.entryContainer .entry {
 	top: 0;
 	width: 100%;
 	left: 0;
@@ -64,8 +64,22 @@
 	left: max(15vw - 7rem, 1.5rem);
 }
 
+.entryHeader:first-child {
+	font-size: max(min(1.5rem, 3vw) + 1.5rem, 2rem);
+}
+
+.entryHeader:nth-child(2) {
+	font-size: max(min(1.5rem, 3vw), 0.5rem);
+}
+
+.entryHeader:first-child, .entryHeader:nth-child(2) {
+	font-family: "CopperplateIda";
+	paint-order: stroke;
+	-webkit-text-stroke: 5px #282828;
+}
+
 .foot {
-	top: 0;
+	top: 0;nt
 }
 
 .tooltip img {

@@ -25,9 +25,11 @@ async function getListItems(list) {
 function addEntries(entryFile){
 	const entries = String(entryFile).split("\n");
 	var entriesCount = entries.length;
+	document.getElementById("entryBox").innerHTML += "<div>\n";
 	for(i = 0; i < entriesCount; i++) {
 		splitEntry(entries);
 	}
+	document.getElementById("entryBox").innerHTML += "</div>";
 	checkInitial();
 }
 
@@ -44,7 +46,7 @@ function splitEntry(entries){
 			name = name.slice(1);
 			sectionId = name.split(" ").join("");
 			console.log("section " + sectionId +" reached");
-			content = '<div class="entryHeader" id="' + sectionId + '">\n<div class="entry">\n<a>' + name + '</a>\n</div>\n</div>'
+			content = '</div>\n<div class="entryHeader" id="' + sectionId + '">\n<div>' + name + '</div>\n<div>⯆</div>\n</div>\n<div id="' + sectionId + 'Drop">\n'
 			document.getElementById("entryBox").innerHTML += content;
 			break;
 		default:
@@ -62,7 +64,7 @@ function splitEntry(entries){
 			if (!article || article.charAt(0) == "-") {
 				article = "???";
 			}
-			content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<a>' + name + '</a>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>'
+			content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<div>' + name + '</div>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>\n'
 			document.getElementById("entryBox").innerHTML += content;
 	}
 }
