@@ -63,7 +63,7 @@ function splitEntry(entries){
 			console.log(document.getElementById(sectionId + "drop"));
 			let subsectionId = sectionId + "drop";
 			console.log(subsectionId);
-			console.log(document.getElementById(subesctionId));
+			console.log(document.getElementById(subsectionId));
 			window["subsection"] = document.getElementById(sectionId + "drop");
 			console.log(window["subsection"]);
 			break;
