@@ -72,7 +72,7 @@
 	white-space: nowrap;
 	text-align: center;
 	height: max(min(1.5rem, 3vw) + 1.85rem, 2.35rem);
-	padding: 0 0.65rem 0.65rem 0.65rem;
+	margin: 0 0.65rem 0.65rem 0.65rem;
 }
 
 .entryHeader span:first-child:not(:last-of-type) {

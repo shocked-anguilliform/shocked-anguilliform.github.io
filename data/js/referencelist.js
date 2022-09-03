@@ -11,6 +11,17 @@ function reveal(source) {
   document.getElementById("variableText").innerHTML = parts.text;
 }
 
+function sectionToggle(source, targetId) {
+	let target = document.getElementById(targetId);
+	if (target.style.display == "none") {
+		source.children[1].innerHTML = "⯆";
+		target.style.display = "block";
+	} else {
+		source.children[1].innerHTML = "⯅";
+		target.style.display = "none";
+	}
+}
+
 function hidePopup() {
   document.getElementById("popup").style.display = "none";
   document.getElementById("blackout").style.display = "none";
@@ -39,14 +50,14 @@ function splitEntry(entries){
 	if (!name) {
 		return;
 	}
-	switch(name.charAt(0)) {
+	switch (name.charAt(0)) {
 		case "-":
 			break;
 		case "#":
 			name = name.slice(1);
 			sectionId = name.split(" ").join("");
 			console.log("section " + sectionId +" reached");
-			content = '</div>\n<div class="entryHeader" id="' + sectionId + '">\n<span>' + name + '</span>\n<span>⯆</span>\n<div>' + name + ' <span>⯆</span></div>\n</div>\n<div id="' + sectionId + 'Drop">\n'
+			content = '</div>\n<div class="entryHeader" id="' + sectionId + '" onclick="sectionToggle(this, \'' + sectionId + 'Drop\')">\n<span>' + name + '</span>\n<span>⯅</span>\n<div>' + name + ' <span>⯆</span></div>\n</div>\n<div id="' + sectionId + 'Drop">\n'
 			document.getElementById("entryBox").innerHTML += content;
 			break;
 		default:
