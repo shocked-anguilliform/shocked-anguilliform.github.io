@@ -33,7 +33,8 @@ function addEntries(entryFile){
 
 function splitEntry(entries){
 	const entry = entries[i].split("|");
-	switch(entry[0].charAt(0) {
+	let name = $.trim(entry[0]);
+	switch(name.charAt(0)) {
 		case "-":
 			break;
 		case "#":
