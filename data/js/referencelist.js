@@ -93,7 +93,7 @@ function splitEntry(entries){
 			while (article.includes("@")) {
 				console.log(article);
 				let firstStart = article.indexOf("@");
-				if article.includes("]") {
+				if (article.includes("]")) {
 					let firstClose = article.indexOf("]");
 				} else {
 					break;
