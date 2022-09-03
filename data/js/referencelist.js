@@ -97,8 +97,9 @@ function checkInitial() {
 	let source = document.getElementById(querryID)
 	if (source) {
 		reveal(source);
+		centered = $("#" + querryID).offset().top - window.innerHeight / 2;
 		$('html, body').animate({
-			scrollTop: $("#" + querryID).offset().top,
+			scrollTop: $("#" + centered,
 			easing: 'ease-in-out'
 		}, 1250);
 	}
