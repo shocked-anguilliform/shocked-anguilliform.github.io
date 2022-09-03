@@ -50,7 +50,7 @@
 }
 
 
-.entryContainer	{
+.entryContainer, .entryHeader	{
 	cursor: pointer;
 }
 
@@ -69,10 +69,11 @@
 	font-family: "CopperplateIda";
 	font-size: max(min(1.5rem, 3vw) + 1.5rem, 2rem);
 	color: #bbb;
-	white-space: no-wrap;
+	white-space: nowrap;
+	text-align: center;
 }
 
-.entryHeader span:first-child {
+.entryHeader span:first-child:not(:last-of-type) {
 	-webkit-text-stroke: 5px #282828;
 }
 
