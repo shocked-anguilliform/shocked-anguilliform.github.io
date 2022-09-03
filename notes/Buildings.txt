@@ -1,0 +1,25 @@
+Library (1/1+) B1
+Commons (1/1+) B2
+Eateries (1/1+) B3
+Classrooms (6/3+) B4 3L/3S
+1B4L: An architectually artistic building made framed with several soaring wooden arches. The first thing you'd notice about the building is the freshness of the wood and the smell of sawdust and tung oil as you walk inside; it's readily apparent that this building was built rather recently. Next you might notice that the buidling is nearly entirely lacking in sharp corners, or the colorful light that trickles down the central staircase. The building consists of two levels. The first level consists of a round central room, ringed by classrooms, and at the very center, a spiral staircase winding it's way up a massive wooden pole that at one punt must have been the trunk of a very large tree. The classrooms are all lit by massive curved windows that make up nearly all of the outer wall. The central room has large windows too, located high enough up on the domed ceiling to avoid the classrooms, but not so far in as to interfere with the smaller upper floor. The uper floor is a single round room, furnished with mats, cusions, and carved wooden chairs. The colorful glass windows that ring the upper floor cast beautiful shadows that slowly crawl across the floor as the day goes by.
+Stores (1/1+) B5
+Stage, theatre/dance (1/1) B6
+Stage, music (1/1) B7
+The music stage is located in a large clearing, far enough away from campus for the noise to not be an issue. The rest of the clearing is covered in a thick layer of grass that has miraculously survived generations of students' picnic blankets. A closer look at the perimiter would reveal the remenants of countless pruningings and trimmings, the evidance of a decades long fight with the encroching plant life.
+Gardens (1/1) B8
+Office (1/1+) B9
+Storage (3/1+) B10
+Stables, horses (1/1) B11
+Carriage house (1/1) B12
+Stables, griffins/pegasi (1/1) B14
+Lab, alchemy (1/1) B15
+Lab, spellcraft (1/1) B16
+Workshop (1/1) B17
+Paintball (1/1) B18
+Arena (1/1) B19
+Shooting Range (1/1) B20
+Forge (1/1) B21
+Faculty housing (1/1+) B22
+Glassblowing (1/1) B23
+Study Room (1/1+) B24

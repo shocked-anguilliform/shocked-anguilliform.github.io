@@ -33,29 +33,34 @@ function addEntries(entryFile){
 
 function splitEntry(entries){
 	const entry = entries[i].split("|");
-	if (entry[0].charAt(0) == "-") {
-		return;
+	switch(entry[0].charAt(0) {
+		case "-":
+			break;
+		case "#":
+			console.log("section" + entry[0] +"reached");
+			break;
+		default:
+			let name = $.trim(entry[0]);
+			if (!name) {
+				return;
+			}
+			let picture = $.trim(entry[1]);
+			if (!picture || picture.charAt(0) == "-") {
+				picture = "noPicture.jpg";
+			}
+				if (entry[3]) {
+				id = $.trim(entry[3]);
+				idHTML = ' id="' + id + '"';
+			} else {
+				idHTML = "";
+			}
+			var article = $.trim(entry[2]);
+			if (article.charAt(0) == "-") {
+				article = "???";
+			}
+			content = writeHTML($.trim(entry[0]), picture, article, idHTML);
+			document.getElementById("entryBox").innerHTML += content;
 	}
-	let name = $.trim(entry[0]);
-	if (!name) {
-		return;
-	}
-	let picture = $.trim(entry[1]);
-	if (!picture || picture.charAt(0) == "-") {
-		picture = "noPicture.jpg";
-	}
-		if (entry[3]) {
-		id = $.trim(entry[3]);
-		idHTML = ' id="' + id + '"';
-	} else {
-		idHTML = "";
-	}
-	var article = $.trim(entry[2]);
-	if (article.charAt(0) == "-") {
-		article = "???";
-	}
-	content = writeHTML($.trim(entry[0]), picture, article, idHTML);
-	document.getElementById("entryBox").innerHTML += content;
 }
 
 function writeHTML(name, picture, article, idHTML) {
