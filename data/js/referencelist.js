@@ -1,7 +1,7 @@
 function reveal(source) {
 	let parent = source.parentNode;
 	if (parent.style.display == "none") {
-		sectionToggle(parent.previousSibling, parent.id);
+		sectionToggle(parent.previousElementSibling, parent.id);
 	}
 	let children = source.children;
 	const parts = {};
