@@ -34,6 +34,9 @@ function addEntries(entryFile){
 function splitEntry(entries){
 	const entry = entries[i].split("|");
 	let name = $.trim(entry[0]);
+	if (!name) {
+		return;
+	}
 	switch(name.charAt(0)) {
 		case "-":
 			break;
@@ -41,10 +44,6 @@ function splitEntry(entries){
 			console.log("section" + entry[0] +"reached");
 			break;
 		default:
-			let name = $.trim(entry[0]);
-			if (!name) {
-				return;
-			}
 			let picture = $.trim(entry[1]);
 			if (!picture || picture.charAt(0) == "-") {
 				picture = "noPicture.jpg";
@@ -56,10 +55,10 @@ function splitEntry(entries){
 				idHTML = "";
 			}
 			var article = $.trim(entry[2]);
-			if (article.charAt(0) == "-") {
+			if (!article || article.charAt(0) == "-") {
 				article = "???";
 			}
-			content = writeHTML($.trim(entry[0]), picture, article, idHTML);
+			content = writeHTML(name, picture, article, idHTML);
 			document.getElementById("entryBox").innerHTML += content;
 	}
 }
