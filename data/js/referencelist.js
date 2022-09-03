@@ -107,7 +107,7 @@ function splitEntry(entries){
 				console.log(preLink);
 				let linkChunk = article.slice(firstStart + 1, firstClose);
 				let linkParts = linkChunk.split("[");
-				console.log(linkSec);
+				console.log(linkChunk);
 				let postLink = article.slice(firstClose + 1);
 				console.log(postLink);
 				article = preLink + "<a onclick='elemLink(" + linkParts[0] + ");'>" + linkParts[1] + "</a>" + postLink;
