@@ -185,3 +185,13 @@
 #variableText {
  font-size: 1.25rem;
 }
+
+#variableText a {
+	text-decoration: underline;
+}
+
+#variableText a:hover {
+	color: #4952a6;
+	cursor: pointer;
+	text-shadow: 0 0 2px #4952a6;
+}

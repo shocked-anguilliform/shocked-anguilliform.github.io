@@ -21,12 +21,12 @@ function hidePopup() {
 }
 
 function elemLink(target) {
-	centered = target.offset().top - window.innerHeight / 2;
+	centered = $(target).offset().top - window.innerHeight / 2;
 	$('html, body').animate({
 			scrollTop: centered,
 			easing: 'ease-in-out'
 		}, centered);
-	reveal(document.getElementById(target));
+	reveal(target);
 }
 
 function sectionToggle(source, targetId) {
