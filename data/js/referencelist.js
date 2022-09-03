@@ -60,6 +60,10 @@ function splitEntry(entries){
 			console.log("section " + sectionId +" reached");
 			content = '</div>\n<div class="entryHeader" id="' + sectionId + '" onclick="sectionToggle(this, \'' + sectionId + 'Drop\')">\n<span>' + name + '</span>\n<span>⯅</span>\n<div>' + name + ' <span>⯆</span></div>\n</div>\n<div id="' + sectionId + 'Drop">\n</div>\n'
 			document.getElementById("entryBox").innerHTML += content;
+			console.log(document.getElementById(sectionId + "drop"));
+			let subsectionId = sectionId + "drop";
+			console.log(subsectionId);
+			console.log(document.getElementById(subectionId));
 			window["subsection"] = document.getElementById(sectionId + "drop");
 			console.log(window["subsection"]);
 			break;
