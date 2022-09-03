@@ -102,6 +102,6 @@ function checkInitial() {
 		$('html, body').animate({
 			scrollTop: centered,
 			easing: 'ease-in-out'
-		}, 1250);
+		}, centered);
 	}
 }
