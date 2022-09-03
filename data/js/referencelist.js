@@ -20,8 +20,13 @@ function hidePopup() {
 	document.getElementById("blackout").style.display = "none";
 }
 
-function elemLink(targetId) {
-	reveal(document.getElementById(targetId));
+function elemLink(target) {
+	centered = target.offset().top - window.innerHeight / 2;
+	$('html, body').animate({
+			scrollTop: centered,
+			easing: 'ease-in-out'
+		}, centered);
+	reveal(document.getElementById(target));
 }
 
 function sectionToggle(source, targetId) {
@@ -98,13 +103,14 @@ function splitEntry(entries){
 				} else {
 					break;
 				}
-				let preLink = article.slice(0, firstStart - 1);
+				let preLink = article.slice(0, firstStart);
 				console.log(preLink);
-				let linkSec = article.slice(firstStart, firstClose);
+				let linkChunk = article.slice(firstStart + 1, firstClose);
+				let linkParts = linkChunk.split("[");
 				console.log(linkSec);
-				let postLink = article.slice(firstClose);
+				let postLink = article.slice(firstClose + 1);
 				console.log(postLink);
-				article = preLink + postLink;
+				article = preLink + "<a onclick='elemLink(" + linkParts[0] + ");'>" + linkParts[1] + "</a>" + postLink;
 			}
 			content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<div>' + name + '</div>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>\n'
 			window["subsection"].innerHTML += content;

@@ -70,4 +70,4 @@ Hwen || - | Hwen
 Stoneskip Jaunt || - | StoneskipJaunt
 #Campus
 Test Location || This is a test entry; it is to be removed <a onclick="elemLink(CabinArea);">link</a> | testId
-Test Location || This is a test entry; it is to be removed @CabinArea[link] post link text| testId
+Test Location || This is a test entry; it is to be removed @CabinArea[click me] post link text | testId2
