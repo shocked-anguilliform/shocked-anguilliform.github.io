@@ -1,6 +1,6 @@
 function reveal(source) {
 	let parent = source.parentNode;
-	if (parent.style.display == "none" {
+	if (parent.style.display == "none") {
 		sectionToggle(parent.previousSibling, parent.id);
 	}
 	let children = source.children;
