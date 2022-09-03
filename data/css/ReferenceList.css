@@ -69,6 +69,7 @@
 	font-family: "CopperplateIda";
 	font-size: max(min(1.5rem, 3vw) + 1.5rem, 2rem);
 	color: #bbb;
+	white-space: no-wrap;
 }
 
 .entryHeader span:first-child {
@@ -85,7 +86,12 @@
 }
 
 .entryHeader div {
-	transform: translateX(-100%);
+	transform: translateY(-100%);
+}
+
+.entryHeader div span {
+	font-size: max(min(1.5rem, 3vw) + 0.5rem, 1rem);
+	color: #0000;
 }
 
 

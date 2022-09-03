@@ -46,7 +46,7 @@ function splitEntry(entries){
 			name = name.slice(1);
 			sectionId = name.split(" ").join("");
 			console.log("section " + sectionId +" reached");
-			content = '</div>\n<div class="entryHeader" id="' + sectionId + '">\n<span>' + name + '</span>\n<span>⯆</span>\n<div>' + name + '</div>\n</div>\n<div id="' + sectionId + 'Drop">\n'
+			content = '</div>\n<div class="entryHeader" id="' + sectionId + '">\n<span>' + name + '</span>\n<span>⯆</span>\n<div>' + name + '<span>⯆</span></div>\n</div>\n<div id="' + sectionId + 'Drop">\n'
 			document.getElementById("entryBox").innerHTML += content;
 			break;
 		default:
