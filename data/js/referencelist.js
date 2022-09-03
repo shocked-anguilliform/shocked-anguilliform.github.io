@@ -98,7 +98,8 @@ function checkInitial() {
 	if (source) {
 		reveal(source);
 		$('html, body').animate({
-			scrollTop: $("#" + querryID).offset().top
-		}, 2000);
+			scrollTop: $("#" + querryID).offset().top,
+			easing: 'ease-in-out'
+		}, 500);
 	}
 }
