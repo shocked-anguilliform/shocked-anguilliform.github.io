@@ -21,6 +21,7 @@ function hidePopup() {
 }
 
 function sectionToggle(source, targetId) {
+	console.log(source);
 	let target = document.getElementById(targetId);
 	if (target.style.display == "none") {
 		source.children[1].innerHTML = "⯆";
