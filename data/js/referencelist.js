@@ -94,7 +94,7 @@ function splitEntry(entries){
 				console.log(article);
 				let firstStart = article.indexOf("@");
 				if (article.includes("]")) {
-					let firstClose = article.indexOf("]");
+					var firstClose = article.indexOf("]");
 				} else {
 					break;
 				}
