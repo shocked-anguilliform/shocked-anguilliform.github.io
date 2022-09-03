@@ -21,7 +21,7 @@ function hidePopup() {
 }
 
 function elemLink(targetId) {
-	reveal(document.getElementById(targetId);
+	reveal(document.getElementById(targetId));
 }
 
 function sectionToggle(source, targetId) {
