@@ -64,19 +64,30 @@
 	left: max(15vw - 7rem, 1.5rem);
 }
 
-.entryHeader span:first-child {
+.entryHeader {
+	font-weight: bold;
+	font-family: "CopperplateIda";
 	font-size: max(min(1.5rem, 3vw) + 1.5rem, 2rem);
+	color: #bbb;
+}
+
+.entryHeader span:first-child {
+	-webkit-text-stroke: 5px #282828;
 }
 
 .entryHeader span:nth-child(2) {
-	font-size: max(min(1.5rem, 3vw), 0.5rem);
+	font-size: max(min(1.5rem, 3vw) + 0.5rem, 1rem);
+	-webkit-text-stroke: 1.25px #282828;
 }
 
-.entryHeader span {
-	font-family: "CopperplateIda";
-	paint-order: stroke;
-	-webkit-text-stroke: 5px #282828;
+.entryHeader:hover span:nth-child(2) {
+	color: #4952a6;
 }
+
+.entryHeader div {
+	transform: translateX(-100%);
+}
+
 
 .foot {
 	top: 0;nt
