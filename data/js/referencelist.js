@@ -125,9 +125,6 @@ function formatPicture(pictureRaw) {
 		
 		let pictureParts = pictureRaw.split(",");
 		let picNumber = pictureParts.length;
-		if (picNumber < 1) {
-			return "shit";
-		}
 		console.log(pictureParts.length);
 		for (i = 0; i < 1; i++) {
 			let currentPic = $.trim(pictureParts[i]);
