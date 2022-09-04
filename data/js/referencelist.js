@@ -121,7 +121,7 @@ function writePicture(pictureRaw) {
 		/*return pictures;*/
 	} else {
 		let pictureParts = pictureRaw.split(",");
-		console.log pictureParts.length;
+		console.log(pictureParts.length);
 		/*
 		for (i = 0; i < pictureParts.length; i++) {
 			let currentPic = $.trim(pictureParts[i]);
