@@ -122,7 +122,6 @@ function formatPicture(pictureRaw) {
 		pictures.push("noPicture.jpg");
 		/*return pictures;*/
 	} else {
-		/*
 		let pictureParts = pictureRaw.split(",");
 		let picNumber = pictureParts.length;
 		if (picNumber < 1) {
@@ -132,7 +131,6 @@ function formatPicture(pictureRaw) {
 		for (i = 0; i < picNumber; i++) {
 			let currentPic = $.trim(pictureParts[i]);
 			console.log(currentPic);
-		}*/
 		console.log("else");
 	}
 	return "noPicture.jpg";
