@@ -121,12 +121,12 @@ function writePicture(pictureRaw) {
 		/*return pictures;*/
 	} else {
 		let pictureParts = pictureRaw.split(",");
+		let picNumber = pictureParts.length;
 		console.log(pictureParts.length);
-		/*
-		for (i = 0; i < pictureParts.length; i++) {
+		for (i = 0; i < picNumber; i++) {
 			let currentPic = $.trim(pictureParts[i]);
 			console.log(currentPic);
-		}*/
+		}
 	}
 	return "noPicture.jpg";
 }
