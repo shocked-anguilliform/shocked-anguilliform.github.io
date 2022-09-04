@@ -68,5 +68,10 @@ Sunspeckled Sanctuary || - | SunspeckledSanctuary
 Westra Academy || - | WestraAcademy
 Hwen || - | Hwen
 Stoneskip Jaunt || - | StoneskipJaunt
-#Campus
-Test Location || This is a test entry; it is to be removed @CabinArea[click me] @TwoStepRoad[or me] post link text | testId2
+#Academy
+#Roads
+#Hwen
+#Townside
+#Central
+#Mawside
+Test Location | noPicture.jpg[test1], LowoodPath.png[test2] | This is a test entry; it is to be removed @CabinArea[click me] @TwoStepRoad[or me] post link text | testId2

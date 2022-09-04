@@ -10,7 +10,7 @@ function reveal(source) {
 	parts.text = children[1].children[1].innerHTML;
 	document.getElementById("popup").style.display = "block";
 	document.getElementById("blackout").style.display = "block";
-	document.getElementById("variableImage").innerHTML = parts.picture;
+	document.getElementById("variableImage")firstElementChild.outerHTML = parts.picture;
 	document.getElementById("variableName").innerHTML = parts.name;
 	document.getElementById("variableText").innerHTML = parts.text;
 }
@@ -81,11 +81,8 @@ function splitEntry(entries){
 			document.getElementById("entryBox").appendChild(window["subsection"]);
 			break;
 		default:
-			let picture = $.trim(entry[1]);
-			if (!picture || picture.charAt(0) == "-") {
-				picture = "noPicture.jpg";
-			}
-				if (entry[3]) {
+			picture = writePicture($.trim(entry[1]));
+			if (entry[3]) {
 				id = $.trim(entry[3]);
 				idHTML = ' id="' + id + '"';
 			} else {
@@ -115,6 +112,21 @@ function splitEntry(entries){
 			content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<div>' + name + '</div>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>\n'
 			window["subsection"].innerHTML += content;
 	}
+}
+
+function writePicture(pictureRaw) {
+	const pictures = [];
+	if (!pictureRaw || pictureRaw.charAt(0) == "-") {
+		pictures.push("noPicture.jpg");
+		/*return pictures;*/
+	} else {
+		let pictureParts = pictureRaw.splt(",");
+		for (i = 0; i < pictureParts.length; i++) {
+			let currentPic = $.trim(pictureParts[i]);
+			console.log(currentPic);
+		}
+	}
+	return "noPicture.jpg";
 }
 
 function checkInitial() {
