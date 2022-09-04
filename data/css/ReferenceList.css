@@ -125,10 +125,6 @@
   background-clip: text;
 }
 
-.innerUp a {
-	text-decoration: underline;
-}
-
 #popup{
   display: none;
   position: fixed;
@@ -190,8 +186,8 @@
  font-size: 1.25rem;
 }
 
-#variableText a {
-	text-decoration: underline;
+#variableText a, .innerUp a {
+	text-decoration: underline black;
 }
 
 #variableText a:hover {
