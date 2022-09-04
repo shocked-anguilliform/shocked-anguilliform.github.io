@@ -129,7 +129,6 @@ function writePicture(pictureRaw) {
 		for (i = 0; i < picNumber; i++) {
 			let currentPic = $.trim(pictureParts[i]);
 			console.log(currentPic);
-			break;
 		}
 	}
 	return "noPicture.jpg";
