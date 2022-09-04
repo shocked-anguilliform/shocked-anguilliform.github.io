@@ -87,6 +87,7 @@ function splitEntry(entries){
 			/*console.log(writePicture($.trim(entry[1])));*/
 			console.log("Entry[1]:");
 			console.log($.trim(entry[1]));
+			console.log(writePicture("shit, piss"));
 			if (entry[3]) {
 				id = $.trim(entry[3]);
 				idHTML = ' id="' + id + '"';
@@ -128,6 +129,9 @@ function writePicture(pictureRaw) {
 	} else {
 		let pictureParts = pictureRaw.split(",");
 		let picNumber = pictureParts.length;
+		if (picNumber < 1) {
+			return "shit";
+		}
 		console.log(pictureParts.length);
 		for (i = 0; i < picNumber; i++) {
 			let currentPic = $.trim(pictureParts[i]);
