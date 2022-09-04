@@ -120,7 +120,7 @@ function writePicture(pictureRaw) {
 		pictures.push("noPicture.jpg");
 		/*return pictures;*/
 	} else {
-		let pictureParts = pictureRaw.splt(",");
+		let pictureParts = pictureRaw.split(",");
 		for (i = 0; i < pictureParts.length; i++) {
 			let currentPic = $.trim(pictureParts[i]);
 			console.log(currentPic);
