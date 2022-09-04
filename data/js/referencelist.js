@@ -115,6 +115,7 @@ function splitEntry(entries){
 }
 
 function writePicture(pictureRaw) {
+	console.log("poop");
 	const pictures = [];
 	if (!pictureRaw || pictureRaw.charAt(0) == "-") {
 		pictures.push("noPicture.jpg");
@@ -126,6 +127,7 @@ function writePicture(pictureRaw) {
 		for (i = 0; i < picNumber; i++) {
 			let currentPic = $.trim(pictureParts[i]);
 			console.log(currentPic);
+			break;
 		}
 	}
 	return "noPicture.jpg";
