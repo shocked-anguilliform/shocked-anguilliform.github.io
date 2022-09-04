@@ -10,7 +10,7 @@ function reveal(source) {
 	parts.text = children[1].children[1].innerHTML;
 	document.getElementById("popup").style.display = "block";
 	document.getElementById("blackout").style.display = "block";
-	document.getElementById("variableImage")firstElementChild.outerHTML = parts.picture;
+	document.getElementById("variableImage").firstElementChild.outerHTML = parts.picture;
 	document.getElementById("variableName").innerHTML = parts.name;
 	document.getElementById("variableText").innerHTML = parts.text;
 }
