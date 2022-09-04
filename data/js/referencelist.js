@@ -82,11 +82,7 @@ function splitEntry(entries){
 			break;
 		default:
 			console.log("pee");
-			var picture = "noPicture.jpg";
-			var picture2 = formatPicture($.trim(entry[1]))
-			console.log("Entry[1]:");
-			console.log($.trim(entry[1]));
-			console.log(formatPicture("shit, piss"));
+			var picture = formatPicture($.trim(entry[1]))
 			if (entry[3]) {
 				id = $.trim(entry[3]);
 				idHTML = ' id="' + id + '"';
