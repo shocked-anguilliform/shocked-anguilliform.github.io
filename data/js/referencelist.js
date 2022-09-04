@@ -81,7 +81,7 @@ function splitEntry(entries){
 			document.getElementById("entryBox").appendChild(window["subsection"]);
 			break;
 		default:
-			picture = writePicture($.trim(entry[1]));
+			writePicture($.trim(entry[1]));
 			if (entry[3]) {
 				id = $.trim(entry[3]);
 				idHTML = ' id="' + id + '"';
