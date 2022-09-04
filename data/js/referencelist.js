@@ -81,6 +81,7 @@ function splitEntry(entries){
 			document.getElementById("entryBox").appendChild(window["subsection"]);
 			break;
 		default:
+			console.log("pee");
 			writePicture($.trim(entry[1]));
 			if (entry[3]) {
 				id = $.trim(entry[3]);
