@@ -83,11 +83,11 @@ function splitEntry(entries){
 		default:
 			console.log("pee");
 			var picture = "noPicture.jpg";
-			/*var picture2 = writePicture($.trim(entry[1]));*/
-			/*console.log(writePicture($.trim(entry[1])));*/
+			/*var picture2 = formatPicture($.trim(entry[1]));*/
+			/*console.log(formatPicture($.trim(entry[1])));*/
 			console.log("Entry[1]:");
 			console.log($.trim(entry[1]));
-			console.log(writePicture("shit, piss"));
+			console.log(formatPicture("shit, piss"));
 			if (entry[3]) {
 				id = $.trim(entry[3]);
 				idHTML = ' id="' + id + '"';
@@ -120,13 +120,14 @@ function splitEntry(entries){
 	}
 }
 
-function writePicture(pictureRaw) {
+function formatPicture(pictureRaw) {
 	console.log("poop");
 	const pictures = [];
 	if (!pictureRaw || pictureRaw.charAt(0) == "-") {
 		pictures.push("noPicture.jpg");
 		/*return pictures;*/
 	} else {
+		/*
 		let pictureParts = pictureRaw.split(",");
 		let picNumber = pictureParts.length;
 		if (picNumber < 1) {
@@ -136,7 +137,8 @@ function writePicture(pictureRaw) {
 		for (i = 0; i < picNumber; i++) {
 			let currentPic = $.trim(pictureParts[i]);
 			console.log(currentPic);
-		}
+		}*/
+		console.log("else");
 	}
 	return "noPicture.jpg";
 }
