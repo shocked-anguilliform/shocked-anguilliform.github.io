@@ -39,7 +39,7 @@
 	max-height: min(11rem, 35vw);
 	min-height: calc(min(6.5rem,  16vw) + 1rem);
 	padding: 0.7rem 1rem 0.1rem 1rem;
-}	
+}
 
 .entryContainer:hover	{
 	z-index: 1;
@@ -115,7 +115,7 @@
 	float: left
 }
 
-.innerUp{
+.innerUp {
 	text-indent: 0;
 	font-size: min(1.25rem, 3vw);
 	line-height: min(1.5rem, 3.6vw);
@@ -123,6 +123,10 @@
   background:linear-gradient(black min(8.3rem, 28vw - 0.2rem), transparent min(10.8rem, 35vw - 0.2rem));
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+.innerUp a {
+	text-decoration: underline;
 }
 
 #popup{
