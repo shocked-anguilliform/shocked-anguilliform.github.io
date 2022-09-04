@@ -83,8 +83,7 @@ function splitEntry(entries){
 		default:
 			console.log("pee");
 			var picture = "noPicture.jpg";
-			/*var picture2 = formatPicture($.trim(entry[1]));*/
-			/*console.log(formatPicture($.trim(entry[1])));*/
+			var picture2 = formatPicture($.trim(entry[1]))
 			console.log("Entry[1]:");
 			console.log($.trim(entry[1]));
 			console.log(formatPicture("shit, piss"));
