@@ -86,7 +86,7 @@ function splitEntry(entries){
 			/*var picture2 = writePicture($.trim(entry[1]));*/
 			/*console.log(writePicture($.trim(entry[1])));*/
 			console.log("Entry[1]:");
-			console.log($.trim(entry[1]);
+			console.log($.trim(entry[1]));
 			if (entry[3]) {
 				id = $.trim(entry[3]);
 				idHTML = ' id="' + id + '"';
