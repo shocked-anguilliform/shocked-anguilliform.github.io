@@ -124,7 +124,9 @@ function splitEntry(entries){
 			tooltip.className = "tooltip";
 			tooltip.appendChild(document.createElement('img'));
 			if (multiPicture == true) {
-				var displayPic = pictures[0].slice(0, pictures[0].indexOf("["));
+				let firstPic = pictures[0];
+				var displayPic = firstPic.slice(0, firstPic.indexOf("["));
+				console.log(displayPic);
 			} else {
 				var displayPic = pictures[0];
 			}
