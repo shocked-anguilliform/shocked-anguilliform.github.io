@@ -152,7 +152,7 @@ function splitEntry(entries){
 			}
 			entryElem.appendChild(infoBox);
 			window["subsection"].appendChild(entryElem);
-			entryElem.addEventListener("click", revealFromClick);
+			document.getElementById(id).addEventListener("click", revealFromClick);
 			
 			/*--------------------------------------------------------------------------------------*/
 			/*content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<div>' + name + '</div>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>\n'
