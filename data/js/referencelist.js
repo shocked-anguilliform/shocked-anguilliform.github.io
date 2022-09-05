@@ -28,7 +28,7 @@ function elemLink(target, source) {
 	if ($(source).offset().top > $(target).offset().top) {
 		let time = $(source).offset().top - $(target).offset().top;
 	} else {
-		let time = centered;
+		let time = $(target).offset().top - $(source).offset().top;
 	}
 	$('html, body').animate({
 			scrollTop: centered,
