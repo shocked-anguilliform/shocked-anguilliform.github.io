@@ -170,8 +170,8 @@ function formatPicture(pictureRaw) {
 				currentPic = currentPic.slice(0, currentPic.indexOf("]"));
 			} else {
 			currentPic = currentPic + "[picture " + j;
-			pictures.push(currentPic);
 			}
+			pictures.push(currentPic);
 		}
 	} else if (pictureRaw.includes("[")) {
 		pictures.push(pictureRaw.slice(0, pictureRaw.indexOf("[")));
