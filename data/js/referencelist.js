@@ -15,11 +15,6 @@ function reveal(source) {
 	document.getElementById("variableText").innerHTML = parts.text;
 }
 
-function revealFromClick() {
-	console.log("shit balls");
-	reveal(this);
-}
-
 function hidePopup() {
 	document.getElementById("popup").style.display = "none";
 	document.getElementById("blackout").style.display = "none";
@@ -39,7 +34,6 @@ function elemLink(target, source) {
 }
 
 function sectionToggle(source, targetId) {
-	console.log(source);
 	let target = document.getElementById(targetId);
 	if (target.style.display == "none") {
 		source.children[1].innerHTML = "⯆";
@@ -84,7 +78,6 @@ function splitEntry(entries){
 		case "#":
 			name = name.slice(1);
 			sectionId = name.split(" ").join("");
-			console.log("section " + sectionId +" reached");
 			/*--------------------------------------------------------------------------------------*/
 			let divider = document.createElement('div');
 			divider.className = "entryHeader";
@@ -120,7 +113,6 @@ function splitEntry(entries){
 				article = "???";
 			}
 			while (article.includes("@")) {
-				console.log(article);
 				let firstStart = article.indexOf("@");
 				if (article.includes("]")) {
 					var firstClose = article.indexOf("]");
@@ -128,12 +120,9 @@ function splitEntry(entries){
 					break;
 				}
 				let preLink = article.slice(0, firstStart);
-				console.log(preLink);
 				let linkChunk = article.slice(firstStart + 1, firstClose);
 				let linkParts = linkChunk.split("[");
-				console.log(linkChunk);
 				let postLink = article.slice(firstClose + 1);
-				console.log(postLink);
 				article = preLink + "<a onclick='elemLink(" + linkParts[0] + ", this);'>" + linkParts[1] + "</a>" + postLink;
 			}
 			/*--------------------------------------------------------------------------------------*/
@@ -151,7 +140,6 @@ function splitEntry(entries){
 			tooltip.appendChild(document.createElement('img'));
 			if (multiPicture == true) {
 				var displayPic = pictures[0].slice(0, pictures[0].indexOf("["));
-				console.log(pictures[0]);
 			} else {
 				var displayPic = pictures[0];
 			}
@@ -183,7 +171,6 @@ function splitEntry(entries){
 
 function formatPicture(pictureRaw) {
 	multiPicture = false;
-	console.log(pictureRaw);
 	const pictures = [];
 	let pictureParts = pictureRaw.split(",");
 	if (!pictureRaw || pictureRaw.charAt(0) == "-") {
@@ -192,7 +179,6 @@ function formatPicture(pictureRaw) {
 		multiPicture = true;
 		for (j = 0; j < pictureParts.length; j++) {
 			let currentPic = $.trim(pictureParts[j]);
-			console.log(currentPic);
 			if (currentPic.includes("[") && currentPic.includes("]")) {
 				currentPic = currentPic.slice(0, currentPic.indexOf("]"));
 			} else {
@@ -205,8 +191,6 @@ function formatPicture(pictureRaw) {
 	} else {
 		pictures.push(pictureRaw);
 	}
-	console.log(pictures);
-	console.log("multi picture: " + multiPicture);
 	return pictures;
 }
 
@@ -217,7 +201,6 @@ function checkInitial() {
 	if (source) {
 		reveal(source);
 		centered = $("#" + querryID).offset().top - window.innerHeight / 2;
-		console.log(centered);
 		$('html, body').animate({
 			scrollTop: centered,
 			easing: 'ease-in-out'
