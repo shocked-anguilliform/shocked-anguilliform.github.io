@@ -134,7 +134,7 @@ function splitEntry(entries){
 			tooltip.children[1].innerHTML = article;
 			entryElem.appendChild(tooltip);
 			let infoBox = document.createElement('div');
-			infoBox.className = hidden;ss
+			infoBox.className = hidden;
 			infoBox.appendChild(document.createElement('div'));
 			infoBox.innerHTML = multiPicture;
 			if (multiPicture = true) {
@@ -162,7 +162,7 @@ function formatPicture(pictureRaw) {
 		for (j = 0; j < pictureParts.length; j++) {
 			let currentPic = $.trim(pictureParts[j]);
 			console.log(currentPic);
-			if (currentPic.includes("[") && (currentPic.includes("]")) {
+			if (currentPic.includes("[") && currentPic.includes("]")) {
 				currentPic = currentPic.slice(0, currentPic.indexOf("]"));
 			} else {
 			currentPic = currentPic + "[picture " + j;
