@@ -85,7 +85,7 @@ function splitEntry(entries){
 			let divider = document.createElement('div');
 			divider.className = "entryHeader";
 			divider.id = sectionId
-			divider.onclick = toggleFromClick;
+			divider.onclick = sectionToggle(this, this.nextElementSibling);
 			divider.appendChild(document.createElement('span'));
 			divider.lastElementChild.innerHTML = name;
 			divider.appendChild(document.createElement('span'));
