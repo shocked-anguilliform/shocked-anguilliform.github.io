@@ -81,7 +81,6 @@ function splitEntry(entries){
 			document.getElementById("entryBox").appendChild(window["subsection"]);
 			break;
 		default:
-			console.log("pee");
 			var picture = formatPicture($.trim(entry[1]))
 			if (entry[3]) {
 				id = $.trim(entry[3]);
@@ -116,7 +115,6 @@ function splitEntry(entries){
 }
 
 function formatPicture(pictureRaw) {
-	console.log("poop");
 	const pictures = [];
 	if (!pictureRaw || pictureRaw.charAt(0) == "-") {
 		pictures.push("noPicture.jpg");
