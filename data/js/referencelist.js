@@ -59,6 +59,8 @@ function addEntries(entryFile){
 	checkInitial();
 }
 
+var multiPicture = false;
+
 function splitEntry(entries){
 	const entry = entries[i].split("|");
 	let name = $.trim(entry[0]);
@@ -81,7 +83,6 @@ function splitEntry(entries){
 			document.getElementById("entryBox").appendChild(window["subsection"]);
 			break;
 		default:
-			var multiPicture = false;
 			var pictures = formatPicture($.trim(entry[1]))
 			if (entry[3]) {
 				id = $.trim(entry[3]);
