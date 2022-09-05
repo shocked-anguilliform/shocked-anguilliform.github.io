@@ -161,7 +161,7 @@ function splitEntry(entries){
 			infoBox.className = "hidden";
 			infoBox.appendChild(document.createElement('div'));
 			infoBox.innerHTML = multiPicture;
-			if (multiPicture = true) {
+			if (pictures.length > 1) {
 				for (j = 0; j < pictures.length; j++) {
 					let bonusPic = document.createElement('div');
 					bonusPic.innerHTML = $.trim(pictures[j].split("[")[0]) + " | " + $.trim(pictures[j].split("[")[1]);
