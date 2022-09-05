@@ -55,9 +55,7 @@ async function getListItems(list) {
 function addEntries(entryFile){
 	const entries = String(entryFile).split("\n");
 	let entriesCount = entries.length;
-	window["subsection"] = document.createElement('div');
-	console.log(window["subsection"]);
-	document.getElementById("entryBox").appendChild(window["subsection"]);
+	document.getElementById("entryBox").appendChild(document.createElement('div'));
 	for (i = 0; i < entriesCount; i++) {
 		splitEntry(entries);
 	}
@@ -79,13 +77,27 @@ function splitEntry(entries){
 			name = name.slice(1);
 			sectionId = name.split(" ").join("");
 			console.log("section " + sectionId +" reached");
-			content = '</div>\n<div class="entryHeader" id="' + sectionId + '" onclick="sectionToggle(this, \'' + sectionId + 'Drop\')">\n<span>' + name + '</span>\n<span>⯅</span>\n<div>' + name + ' <span>⯆</span></div>\n</div>\n'
-			document.getElementById("entryBox").innerHTML += content;
-			window["subsection"] = document.createElement('div');
-			window["subsection"].id = sectionId + "Drop";
-			window["subsection"].style.display = "none";
-			console.log(window["subsection"]);
-			document.getElementById("entryBox").appendChild(window["subsection"]);
+			/*--------------------------------------------------------------------------------------*/
+			let divider = document.createElement('div');
+			divider.className = "entryHeader";
+			divider.id = sectionId
+			divider.onclick = function() {sectionToggle(this, this.nextElementSibling);};
+			divider.appendChild(document.createElement('span'));
+			divider.lastElementChild.innerHTML = name;
+			divider.appendChild(document.createElement('span'));
+			divider.lastElementChild.innerHTML = "⯅";
+			divider.appendChild(document.createElement('div'));
+			divider.lastElementChild.appendChild(document.createTextNode(name));
+			divider.lastElementChild.appendChild(document.createElement('span'));
+			divider.lastElementChild.lastElementChild.innerHTML = "⯆";
+			document.getElementById("entryBox").appendChild(divider);
+			/*--------------------------------------------------------------------------------------*/
+			/*content = '</div>\n<div class="entryHeader" id="' + sectionId + '" onclick="sectionToggle(this, \'' + sectionId + 'Drop\')">\n<span>' + name + '</span>\n<span>⯅</span>\n<div>' + name + ' <span>⯆</span></div>\n</div>\n'
+			document.getElementById("entryBox").innerHTML += content;*/
+			subsection = document.createElement('div');
+			subsection.id = sectionId + "Drop";
+			subsection.style.display = "none";
+			document.getElementById("entryBox").appendChild(subsection);
 			break;
 		default:
 			var pictures = formatPicture($.trim(entry[1]))
@@ -120,6 +132,7 @@ function splitEntry(entries){
 			let entryElem = document.createElement('div');
 			entryElem.className = "entryContainer";
 			entryElem.id = id;
+			entryElem.addEventListener("click", revealFromClick);
 			entryElem.appendChild(document.createElement('div'));
 			entryElem.children[0].className = "entry";
 			entryElem.children[0].appendChild(document.createElement('div'));
@@ -151,8 +164,7 @@ function splitEntry(entries){
 				}
 			}
 			entryElem.appendChild(infoBox);
-			window["subsection"].appendChild(entryElem);
-			document.getElementById(id).addEventListener("click", revealFromClick);
+			document.getElementById("entryBox").lastElementChild.appendChild(entryElem);
 			
 			/*--------------------------------------------------------------------------------------*/
 			/*content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<div>' + name + '</div>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>\n'
