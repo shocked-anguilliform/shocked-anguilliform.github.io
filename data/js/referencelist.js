@@ -25,13 +25,17 @@ function hidePopup() {
 	document.getElementById("blackout").style.display = "none";
 }
 
-function elemLink(target) {
+function elemLink(target, source) {
+	console.log($(target).offset().top);
+	console.log($(source).offset().top);
 	reveal(target);
 	centered = $(target).offset().top - window.innerHeight / 2;
 	$('html, body').animate({
 			scrollTop: centered,
 			easing: 'ease-in-out'
 		}, centered);
+	console.log(centered);
+	console.log($(source).offset().top - $(target).offset().top - window.innerHeight / 2);
 }
 
 function sectionToggle(source, targetId) {
@@ -130,7 +134,7 @@ function splitEntry(entries){
 				console.log(linkChunk);
 				let postLink = article.slice(firstClose + 1);
 				console.log(postLink);
-				article = preLink + "<a onclick='elemLink(" + linkParts[0] + ");'>" + linkParts[1] + "</a>" + postLink;
+				article = preLink + "<a onclick='elemLink(" + linkParts[0] + ", this);'>" + linkParts[1] + "</a>" + postLink;
 			}
 			/*--------------------------------------------------------------------------------------*/
 			let entryElem = document.createElement('div');
