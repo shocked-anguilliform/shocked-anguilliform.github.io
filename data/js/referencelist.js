@@ -81,7 +81,8 @@ function splitEntry(entries){
 			document.getElementById("entryBox").appendChild(window["subsection"]);
 			break;
 		default:
-			var picture = formatPicture($.trim(entry[1]))
+			var multiPicture = false;
+			var pictures = formatPicture($.trim(entry[1]))
 			if (entry[3]) {
 				id = $.trim(entry[3]);
 				idHTML = ' id="' + id + '"';
@@ -121,12 +122,28 @@ function splitEntry(entries){
 			let tooltip = document.createElement('div');
 			tooltip.className = "tooltip";
 			tooltip.appendChild(document.createElement('img'));
-			tooltip.children[0].setAttribute("src", "/data/images/ReferenceList/" + picture);
+			if (multiPicture == true) {
+				let displayPic = pictures[0].slice(0, pictures[0].indexOf("["));
+			} else {
+				let displayPic = pictures[0];
+			}
+			tooltip.children[0].setAttribute("src", "/data/images/ReferenceList/" + displayPic);
 			tooltip.children[0].setAttribute("alt", name);
 			tooltip.appendChild(document.createElement('div'));
 			tooltip.children[1].className = "innerUp";
 			tooltip.children[1].innerHTML = article;
 			entryElem.appendChild(tooltip);
+			let infoBox = document.createElement('div');
+			infoBox.className = hidden;ss
+			infoBox.appendChild(document.createElement('div'));
+			infoBox.innerHTML = multiPicture;
+			if (multiPicture = true) {
+				for (j = 0; j < pictures.length; j++) {
+					let bonusPic = document.createElement('div');
+					bonusPic.innerHTML = $.trim(pictures[j].split("[")[0]) + " | " + $.trim(pictures[j].split("[")[1]);
+					infoBox.appendChild(bonusPic);
+				}
+			}
 			window["subsection"].appendChild(entryElem);
 			
 			/*--------------------------------------------------------------------------------------*/
@@ -137,18 +154,29 @@ function splitEntry(entries){
 
 function formatPicture(pictureRaw) {
 	const pictures = [];
+	let pictureParts = pictureRaw.split(",");
 	if (!pictureRaw || pictureRaw.charAt(0) == "-") {
 		pictures.push("noPicture.jpg");
-		/*return pictures;*/
-	} else {
-		let pictureParts = pictureRaw.split(",");
+	} else if (pictureParts.length > 1) {
+		multiPicture = true;
 		for (j = 0; j < pictureParts.length; j++) {
-			let currentPic = $.trim(pictureParts[i]);
+			let currentPic = $.trim(pictureParts[j]);
 			console.log(currentPic);
+			if (currentPic.includes("[") && (currentPic.includes("]")) {
+				currentPic = currentPic.slice(0, currentPic.indexOf("]"));
+			} else {
+			currentPic = currentPic + "[picture " + j;
+			pictures.push(currentPic);
+			}
 		}
-		console.log("else");
+	} else if (pictureRaw.includes("[") {
+		pictures.push(pictureRaw.slice(0, pictureRaw.indexOf("[")));
+	} else {
+		pictures.push(pictureRaw);
 	}
-	return "noPicture.jpg";
+	console.log(pictures);
+	console.log("multi picture: " + multiPicture);
+	return pictures;
 }
 
 function checkInitial() {
