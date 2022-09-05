@@ -115,7 +115,8 @@ function splitEntry(entries){
 			let entryElem = document.createElement('div');
 			entryElem.className = "entryContainer";
 			entryElem.id = id;
-			entryElem.addEventListener("onclick", function () {reveal(this)});
+			/*entryElem.addEventListener("onclick", function () {reveal(this)});*/
+			entryElem.addEventListener("onclick", console.log("shit balls");
 			entryElem.appendChild(document.createElement('div'));
 			entryElem.children[0].className = "entry";
 			entryElem.children[0].appendChild(document.createElement('div'));
