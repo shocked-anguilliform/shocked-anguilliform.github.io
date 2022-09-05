@@ -23,13 +23,13 @@ function hidePopup() {
 function elemLink(target, source) {
 	console.log($(target).offset().top);
 	console.log($(source).offset().top);
-	reveal(target);
 	centered = $(target).offset().top - window.innerHeight / 2;
 	if ($(source).offset().top > $(target).offset().top) {
 		var time = $(source).offset().top - $(target).offset().top;
 	} else {
 		var time = $(target).offset().top - $(source).offset().top;
 	}
+	reveal(target);
 	$('html, body').animate({
 			scrollTop: centered,
 			easing: 'ease-in-out'
