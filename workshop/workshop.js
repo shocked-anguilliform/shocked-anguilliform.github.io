@@ -1,6 +1,14 @@
+var tf = false;
+
 function initialize() {
-	getLocationFile();
 }
+
+function myFunction() {
+	console.log(tf + 1);
+}
+
+function f1() {tf = true;}
+function f2() {tf = false;}
 
 function getLocationFile() {
   let locationsText = document.getElementById("div2").innerHTML;
@@ -27,4 +35,22 @@ function appendEntries(locations,locations2) {;
 	div.innerHTML += locations[i];
 	let locationName = locations2[i].split("|")[0];
 	div.innerHTML += " | " + locationName + " <br>\n";
+}
+
+function writePicture(pictureRaw) {
+	console.log("poop");
+	const pictures = [];
+	if (!pictureRaw || pictureRaw.charAt(0) == "-") {
+		pictures.push("noPicture.jpg");
+		/*return pictures;*/
+	} else {
+		let pictureParts = pictureRaw.split(",");
+		let picNumber = pictureParts.length;
+		console.log(pictureParts.length);
+		for (i = 0; i < picNumber; i++) {
+			let currentPic = $.trim(pictureParts[i]);
+			console.log(currentPic);
+		}
+	}
+	return "noPicture.jpg";
 }

@@ -124,9 +124,9 @@ function splitEntry(entries){
 			tooltip.className = "tooltip";
 			tooltip.appendChild(document.createElement('img'));
 			if (multiPicture == true) {
-				let displayPic = pictures[0].slice(0, pictures[0].indexOf("["));
+				var displayPic = pictures[0].slice(0, pictures[0].indexOf("["));
 			} else {
-				let displayPic = pictures[0];
+				var displayPic = pictures[0];
 			}
 			tooltip.children[0].setAttribute("src", "/data/images/ReferenceList/" + displayPic);
 			tooltip.children[0].setAttribute("alt", name);
