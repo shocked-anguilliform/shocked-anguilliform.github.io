@@ -124,7 +124,7 @@ function splitEntry(entries){
 			tooltip.children[0].setAttribute("src", "/data/images/ReferenceList/" + picture);
 			tooltip.children[0].setAttribute("alt", name);
 			tooltip.appendChild(document.createElement('div'));
-			tooltip.children[1].className = "innerUp;
+			tooltip.children[1].className = "innerUp";
 			tooltip.children[1].innerHTML = article;
 			entryElem.appendChild(tooltip);
 			window["subsection"].appendChild(entryElem);
