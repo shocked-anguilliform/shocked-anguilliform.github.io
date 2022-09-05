@@ -109,8 +109,29 @@ function splitEntry(entries){
 				console.log(postLink);
 				article = preLink + "<a onclick='elemLink(" + linkParts[0] + ");'>" + linkParts[1] + "</a>" + postLink;
 			}
-			content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<div>' + name + '</div>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>\n'
-			window["subsection"].innerHTML += content;
+			/*--------------------------------------------------------------------------------------*/
+			let entryElem = document.createElement('div');
+			entryElem.className = "entryContainer";
+			entryElem.id = id;
+			entryElem.onclick = "reveal(this)";
+			entryElem.appendChild(document.createElement('div'));
+			entryElem.children[0].className = "entry";
+			entryElem.children[0].appendChild(document.createElement('div'));
+			entryElem.children[0].children[0].innerHTML = name;
+			let tooltip = document.createElement('div');
+			tooltip.className = "tooltip";
+			tooltip.appendChild(document.createElement('img'));
+			tooltip.children[0].setAttribute("src", "/data/images/ReferenceList/" + picture);
+			tooltip.children[0].setAttribute("alt", name);
+			tooltip.appendChild(document.createElement('div'));
+			tooltip.children[1].className = "innerUp;
+			tooltip.children[1].innerHTML = article;
+			entryElem.appendChild(tooltip);
+			window["subsection"].appendChild(entryElem);
+			
+			/*--------------------------------------------------------------------------------------*/
+			/*content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<div>' + name + '</div>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>\n'
+			window["subsection"].innerHTML += content;*/
 	}
 }
 
@@ -120,7 +141,6 @@ function formatPicture(pictureRaw) {
 		pictures.push("noPicture.jpg");
 		/*return pictures;*/
 	} else {
-		
 		let pictureParts = pictureRaw.split(",");
 		for (j = 0; j < pictureParts.length; j++) {
 			let currentPic = $.trim(pictureParts[i]);
