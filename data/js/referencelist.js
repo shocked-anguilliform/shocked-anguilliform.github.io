@@ -120,8 +120,6 @@ function splitEntry(entries){
 			let entryElem = document.createElement('div');
 			entryElem.className = "entryContainer";
 			entryElem.id = id;
-			entryElem.addEventListener("click", revealFromClick);
-			entryElem.onclick = function() {alert('shit balls');};
 			entryElem.appendChild(document.createElement('div'));
 			entryElem.children[0].className = "entry";
 			entryElem.children[0].appendChild(document.createElement('div'));
@@ -154,6 +152,7 @@ function splitEntry(entries){
 			}
 			entryElem.appendChild(infoBox);
 			window["subsection"].appendChild(entryElem);
+			entryElem.addEventListener("click", revealFromClick);
 			
 			/*--------------------------------------------------------------------------------------*/
 			/*content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<div>' + name + '</div>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>\n'
