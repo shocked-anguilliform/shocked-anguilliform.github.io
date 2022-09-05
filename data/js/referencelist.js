@@ -156,6 +156,7 @@ function splitEntry(entries){
 }
 
 function formatPicture(pictureRaw) {
+	console.log(pictureRaw);
 	const pictures = [];
 	let pictureParts = pictureRaw.split(",");
 	if (!pictureRaw || pictureRaw.charAt(0) == "-") {
