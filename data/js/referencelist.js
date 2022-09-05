@@ -15,6 +15,11 @@ function reveal(source) {
 	document.getElementById("variableText").innerHTML = parts.text;
 }
 
+function revealFromClick {
+	console.log("shit balls");
+	reveal(this);
+}
+
 function hidePopup() {
 	document.getElementById("popup").style.display = "none";
 	document.getElementById("blackout").style.display = "none";
@@ -116,7 +121,7 @@ function splitEntry(entries){
 			entryElem.className = "entryContainer";
 			entryElem.id = id;
 			/*entryElem.addEventListener("onclick", function () {reveal(this)});*/
-			entryElem.addEventListener("onclick", console.log("shit balls"));
+			entryElem.addEventListener("onclick", revealFromClick;
 			entryElem.appendChild(document.createElement('div'));
 			entryElem.children[0].className = "entry";
 			entryElem.children[0].appendChild(document.createElement('div'));
