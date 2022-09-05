@@ -25,10 +25,15 @@ function elemLink(target, source) {
 	console.log($(source).offset().top);
 	reveal(target);
 	centered = $(target).offset().top - window.innerHeight / 2;
+	if ($(source).offset().top > $(target).offset().top) {
+		let time = $(source).offset().top - $(target).offset().top;
+	} else {
+		let time = centered;
+	}
 	$('html, body').animate({
 			scrollTop: centered,
 			easing: 'ease-in-out'
-		}, centered);
+		}, time);
 	console.log(centered);
 	console.log($(source).offset().top - $(target).offset().top - window.innerHeight / 2);
 }
