@@ -24,7 +24,7 @@ function elemLink(target, source) {
 	console.log($(target).offset().top);
 	console.log($(source).offset().top);
 	centered = $(target).offset().top - window.innerHeight / 2;
-	var time = abs($(source).offset().top - $(target).offset().top);
+	var time = Math.abs($(source).offset().top - $(target).offset().top);
 	reveal(target);
 	$('html, body').animate({
 			scrollTop: centered,
