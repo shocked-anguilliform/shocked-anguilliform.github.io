@@ -85,7 +85,7 @@ function splitEntry(entries){
 			let divider = document.createElement('div');
 			divider.className = "entryHeader";
 			divider.id = sectionId
-			divider.onclick = function() {sectionToggle(this, this.nextElementSibling)};
+			divider.onclick = function() {sectionToggle(this, this.nextElementSibling.id)};
 			divider.appendChild(document.createElement('span'));
 			divider.lastElementChild.innerHTML = name;
 			divider.appendChild(document.createElement('span'));
@@ -136,7 +136,8 @@ function splitEntry(entries){
 			let entryElem = document.createElement('div');
 			entryElem.className = "entryContainer";
 			entryElem.id = id;
-			entryElem.addEventListener("click", revealFromClick);
+			/*entryElem.addEventListener("click", revealFromClick);*/
+			entryElem.onclick = function() {reveal(this)};
 			entryElem.appendChild(document.createElement('div'));
 			entryElem.children[0].className = "entry";
 			entryElem.children[0].appendChild(document.createElement('div'));
