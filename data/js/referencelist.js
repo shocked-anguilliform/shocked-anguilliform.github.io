@@ -46,6 +46,10 @@ function sectionToggle(source, targetId) {
 	}
 }
 
+function toggleFromClick {
+	sectionToggle(this, this.nextElementSibling);
+}
+
 async function getListItems(list) {
 	let listObject = await fetch("/data/reference/" + list + ".txt");
 	let listText = await listObject.text();
@@ -81,7 +85,7 @@ function splitEntry(entries){
 			let divider = document.createElement('div');
 			divider.className = "entryHeader";
 			divider.id = sectionId
-			divider.onclick = function() {sectionToggle(this, this.nextElementSibling);};
+			divider.onclick = toggleFromClick;
 			divider.appendChild(document.createElement('span'));
 			divider.lastElementChild.innerHTML = name;
 			divider.appendChild(document.createElement('span'));
