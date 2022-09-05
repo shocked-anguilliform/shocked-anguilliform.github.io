@@ -120,7 +120,7 @@ function splitEntry(entries){
 			let entryElem = document.createElement('div');
 			entryElem.className = "entryContainer";
 			entryElem.id = id;
-			entryElem.addEventListener("onclick", revealFromClick;
+			entryElem.addEventListener("onclick", revealFromClick);
 			entreElem.onclick = function() {alert('shit balls');};
 			entryElem.appendChild(document.createElement('div'));
 			entryElem.children[0].className = "entry";
