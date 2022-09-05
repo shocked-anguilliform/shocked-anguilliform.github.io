@@ -83,7 +83,6 @@ function splitEntry(entries){
 		case "#":
 			name = name.slice(1);
 			sectionId = name.split(" ").join("");
-			/*--------------------------------------------------------------------------------------*/
 			let divider = document.createElement('div');
 			divider.className = "entryHeader";
 			divider.id = sectionId
@@ -97,9 +96,6 @@ function splitEntry(entries){
 			divider.lastElementChild.appendChild(document.createElement('span'));
 			divider.lastElementChild.lastElementChild.innerHTML = "⯆";
 			document.getElementById("entryBox").appendChild(divider);
-			/*--------------------------------------------------------------------------------------*/
-			/*content = '</div>\n<div class="entryHeader" id="' + sectionId + '" onclick="sectionToggle(this, \'' + sectionId + 'Drop\')">\n<span>' + name + '</span>\n<span>⯅</span>\n<div>' + name + ' <span>⯆</span></div>\n</div>\n'
-			document.getElementById("entryBox").innerHTML += content;*/
 			subsection = document.createElement('div');
 			subsection.id = sectionId + "Drop";
 			subsection.style.display = "none";
@@ -130,11 +126,9 @@ function splitEntry(entries){
 				let postLink = article.slice(firstClose + 1);
 				article = preLink + "<a onclick='elemLink(" + linkParts[0] + ", this);'>" + linkParts[1] + "</a>" + postLink;
 			}
-			/*--------------------------------------------------------------------------------------*/
 			let entryElem = document.createElement('div');
 			entryElem.className = "entryContainer";
 			entryElem.id = id;
-			/*entryElem.addEventListener("click", revealFromClick);*/
 			entryElem.onclick = function() {reveal(this)};
 			entryElem.appendChild(document.createElement('div'));
 			entryElem.children[0].className = "entry";
@@ -167,10 +161,6 @@ function splitEntry(entries){
 			}
 			entryElem.appendChild(infoBox);
 			document.getElementById("entryBox").lastElementChild.appendChild(entryElem);
-			
-			/*--------------------------------------------------------------------------------------*/
-			/*content = '<div class="entryContainer"' + idHTML + ' onclick="reveal(this)">\n<div class="entry">\n<div>' + name + '</div>\n</div>\n<div class="tooltip">\n<img src="/data/images/ReferenceList/' + picture + '" alt="' + name + '">\n\<div class="innerUp">\n' + article + '\n</div>\n</div>\n</div>\n'
-			window["subsection"].innerHTML += content;*/
 	}
 }
 
