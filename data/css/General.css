@@ -185,6 +185,6 @@ body {
 	filter: opacity(1);
 }
 
-.hidden {
+.infoBox {
 	display: none;
 }

@@ -158,7 +158,7 @@ function splitEntry(entries){
 			tooltip.children[1].innerHTML = article;
 			entryElem.appendChild(tooltip);
 			let infoBox = document.createElement('div');
-			infoBox.className = "hidden";
+			infoBox.className = "infoBox";
 			infoBox.appendChild(document.createElement('div'));
 			infoBox.innerHTML = multiPicture;
 			if (pictures.length > 1) {
