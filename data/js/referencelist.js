@@ -15,7 +15,7 @@ function reveal(source) {
 	document.getElementById("variableText").innerHTML = parts.text;
 }
 
-function revealFromClick {
+function revealFromClick() {
 	console.log("shit balls");
 	reveal(this);
 }
@@ -121,7 +121,7 @@ function splitEntry(entries){
 			entryElem.className = "entryContainer";
 			entryElem.id = id;
 			entryElem.addEventListener("onclick", revealFromClick;
-			entreElem.onclick = function() {alert('clicked');};
+			entreElem.onclick = function() {alert('shit balls');};
 			entryElem.appendChild(document.createElement('div'));
 			entryElem.children[0].className = "entry";
 			entryElem.children[0].appendChild(document.createElement('div'));
