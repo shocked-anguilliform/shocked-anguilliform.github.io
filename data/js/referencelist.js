@@ -146,6 +146,7 @@ function splitEntry(entries){
 					infoBox.appendChild(bonusPic);
 				}
 			}
+			entryElem.appendChild(infoBox);
 			window["subsection"].appendChild(entryElem);
 			
 			/*--------------------------------------------------------------------------------------*/
