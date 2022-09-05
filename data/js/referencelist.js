@@ -169,7 +169,7 @@ function formatPicture(pictureRaw) {
 			pictures.push(currentPic);
 			}
 		}
-	} else if (pictureRaw.includes("[") {
+	} else if (pictureRaw.includes("[")) {
 		pictures.push(pictureRaw.slice(0, pictureRaw.indexOf("[")));
 	} else {
 		pictures.push(pictureRaw);
