@@ -46,7 +46,7 @@ function sectionToggle(source, targetId) {
 	}
 }
 
-function toggleFromClick {
+function toggleFromClick () {
 	sectionToggle(this, this.nextElementSibling);
 }
 
