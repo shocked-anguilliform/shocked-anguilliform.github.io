@@ -13,6 +13,7 @@ function reveal(source) {
 	document.getElementById("variableImage").firstElementChild.outerHTML = parts.picture;
 	document.getElementById("variableName").innerHTML = parts.name;
 	document.getElementById("variableText").innerHTML = parts.text;
+	document.getElementById("multiSelect").innerHTML = "";
 	if (children[2].firstChild.data == "true") {
 		for (i = 0; i < children[2].children.length; i++) {
 			let picParts = children[2].children[i].innerHTML.split(" | ");
