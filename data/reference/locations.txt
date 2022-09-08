@@ -1,72 +1,86 @@
 #Unsorted
 Test Location | noPicture.jpg[test1], LowoodPath.png[test2] | This is a test entry; it is to be removed @CabinArea[click me] @TwoStepRoad[or me] post link text | testId2
-Whistler's Crossing | WhistlersCrossing.png | - | WhistlersCrossing
-Shaded Snarl | ShadedSnarl.png | - | ShadedSnarl
-Prince's Peril || - | PrincesPeril
-Marlin Way | MarlinWay.png | - | MarlinWay
-Copperquill Run | CopperquillRun.png | - | CopperquillRun
-Talontrot Trail | TalontrotTrail.png | - | TalontrotTrail
-Galigos Trail | GaligosTrail.png | - | GaligosTrail
-Forsaken Steps || - | ForsakenSteps
-Mistral Pass | MistralPass.png | - | MistralPass
-Ravelroot Trail | RavelrootTrail.png | - | RavelrootTrail
-Bygone Bourn || - | BygoneBourn
-Dusty's Trail || - | DustysTrail
-The Overgrove | TheOvergrove.png | - | TheOvergrove
-Broken Branch Bend | BrokenBranchBend.png | - | BrokenBranchBend
-Ameryns Cradle || - | AmerynsCradle
-Seasculpt Ascent || - | SeasculptAscent
-Gleamwater Gyre || - | GleamwaterGyre
-Nestled Crook | NestledCrook.png | Winding through the overwrapping canopy is a narrow, quiet path. Various plants cradle the crooks edges with curled leaves. A rustling overhead catches your attention. Glancing up, you see a small furry creature leaping into the branches away from you. It stops and looks back at you curiously with large yellow eyes and a piece of fruit held in its mouth. | NestledCrook
-Glimmer Tides | GlimmerTides.png | - | GlimmerTides
-Underbite Path | UnderbitePath.png | - | UnderbitePath
-Outpost Trail | OutpostTrail.png | - | OutpostTrail
-Amplegreen Trail || - | AmplegreenTrail
-Sundered Tangle || - | SunderedTangle
-Unnamed Trail || - | UnnamedTrail
-Shrine Path || - | ShrinePath
-Ondor Steps || - | OndorSteps
-Hopskip Bound || - | HopskipBound
-Overlook Path || - | OverlookPath
-Unnamed Trail || - | UnnamedTrail2
-Hag's Stroll || - | HagsStroll
-Wandering Way || - | WanderingWay
-Bay Walk | BayWalk.png | - | BayWalk
-Lowood Path | LowoodPath.png | - | LowoodPath
-Ondor Run || - | OndorRun
-Stoneskip Jaunt || - | StoneskipJaunt
 #Academy
+Cabin Area || - | CabinArea
 #Hwen
 #Townside
 Westra Academy || - | WestraAcademy
-Cabin Area || - | CabinArea
 School Docks || - | SchoolDocks
 Hwen || - | Hwen
 Bay Of Many Crabs || - | BayOfManyCrabsText
+Glimmer Tides | GlimmerTides.png | - | GlimmerTides
 Sweetfish Bay || - | SweetFishBayText
 Bramble Bastion || - | BrambleBastion
+-Headmaster's Graveyard || - | HeadmastersGraveyard
+-Hermany Mural || - | HermanyMural
 North Point Overlook || - | NorthPointOverlook
+-Ondor Ruin || - | OndorRun
+-Staff in the Stone || - | StaffintheStone
 Sunspeckled Sanctuary || - | SunspeckledSanctuary
 The Old Orchard || - | OldOrchard
+-The Morytha || - | Morytha
+-Treehouse || - | Treehouse
+Amplegreen Trail || - | AmplegreenTrail
+Broken Branch Bend | BrokenBranchBend.png | - | BrokenBranchBend
+Bygone Bourn || - | BygoneBourn
+Dusty's Trail || - | DustysTrail
+Gleamwater Gyre || - | GleamwaterGyre
+Hopskip Bound || - | HopskipBound
+Nestled Crook | NestledCrook.png | Winding through the overwrapping canopy is a narrow, quiet path. Various plants cradle the crooks edges with curled leaves. A rustling overhead catches your attention. Glancing up, you see a small furry creature leaping into the branches away from you. It stops and looks back at you curiously with large yellow eyes and a piece of fruit held in its mouth. | NestledCrook
+Ondor Steps || - | OndorSteps
+Overlook Path || - | OverlookPath
+Ravelroot Trail | RavelrootTrail.png | - | RavelrootTrail
+Shrine Path || - | ShrinePath
+Sundered Tangle || - | SunderedTangle
+Unnamed Trail || - | UnnamedTrail
 #Center
 Smirey Docks || - | SmireyDocks
+-Fife Fields || - | FifeFields
+-Lachrymose Grounds || - | LachrymoseGrounds
 Lost Meadow || - | LostMeadow
 Monster Rock || - | MonsterRock
 Prancing Prairie || - | PrancingPrairie
+-Spice House || - | SpiceHouse
 Tower Overlook || - | TowerOverlook
+Copperquill Run | CopperquillRun.png | - | CopperquillRun
+Mistral Pass | MistralPass.png | - | MistralPass
+Prince's Peril || - | PrincesPeril
+Seasculpt Ascent || - | SeasculptAscent
+Talontrot Trail | TalontrotTrail.png | - | TalontrotTrail
+The Overgrove | TheOvergrove.png | - | TheOvergrove
+Wandering Way || - | WanderingWay
 #Mawside
 Llaffan || - | Llaffan
 Point Rock || - | PointRockText
 Seaweed Cove || - | SeaweedCoveText
 Wameday Bay || - | WamedayBayText
 West Point || - | WestPointText
+-Haunted House || - | HauntedHouse
 Long Meadow || - | LongMeadow
+-Mysterious Shack || - | MysteriousShack
+-Shrouded Statue || - | ShroudedStatue
+-Tanglerock Outpost || - | TanglerockOutpost
+-Village Ruins || - | VillageRuins
+-Volcanic Caverns || - | VolcanicCaverns
+-Willowalk Pier || - | WillowalkPier
+Ameryns Cradle || - | AmerynsCradle
+Bay Walk | BayWalk.png | - | BayWalk
+Forsaken Steps || - | ForsakenSteps
+Galigos Trail | GaligosTrail.png | - | GaligosTrail
+Hag's Stroll || - | HagsStroll
+Lowood Path | LowoodPath.png | - | UnnamedTrail2
+Marlin Way | MarlinWay.png | - | MarlinWay
+Outpost Trail | OutpostTrail.png | - | OutpostTrail
+Shaded Snarl | ShadedSnarl.png | - | ShadedSnarl
+Stoneskip Jaunt || - | StoneskipJaunt
+Underbite Path | UnderbitePath.png | - | UnderbitePath
+Whistler's Crossing | WhistlersCrossing.png | - | WhistlersCrossing
 #Islands
 High Tide Island || - | HighTdeIslandText
 Lost Lily Island || - | LostLilyIslandText
 Skyview Skerry || - | SkyviewSkerryText
 Smirey Isle || - | SmireyIsleText
-Grey Mirror || - | GreyMirror
+-Grey Mirror || - | GreyMirror
 The Tower || - | TheTower
 #Roads
 Two Step Road || This road has two steps | TwoStepRoad
