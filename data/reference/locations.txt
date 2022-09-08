@@ -1,5 +1,5 @@
 #Unsorted
-Two Step Road || This road has two steps | TwoStepRoad
+Test Location | noPicture.jpg[test1], LowoodPath.png[test2] | This is a test entry; it is to be removed @CabinArea[click me] @TwoStepRoad[or me] post link text | testId2
 Whistler's Crossing | WhistlersCrossing.png | - | WhistlersCrossing
 Shaded Snarl | ShadedSnarl.png | - | ShadedSnarl
 Prince's Peril || - | PrincesPeril
@@ -27,51 +27,52 @@ Unnamed Trail || - | UnnamedTrail
 Shrine Path || - | ShrinePath
 Ondor Steps || - | OndorSteps
 Hopskip Bound || - | HopskipBound
-Farie Dragon Lane || - | FarieDragonLane
 Overlook Path || - | OverlookPath
 Unnamed Trail || - | UnnamedTrail2
 Hag's Stroll || - | HagsStroll
 Wandering Way || - | WanderingWay
 Bay Walk | BayWalk.png | - | BayWalk
 Lowood Path | LowoodPath.png | - | LowoodPath
-Cabin Area || - | CabinArea
-Hwen Road || - | HwenRoad
-Meadow Road || - | MeadowRoad
-Dock Road || - | DockRoad
-Radstone Road || - | RadstoneRoad
-Magelight Road || - | MagelightRoad
-West Point || - | WestPointText
-High Tide Island || - | HighTdeIslandText
-School Docks || - | SchoolDocks
-Lost Meadow || - | LostMeadow
-The Tower || - | TheTower
-Long Meadow || - | LongMeadow
-Smirey Docks || - | SmireyDocks
-Skyview Skerry || - | SkyviewSkerryText
-Smirey Isle || - | SmireyIsleText
-Wameday Bay || - | WamedayBayText
-Seaweed Cove || - | SeaweedCoveText
-Monster Rock || - | MonsterRock
-The Old Orchard || - | OldOrchard
-Grey Mirror || - | GreyMirror
-Bay Of Many Crabs || - | BayOfManyCrabsText
-Lost Lily Island || - | LostLilyIslandText
-Tower Overlook || - | TowerOverlook
-Point Rock || - | PointRockText
-Sweetfish Bay || - | SweetFishBayText
-North Point Overlook || - | NorthPointOverlook
 Ondor Run || - | OndorRun
-Bramble Bastion || - | BrambleBastion
-Prancing Prairie || - | PrancingPrairie
-Llaffan || - | Llaffan
-Sunspeckled Sanctuary || - | SunspeckledSanctuary
-Westra Academy || - | WestraAcademy
-Hwen || - | Hwen
 Stoneskip Jaunt || - | StoneskipJaunt
 #Academy
 #Hwen
 #Townside
-#Central
+Westra Academy || - | WestraAcademy
+Cabin Area || - | CabinArea
+School Docks || - | SchoolDocks
+Hwen || - | Hwen
+Bay Of Many Crabs || - | BayOfManyCrabsText
+Sweetfish Bay || - | SweetFishBayText
+Bramble Bastion || - | BrambleBastion
+North Point Overlook || - | NorthPointOverlook
+Sunspeckled Sanctuary || - | SunspeckledSanctuary
+The Old Orchard || - | OldOrchard
+#Center
+Smirey Docks || - | SmireyDocks
+Lost Meadow || - | LostMeadow
+Monster Rock || - | MonsterRock
+Prancing Prairie || - | PrancingPrairie
+Tower Overlook || - | TowerOverlook
 #Mawside
+Llaffan || - | Llaffan
+Point Rock || - | PointRockText
+Seaweed Cove || - | SeaweedCoveText
+Wameday Bay || - | WamedayBayText
+West Point || - | WestPointText
+Long Meadow || - | LongMeadow
+#Islands
+High Tide Island || - | HighTdeIslandText
+Lost Lily Island || - | LostLilyIslandText
+Skyview Skerry || - | SkyviewSkerryText
+Smirey Isle || - | SmireyIsleText
+Grey Mirror || - | GreyMirror
+The Tower || - | TheTower
 #Roads
-Test Location | noPicture.jpg[test1], LowoodPath.png[test2] | This is a test entry; it is to be removed @CabinArea[click me] @TwoStepRoad[or me] post link text | testId2
+Two Step Road || This road has two steps | TwoStepRoad
+Magelight Road || - | MagelightRoad
+Radstone Road || - | RadstoneRoad
+Farie Dragon Lane || - | FarieDragonLane
+Meadow Road || - | MeadowRoad
+Hwen Road || - | HwenRoad
+Dock Road || - | DockRoad
