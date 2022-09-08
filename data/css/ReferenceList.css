@@ -1,3 +1,5 @@
+
+
 .entry, .tooltip, #popup{
 	border: solid #666d;
 	font-family: "lucida bright";
@@ -9,22 +11,25 @@
 .entry, .entryContainer, .entryHeader {
 	top: -2.5rem;
 	position: relative;
-	width: min(46rem, 50% - max(30vw - 14rem, 3rem) - 1rem);
+	/*width: min(46rem, 50% - max(30vw - 14rem, 3rem) - 1rem);*/
+	width: min(46rem, 50% + 13rem - 30vw, 50% - 4rem);
+	/*width: min(46rem, 50% - max(30vw - 13rem, 4rem); <- technically shorter, but more complex in my mind*/
 	user-select: none;
 }
 
 .entry {
 	margin-bottom: min(0.65rem, 1.5vw);
 	font-weight: bold;
-	font-size: max(min(1.5rem, 3vw), 0.5rem);
+	/*font-size: max(min(1.5rem, 3vw), 0.5rem);*/
+	font-size: clamp(0.5rem, 3vw, 1.5rem);
 	text-align: center;
 	white-space: nowrap;
 	overflow: auto;
 	padding: 0.5rem;
 	min-width: max-content;
 	text-indent: 0;
-	/*Delete Later*/
-	left: max(15vw - 7rem, 1.5rem);
+	/*Delete Later 9/8/22: I couldn't bring myself to delete it :(*/
+	/*left: max(15vw - 7rem, 1.5rem);*/
 }
 
 .tooltip {
@@ -68,21 +73,26 @@
 .entryHeader {
 	font-weight: bold;
 	font-family: "CopperplateIda";
-	font-size: max(min(1.5rem, 3vw) + 1.5rem, 2rem);
+	/*font-size: max(min(1.5rem, 3vw) + 1.5rem, 2rem);*/
+	font-size: clamp(2rem, 3vw + 1.5rem, 3rem);
 	color: #bbb;
 	white-space: nowrap;
 	text-align: center;
-	height: max(min(1.5rem, 3vw) + 1.85rem, 2.35rem);
+	/*height: max(min(1.5rem, 3vw) + 1.85rem, 2.35rem);*/
+	height: clamp(2.35rem, 3vw + 1.85rem, 3.35rem);
 	margin: 0 0.65rem 0.65rem 0.65rem;
 }
 
 .entryHeader span:first-child:not(:last-of-type) {
-	-webkit-text-stroke: 5px #282828;
+	/*-webkit-text-stroke: 1.25px #282828;*/
+	text-shadow: 0 0 8px #282828, 0 0 3px #282828, 0 0 3px #282828, 0 0 3px #282828, 0 0 3px #282828, 0 0 3px #282828, 0 0 3px #282828, 0 0 3px #282828, 0 0 3px #282828;
 }
 
 .entryHeader span:nth-child(2) {
-	font-size: max(min(1.5rem, 3vw) + 0.5rem, 1rem);
-	-webkit-text-stroke: 1.25px #282828;
+	/*font-size: max(min(1.5rem, 3vw) + 0.25rem, 0.75rem);*/
+	font-size: clamp(0.75rem, 3vw + 0.25rem, 1.75rem);
+	/*-webkit-text-stroke: 1.25px #282828;*/
+	text-shadow: 0 0 8px #282828, 0 0 3px #282828, 0 0 3px #282828, 0 0 3px #282828, 0 0 3px #282828, 0 0 3px #282828, 0 0 3px #282828, 0 0 3px #282828, 0 0 3px #282828;
 }
 
 .entryHeader:hover span:nth-child(2) {
@@ -94,7 +104,8 @@
 }
 
 .entryHeader div span {
-	font-size: max(min(1.5rem, 3vw) + 0.5rem, 1rem);
+	/*font-size: max(min(1.5rem, 3vw) + 0.25rem, 0.75rem);*/
+	font-size: clamp(0.75rem, 3vw + 0.25rem, 1.75rem);
 	color: #0000;
 }
 
@@ -117,47 +128,81 @@
 
 .innerUp {
 	text-indent: 0;
-	font-size: min(1.25rem, 3vw);
+	font-size: min(125%, 3vw);
 	line-height: min(1.5rem, 3.6vw);
 	color: transparent;
-  background:linear-gradient(black min(8.3rem, 28vw - 0.2rem), transparent min(10.8rem, 35vw - 0.2rem));
-  -webkit-background-clip: text;
-  background-clip: text;
+	background:linear-gradient(black min(8.3rem, 28vw - 0.2rem), transparent min(10.8rem, 35vw - 0.2rem));
+	-webkit-background-clip: text;
+	background-clip: text;
 }
 
 #popup{
-  display: none;
-  position: fixed;
-  width: 70vw;
-  height: 85vh;
-  overflow-y: auto;
-  z-index: 2;
-  background: #aaa;
-  border-color: #555;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 10%;
-  border-radius: 0.5rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+	display: none;
+	position: fixed;
+	width: 70vw;
+	height: clamp(50vh, 50vw, 85vh);
+	/*min-height: max(50vh, min(50vw, 85vh));
+	max-height: 85vh;*/
+	overflow-y: auto;
+	z-index: 2;
+	background: #aaa;
+	border-color: #555;
+	left: 50%;	
+	transform: translateX(-50%);
+	top: 10%;
+	border-radius: 0.5rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	white-space: nowrap;
+}
+
+#popup::-webkit-scrollbar-track {
+	border-radius: 10vw;
+}
+
+#popup a, .innerUp a {
+	text-decoration: underline black;
+}
+
+#popup a:hover {
+	text-decoration: underline #4952a6;
+	color: #4952a6;
+	cursor: pointer;
+}
+
+#popupContent {
+	width: 100%;
+	min-width: 17.2rem;
 }
 
 #closeButton {
-  position: absolute;
-  right: 0;
-  font-weight: bold;
-  margin: 0.7rem;
-  cursor: pointer;
+	position: absolute;
+	right: 0;
+	font-weight: bold;
+	margin: 0.7rem;
+	cursor: pointer;
 }
 
 #blackout {
-  display: none;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: #ccc0;
-  z-index: 1;
-  top: 0;
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: #ccc0;
+	z-index: 1;
+	top: 0;
+}
+
+#variableImage {
+	display: inline-block;
+    width: min(20.3rem,  25vw + 0.3rem);
+    float: left;
+    white-space: normal;
+    /*margin-left: calc(max(0.75rem, 2vw) - 1rem);*/
+	margin-left: max(-0.25rem, 2vw - 1rem);
+    min-width: 7.3rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
 }
 
 #variableImage img {
@@ -169,28 +214,61 @@
 	border: 0.15rem #894c33 solid;
 	margin: max(0.75rem, 2vw);
 	margin-bottom: 0.01rem;
-	margin-left: calc(max(0.75rem, 2vw) - 1rem);
+	margin-left: 0;
 	border-radius: 0.8rem;
-	float: left
+	float: left;
+	min-width: 7rem;
+	min-height: 7rem;
+	z-index:  1;
 }
 
 #variableName {
-  text-indent: 0;
-  text-align: center;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-  font-family: CopperplateIda;
+	text-indent: 0;
+	text-align: center;
+	margin-right: 1.25rem;
+	font-family: CopperplateIda;
+	white-space: normal;
+	/*width: calc(100% - 2.1rem - 16px - max(min(20.3rem,  25vw + 0.3rem), 7.3rem) - calc(max(0.75rem, 2vw) - 	1rem));*/
+	width: calc(100% - 1.1rem - 16px - clamp(7.3rem,  25vw + 0.3rem, 20.3rem) - max(0.75rem, 2vw));
+	display: inline-block;
+	float: left;
+	margin-right: 0;
+	margin-bottom: 1rem;
+	margin-top: 1.5rem;
 }
 
 #variableText {
- font-size: 1.25rem;
+	font-size: 125%;
+	white-space: normal;
+	margin-bottom: 1rem;
 }
 
-#variableText a, .innerUp a {
-	text-decoration: underline black;
+#clicked {
+	text-decoration: none !important;
+	color: #555 !important;
+	cursor: default !important;
+	background: #999;
 }
 
-#variableText a:hover {
-	color: #4952a6;
-	cursor: pointer;
+#multiSelect {
+	text-indent: 0;
+	width: 100%;
+    margin: 0.35rem 0;
+    top: -1rem;
+    position: relative;
+	overflow-x: scroll;
+	padding-bottom: 1.5rem;
+}
+
+#multiSelect a {
+	padding: 5rem 0.25rem 0.5rem 0.25rem;
+	border-radius: 0 0 0.5rem 0.5rem;
+	text-decoration: none !important;
+	white-space: nowrap;
+	position: relative;
+	top: 1rem;
+}
+
+#multiSelect a:hover:not(#clicked){
+	background: #a0a0a0;
 }

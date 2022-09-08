@@ -8,7 +8,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 	background-attachment: fixed;
-	overflow-x: hidden;}
+	overflow-x: hidden;
+}
 
 @font-face {
    font-family: CopperplateIda;
@@ -187,4 +188,62 @@ body {
 
 .infoBox {
 	display: none;
+}
+
+::-webkit-scrollbar {
+	width: 0.8rem;
+	height: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+	background: #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #777;
+	border: 0.225rem solid #aaa;
+	border-radius: 10vw;
+	margin-block: 0.5rem;
+	margin-inline: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+	border: 0.15rem solid #aaa;
+}
+
+::-webkit-scrollbar-corner {
+	background: #aaa;
+}
+
+body::-webkit-scrollbar-button {
+height: 0.8rem;
+}
+
+/*Idea credit: BevansDesign on Stack Exchange*/
+
+body::-webkit-scrollbar-button:vertical:decrement {
+    background:
+        linear-gradient(120deg, #aaa 39%, rgba(0, 0, 0, 0) 42%),
+        linear-gradient(240deg, #aaa 39%, rgba(0, 0, 0, 0) 42%),
+        linear-gradient(0deg, #aaa 29%, rgba(0, 0, 0, 0) 32%);
+    background-color: #555
+}
+
+body::-webkit-scrollbar-button:vertical:increment {
+    background:
+        linear-gradient(300deg, #aaa 39%, rgba(0, 0, 0, 0) 42%),
+        linear-gradient(60deg, #aaa 39%, rgba(0, 0, 0, 0) 42%),
+        linear-gradient(180deg, #aaa 29%, rgba(0, 0, 0, 0) 32%);
+    background-color: #555;
+}
+
+@supports (scrollbar-color: #aaa #555) {
+	* {
+		scrollbar-color: #aaa #777;
+		scrollbar-width: thin;
+	}
+	*:hover {
+		scrollbar-color: #aaa #555)
+	}
 }

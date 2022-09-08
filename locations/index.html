@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="/data/css/ReferenceList.css">
 		<script src="/data/js/jquery-3.6.0.min.js"></script>
 		<script src="/data/js/referencelist.js"></script>
+		<script src="/data/js/general.js"></script>
 		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> (<i class="fa fa-home"></i>)--> 
 		<style>
 			body {
@@ -18,7 +19,7 @@
 		<div class="headSpace">
 			<div class="navBar">
 				<a href="\">Home</a>
-				<a href="\">Back</a>
+				<a href="\maps\">Maps</a>
 			</div>
 			<div class="titleBox dummyTitle">
 				<span class="titleWord">Locations</span>
@@ -29,13 +30,15 @@
 		</div>
 		<div id="blackout" onclick="hidePopup()"></div>
 		<div id="popup">
-			<button id="closeButton" onclick="hidePopup()">🞮</button>
-			<div id="variableImage">
-				<img>
-				<div id="multiSelect"></div>
+			<div id="popupContent">
+				<button id="closeButton" onclick="hidePopup()">&#10006;</button>
+				<div id="variableImage">
+					<img>
+					<div id="multiSelect"></div>
+				</div>
+				<h1 id="variableName"></h1>
+				<div id="variableText"></div>
 			</div>
-			<h1 id="variableName"></h1>
-			<div id="variableText"></div>
 		</div>
 		<div id="entryBox">
 		</div>

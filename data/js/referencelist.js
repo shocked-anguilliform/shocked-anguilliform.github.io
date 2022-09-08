@@ -13,6 +13,23 @@ function reveal(source) {
 	document.getElementById("variableImage").firstElementChild.outerHTML = parts.picture;
 	document.getElementById("variableName").innerHTML = parts.name;
 	document.getElementById("variableText").innerHTML = parts.text;
+	if (children[2].firstChild.data == "true") {
+		for (i = 0; i < children[2].children.length; i++) {
+			let picParts = children[2].children[i].innerHTML.split(" | ");
+			let subPic = document.createElement('a');
+			if (i == 0) {subPic.id = "clicked";}
+			subPic.onclick = function() {document.getElementById("variableImage").firstElementChild.setAttribute("src", "/data/images/ReferenceList/" + picParts[0]);document.getElementById("clicked").id="";this.id="clicked"};
+			subPic.innerHTML = picParts[1];
+			console.log(subPic);
+			document.getElementById("multiSelect").appendChild(subPic);
+			/*document.getElementById("multiSelect").appendChild(document.createTextNode(" "));*/
+			
+		}
+	}
+}
+
+function setPic(name) {
+	document.getElementById("variableImage").firstElementChild.setAttribute("src", "/data/images/ReferenceList/" + picParts[0]);
 }
 
 function hidePopup() {
@@ -37,10 +54,10 @@ function elemLink(target, source) {
 function sectionToggle(source, targetId) {
 	let target = document.getElementById(targetId);
 	if (target.style.display == "none") {
-		source.children[1].innerHTML = "⯆";
+		source.children[1].innerHTML = "&#11206;";
 		target.style.display = "block";
 	} else {
-		source.children[1].innerHTML = "⯅";
+		source.children[1].innerHTML = "&#11205;";
 		target.style.display = "none";
 	}
 }
@@ -86,11 +103,11 @@ function splitEntry(entries){
 			divider.appendChild(document.createElement('span'));
 			divider.lastElementChild.innerHTML = name;
 			divider.appendChild(document.createElement('span'));
-			divider.lastElementChild.innerHTML = "⯅";
+			divider.lastElementChild.innerHTML = "&#11205;";
 			divider.appendChild(document.createElement('div'));
 			divider.lastElementChild.appendChild(document.createTextNode(name));
 			divider.lastElementChild.appendChild(document.createElement('span'));
-			divider.lastElementChild.lastElementChild.innerHTML = "⯆";
+			divider.lastElementChild.lastElementChild.innerHTML = "&#11206;";
 			document.getElementById("entryBox").appendChild(divider);
 			subsection = document.createElement('div');
 			subsection.id = sectionId + "Drop";
