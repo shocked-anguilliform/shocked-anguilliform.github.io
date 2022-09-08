@@ -7,6 +7,11 @@ Cabin Area || - | CabinArea
 Westra Academy || - | WestraAcademy
 School Docks || - | SchoolDocks
 Hwen || - | Hwen
+Cape Seaspray || - | Capeseaspray
+Crumbled Peninsula || - | CrumbledPeninsula
+Kalclith Horn || - | KalclithHorn
+Stoney Beach || - | StoneyBeach
+Scuttling Shore || - | ScuttlingShore
 Bay Of Many Crabs || - | BayOfManyCrabsText
 Glimmer Tides | GlimmerTides.png | - | GlimmerTides
 Sweetfish Bay || - | SweetFishBayText
@@ -35,6 +40,9 @@ Sundered Tangle || - | SunderedTangle
 Unnamed Trail || - | UnnamedTrail
 #Center
 Smirey Docks || - | SmireyDocks
+Bowing Bluffs || - | BowingBluffs
+Driftwind Beach || - | DriftwindBeach
+Scrawlmark Channel || - | Scrawlmark Channel
 -Fife Fields || - | FifeFields
 -Lachrymose Grounds || - | LachrymoseGrounds
 Lost Meadow || - | LostMeadow
@@ -51,7 +59,11 @@ The Overgrove | TheOvergrove.png | - | TheOvergrove
 Wandering Way || - | WanderingWay
 #Mawside
 Llaffan || - | Llaffan
+Crag Maw || - | CragMaw
 Point Rock || - | PointRockText
+West Point || - | WestPoint
+Brine's Bounty || - | BrinesBounty
+Jagged Jaw Coast  || - | JaggedJawCoast
 Seaweed Cove || - | SeaweedCoveText
 Wameday Bay || - | WamedayBayText
 West Point || - | WestPointText
