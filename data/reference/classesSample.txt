@@ -4,3 +4,11 @@ Taking Candy From Babies | FUN 221 | FUN 222 | 3 | 12 | P | - | 7+8 5+6
 Hexes and Destructive Enchantment | ENC 221 | @ | 5 | 6 | L | ENC 102, NMS 171:NF | 1 2 7
 Manslaughter and Genocide | FUN 101 | @ | 1 | 1 | P | - | 1+2 7+8
 TV Watching | FUN 111 | FUN 112 | 1 | 320 | P | - | 8 5 7
+Getting Morgan to Start the Campaign | NFN 101 | NFN 102 | 10 | 6 | P | - | 9+10
+Croissant Making | ART 331 | @ | 2 | 12 | P | ART 231 | 5 7 9 10
+Fence Painting | NFN 111 | NFN 112 | 1 | 4 | P | - | 9 3 5 6 2
+Why You're Awsome | SHP 101 | SHP 102 | 2 | 24 | L | - | 2 3 4 5 7 9
+How to Chase Geese | ??? 101 | @ | 5 | 32 | L | - | 1 2 4 6 8
+ADVANCED How to Chase Geese | ??? 201 | ??? 202 | 9 | 16 | L | ??? 101 | 1 2 4 6 8
+The Pros of Lettuce | CUL 101 | - | 3 | 16 | M | - | 2 3 4 5 6 7
+The Cons of Lettuce | - | CUL 102 | 3 | 16 | M | - | 2 3 4 5 6 7

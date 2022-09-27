@@ -108,11 +108,13 @@ function selectClass (mode, targetValue, targetID, doubleClass, day, others) {
 	let maxLines = undefined;
 	switch (blockType) {
 		case 0:
-		case 2:
-			maxLines = 2;
+			if (mode == "full") {maxLines = 1;} else {maxLines = 2;}
 			break;
 		case 1:
 			maxLines = 4;
+			break;
+		case 2:
+			maxLines = 2;
 			break;
 		case 3:
 			maxLines = 7;
@@ -549,14 +551,6 @@ function addByPeriod(mode, course) {
 			addDivSimple(course, courseID, timeslot, mode);
 		}
 	});
-}
-
-function addDiv(course, courseID, timeslot, semester) {
-	let div = document.createElement('div')
-	div.innerHTML =  courseID + " - " + $.trim(course[0]);
-	div.title = div.innerHTML;
-	div.addEventListener('mousedown', () => {select(div.innerHTML, "period" + timeslot + semester);});
-	document.getElementById("ddP" + timeslot + semester).children[2].appendChild(div);
 }
 
 function addDivSimple(course, courseID, timeslot, semester) {
