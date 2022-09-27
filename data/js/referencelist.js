@@ -29,10 +29,6 @@ function reveal(source) {
 	}
 }
 
-function setPic(name) {
-	document.getElementById("variableImage").firstElementChild.setAttribute("src", "/data/images/ReferenceList/" + picParts[0]);
-}
-
 function hidePopup() {
 	document.getElementById("popup").style.display = "none";
 	document.getElementById("blackout").style.display = "none";
@@ -191,7 +187,7 @@ function formatPicture(pictureRaw) {
 			if (currentPic.includes("[") && currentPic.includes("]")) {
 				currentPic = currentPic.slice(0, currentPic.indexOf("]"));
 			} else {
-			currentPic = currentPic + "[picture " + j;
+			currentPic = currentPic + "[picture " + (j + 1);
 			}
 			pictures.push(currentPic);
 		}

@@ -244,8 +244,7 @@
 }
 
 #clicked {
-	text-decoration: none !important;
-	color: #555 !important;
+	color: #000 !important;
 	cursor: default !important;
 	background: #999;
 }

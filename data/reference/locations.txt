@@ -1,5 +1,5 @@
 #Unsorted
-Test Location | noPicture.jpg[blank], LowoodPath.png[flowers], BrokenBranchBend.png[trees] | This is a test entry; it is to be removed @CabinArea[click me] @TwoStepRoad[or me] post link text | testId2
+Test Location | LowoodPath.png[flowers], BrokenBranchBend.png[trees], NestledCrook.png | This is a test entry; it is to be removed @CabinArea[click me] @TwoStepRoad[or me] post link text | testId2
 #Academy
 Cabin Area || - | CabinArea
 #Hwen
@@ -95,3 +95,10 @@ Smirey Isle || - | SmireyIsleText
 -Grey Mirror || - | GreyMirror
 The Tower || - | TheTower
 #Roads
+Two Step Road || This road has two steps | TwoStepRoad
+Magelight Road || - | MagelightRoad
+Radstone Road || - | RadstoneRoad
+Farie Dragon Lane || - | FarieDragonLane
+Meadow Road || - | MeadowRoad
+Hwen Road || - | HwenRoad
+Dock Road || - | DockRoad

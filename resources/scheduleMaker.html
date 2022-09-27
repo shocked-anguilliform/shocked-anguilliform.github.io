@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Schedule Maker | Magic School</title>
+		<link rel="stylesheet" href="/data/css/General.css">
+		<link rel="stylesheet" href="/data/css/ScheduleMaker.css">
+		<script src="/data/js/schedule.js"></script>
+		<script src="/data/js/jquery-3.6.0.min.js"></script>
+	</head>
+	<body onload="getClasses('classesSample');">
+		<div class="headSpace scheduleHS">
+			<a href="\">Home</a>
+			<a href="./">Rsrc</a>
+			<div class="titleSM">Schedule Maker</div>
+		</div>
+		<div id="selectAndFoot">
+			<div class="selectorContainer">
+			<div class="periodSelect">
+				<p class="selectorName">Period 1</p>
+				<p class="selectorSubtitle">8:00 am - 9:00 am M/W/F</p>
+				<div class="dropdown" id="ddP1S1" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S1&#10089;" title="Choose a class (S1)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+				<div class="dropdown S2" id="ddP1S2" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S2&#10089;" title="Choose a class (S2)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+			</div>
+			<div class="periodSelect">
+				<p class="selectorName">Period 2</p>
+				<p class="selectorSubtitle">9:20 am - 10:20 am M/W/F</p>
+				<div class="dropdown" id="ddP2S1" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S1&#10089;" title="Choose a class (S1)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+				<div class="dropdown S2" id="ddP2S2" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S2&#10089;" title="Choose a class (S2)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+			</div>
+			<div class="periodSelect">
+				<p class="selectorName">Period 3</p>
+				<p class="selectorSubtitle">10:40 am - 11:40 am M/W/F</p>
+				<div class="dropdown" id="ddP3S1" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S1&#10089;" title="Choose a class (S1)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+				<div class="dropdown S2" id="ddP3S2" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S2&#10089;" title="Choose a class (S2)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+			</div>
+			<div class="periodSelect">
+				<p class="selectorName">Period 4</p>
+				<p class="selectorSubtitle">1:20 pm - 2:20 pm M/W/F</p>
+				<div class="dropdown" id="ddP4S1" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S1&#10089;" title="Choose a class (S1)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+				<div class="dropdown S2" id="ddP4S2" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S2&#10089;" title="Choose a class (S2)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+			</div>
+			<div class="periodSelect">
+				<p class="selectorName">Period 5</p>
+				<p class="selectorSubtitle">2:40 pm - 3:40 pm M/W/F</p>
+				<div class="dropdown" id="ddP5S1" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S1&#10089;" title="Choose a class (S1)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+				<div class="dropdown S2" id="ddP5S2" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S2&#10089;" title="Choose a class (S2)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+			</div>
+			<div class="periodSelect">
+				<p class="selectorName">Period 6</p>
+				<p class="selectorSubtitle">4:00 pm - 5:00 pm M/W/F</p>
+				<div class="dropdown" id="ddP6S1" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S1&#10089;" title="Choose a class (S1)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+				<div class="dropdown S2" id="ddP6S2" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S2&#10089;" title="Choose a class (S2)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+			</div>
+			<div class="periodSelect">
+				<p class="selectorName">Period 7</p>
+				<p class="selectorSubtitle">8:20 am - 9:50 am Tu/Th</p>
+				<div class="dropdown" id="ddP7S1" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S1&#10089;" title="Choose a class (S1)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+				<div class="dropdown S2" id="ddP7S2" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S2&#10089;" title="Choose a class (S2)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+			</div>
+			<div class="periodSelect">
+				<p class="selectorName">Period 8</p>
+				<p class="selectorSubtitle">10:10 am - 11:40 am Tu/Th</p>
+				<div class="dropdown" id="ddP8S1" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S1&#10089;" title="Choose a class (S1)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+				<div class="dropdown S2" id="ddP8S2" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S2&#10089;" title="Choose a class (S2)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+			</div>
+			<div class="periodSelect">
+				<p class="selectorName">Period 9</p>
+				<p class="selectorSubtitle">1:20 pm - 2:50 pm Tu/Th</p>
+				<div class="dropdown" id="ddP9S1" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S1&#10089;" title="Choose a class (S1)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+				<div class="dropdown S2" id="ddP9S2" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S2&#10089;" title="Choose a class (S2)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+			</div>
+			<div class="periodSelect">
+				<p class="selectorName">Period 10</p>
+				<p class="selectorSubtitle">3:10 pm - 4:40 pm Tu/Th</p>
+				<div class="dropdown" id="ddP10S1" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S1&#10089;" title="Choose a class (S1)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+				<div class="dropdown S2" id="ddP10S2" pointer="none">
+					<input type="text" class="selectBox" placeholder="Choose a class &#10088;S2&#10089;" title="Choose a class (S2)" readonly>
+					<div></div>
+					<div class="classes">
+					</div>
+				</div>
+			</div>
+			<div style="height:1rem;"></div>
+		</div>
+			<div id="selectFooter"></div>
+		</div>
+		<div id="calendar">
+			<svg height="100%" width="100%">
+				<g id="label">
+					<g id="dayLabel">
+						<text x="10%" y="-0.5rem">Monday</text>
+						<text x="30%" y="-0.5rem">Tuesday</text>
+						<text x="50%" y="-0.5rem">Wednesday</text>
+						<text x="70%" y="-0.5rem">Thurday</text>
+						<text x="90%" y="-0.5rem">Friday</text>
+					</g>
+					<g id="hourLabel">
+						<text x="-0.5rem" y="0%">8 am&nbsp;-</text>
+						<text x="-0.5rem" y="11.1%">9 am&nbsp;-</text>
+						<text x="-0.5rem" y="22.2%">10 am-</text>
+						<text x="-0.5rem" y="33.3%">11 am-</text>
+						<text x="-0.5rem" y="44.4%">12 m&nbsp;-</text>
+						<text x="-0.5rem" y="55.6%">1 pm&nbsp;-</text>
+						<text x="-0.5rem" y="66.7%">2 pm&nbsp;-</text>
+						<text x="-0.5rem" y="77.8%">3 pm&nbsp;-</text>
+						<text x="-0.5rem" y="88.9%">4 pm&nbsp;-</text>
+						<text x="-0.5rem" y="100%">5 pm&nbsp;-</text>
+					</g>
+				</g>
+				<g id="grid">
+					<g id="vertical">
+						<line x1="calc(100% / 5)" y1="0" x2="calc(100% / 5)" y2="100%" />
+						<line x1="calc(2 * 100% / 5)" y1="0" x2="calc(2 * 100% / 5)" y2="100%" />
+						<line x1="calc(3 * 100% / 5)" y1="0" x2="calc(3 * 100% / 5)" y2="100%" />
+						<line x1="calc(4 * 100% / 5)" y1="0" x2="calc(4 * 100% / 5)" y2="100%" />
+						<!--<line x1="calc(5 * 100% / 5)" y1="0" x2="calc(5 * 100% / 5)" y2="100%" />
+						<line x1="calc(6 * 100% / 5)" y1="0" x2="calc(6 * 100% / 5)" y2="100%" />-->
+					</g>
+					<g id="horizontal">
+						<line x1="0" y1="calc(100% / 9)" x2="100%" y2="calc(100% / 9)" />
+						<line x1="0" y1="calc(2 * 100% / 9)" x2="100%" y2="calc(2 * 100% / 9)" />
+						<line x1="0" y1="calc(3 * 100% / 9)" x2="100%" y2="calc(3 * 100% / 9)" />
+						<line x1="0" y1="calc(4 * 100% / 9)" x2="100%" y2="calc(4 * 100% / 9)" />
+						<line x1="0" y1="calc(5 * 100% / 9)" x2="100%" y2="calc(5 * 100% / 9)" />
+						<line x1="0" y1="calc(6 * 100% / 9)" x2="100%" y2="calc(6 * 100% / 9)" />
+						<line x1="0" y1="calc(7 * 100% / 9)" x2="100%" y2="calc(7 * 100% / 9)" />
+						<line x1="0" y1="calc(8 * 100% / 9)" x2="100%" y2="calc(8 * 100% / 9)" />
+					</g>
+				</g>
+				<g id="markers">
+					<defs>
+					</defs>
+				</g>
+			</svg>
+		</div>
+	</body>
+</html>

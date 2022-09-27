@@ -1,0 +1,6 @@
+Academy Studies | CRE 101 | CRE 102 | 1 | 16 | M | - | 1 2 3 4 5 6 7 8 9 10
+Alchemy Lab | ALC 211 | ALC 212 | 3 | 12 | P | ALC 201/202:CO | 1+2 4+5
+Taking Candy From Babies | FUN 221 | FUN 222 | 3 | 12 | P | - | 7+8 5+6
+Hexes and Destructive Enchantment | ENC 221 | @ | 5 | 6 | L | ENC 102, NMS 171:NF | 1 2 7
+Manslaughter and Genocide | FUN 101 | @ | 1 | 1 | P | - | 1+2 7+8
+TV Watching | FUN 111 | FUN 112 | 1 | 320 | P | - | 8 5 7

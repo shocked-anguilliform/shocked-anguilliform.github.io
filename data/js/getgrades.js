@@ -94,10 +94,10 @@ function displaySemesterGrades(semester) {
 		let change = "";
 		if (window['S'+semester+'C'+i].oldGrade != "-") {
 			if (window['S'+semester+'C'+i].oldGrade < window['S'+semester+'C'+i].grade) {
-				change = ' <span class="up">⯅</span> ';
+				change = ' <span class="up">&#11205;</span> ';
 			}
 			if (window['S'+semester+'C'+i].oldGrade > window['S'+semester+'C'+i].grade) {
-				change = ' <span class="down">⯆</span>';
+				change = ' <span class="down">&#11206;</span>';
 			}
 		}
 		names.innerHTML += "\n<span class='className'>" + window['S'+semester+'C'+i].name + ": </span><br>";
