@@ -120,7 +120,7 @@ function selectClass (mode, targetValue, targetID, doubleClass, day, others) {
 			maxLines = 7;
 			break;
 	}
-	if (maxLines > 1) {timeText = splitByWord(timeText, 2).join(" ");}
+	if (maxLines > 2) {timeText = splitByWord(timeText, 2).join(" ");}
 	else {timeText = splitByWord(timeText, 1).join(" ");}
 	if (courseNameSpaces < maxLines) {
 		bodyText = courseName;
@@ -140,6 +140,11 @@ function selectClass (mode, targetValue, targetID, doubleClass, day, others) {
 				field.firstElementChild.children[1].style.fontSize = "0.6rem";
 				field.firstElementChild.children[0].style.fontSize = "0.6rem";
 				field.firstElementChild.children[0].style.top = "calc(100% - 0.5rem)";
+			} else {
+				
+				field.firstElementChild.children[1].style.fontSize = "0.8rem";
+				field.firstElementChild.children[0].style.fontSize = "0.8rem";
+				field.firstElementChild.children[0].style.top = "calc(100% - 0.8em)";
 			}
 			field.firstElementChild.children[2].style.fontSize = "0.8rem";
 		} else {
