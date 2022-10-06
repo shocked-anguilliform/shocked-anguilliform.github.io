@@ -236,12 +236,12 @@ async function getClasses(courses) {
 function initializeDropdown() {
 	let allDropdowns = document.querySelectorAll(".dropdown");
 	allDropdowns.forEach((dropdown) => {
-		dropdown.addEventListener('click', (event) => {
+		dropdown.addEventListener('click', event => {
 			if($(event.target).is("input")) {
 				event.target.parentNode.classList.toggle('down');
 			}
 		});
-		dropdown.firstElementChild.addEventListener('blur', (event) => {
+		dropdown.firstElementChild.addEventListener('blur', event => {
 			event.target.parentNode.classList.remove('down');
 		});
 	});
