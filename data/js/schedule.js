@@ -108,7 +108,7 @@ function selectClass (mode, targetValue, targetID, doubleClass, day, others) {
 	let maxLines = undefined;
 	switch (blockType) {
 		case 0:
-			if (mode == "full") {maxLines = 1;} else {maxLines = 2;}
+			maxLines = (mode == "full" ? 1 : 2);
 			break;
 		case 1:
 			maxLines = 4;
@@ -120,13 +120,8 @@ function selectClass (mode, targetValue, targetID, doubleClass, day, others) {
 			maxLines = 7;
 			break;
 	}
-	if (maxLines > 2) {timeText = splitByWord(timeText, 2).join(" ");}
-	else {timeText = splitByWord(timeText, 1).join(" ");}
-	if (courseNameSpaces < maxLines) {
-		bodyText = courseName;
-	} else {
-		bodyText = splitByWord(courseName, maxLines).join(" ");
-	}
+	timeText = (maxLines > 2 ? splitByWord(timeText, 2).join(" ") : splitByWord(timeText, 1).join(" "));
+	bodyText = (courseNameSpaces < maxLines ? courseName : splitByWord(courseName, maxLines).join(" "));
 	Array.from(group.querySelectorAll(".markerTextField")).forEach((field) => {
 		field.firstElementChild.children[1].innerHTML = timeText;
 		field.firstElementChild.children[2].innerHTML = bodyText;
@@ -163,12 +158,7 @@ function splitByWord(string, splits) { /*Based on code from Göran Andersson on 
 			let before = string.lastIndexOf(' ', middle);
 			let after = string.indexOf(' ', middle + 1);
 
-			if (before == -1 || (after != -1 && middle - before >= after - middle)) {
-				middle = after;
-			} else {
-				middle = before;
-			}
-
+			middle = (before == -1 || (after != -1 && middle - before >= after - middle) ? after : before);
 			output.push(string.substr(0, middle).replace(/ /g, "&nbsp;"));
 			string = string.substr(middle + 1);
 		} else {
@@ -522,32 +512,17 @@ function addByPeriod(mode, course) {
 			var courseID = $.trim(course[1]);
 			break;
 		case "S2":
-			if ($.trim(course[2]) == "@") {
-				var courseID = $.trim(course[1]);
-			} else {
-				var courseID = $.trim(course[2]);
-			}
+			var courseID = ($.trim(course[2]) == "@" ? $.trim(course[1]) : $.trim(course[2]));
 			break;
 	}
 	let periods = $.trim(course[7]).split(" ");
 	periods.forEach((timeslot) => {
 		if (timeslot.includes("+")) {
 			let multislot = timeslot.split("+");
+			let day	= (multislot[0] < 7 ? "A" : "B");
 			if (mode == "linked") {
-				let day = undefined;
-				if (multislot[0] < 7) {
-					day = "A";
-				} else {
-					day = "B";
-				}					
 				addDivFullDouble(course, $.trim(course[1]), $.trim(course[2]), multislot, day);
 			} else {
-				let day = undefined;
-				if (multislot[0] < 7) {
-					day = "A";
-				} else {
-					day = "B";
-				}
 				addDivHalfDouble(course, courseID, multislot, mode, day);
 			}
 		} else if (mode == "linked") {
@@ -560,15 +535,10 @@ function addByPeriod(mode, course) {
 
 function addDivSimple(course, courseID, timeslot, semester) {
 	let others = [];
-	let day = undefined;
+	let day	= (timeslot < 7 ? "A" : "B");
 	let div = document.createElement('div')
 	div.innerHTML =  courseID + " - " + $.trim(course[0]);
 	div.title = div.innerHTML;
-	if (timeslot < 7) {
-		day = "A";
-	} else {
-		day = "B";
-	}
 	div.addEventListener('mousedown', () => {
 		clear(timeslot + semester);
 		selectClass("half", div.innerHTML, timeslot + semester, false, day, others);
@@ -638,7 +608,7 @@ function addDivFull(course, firstID, secondID, timeslot) {
 		let num = j.toString();
 		let inverseNum = (3 - j).toString();
 		let others = [timeslot + "S" + inverseNum];
-		let day = undefined;
+		let day	= (timeslot < 7 ? "A" : "B");
 		let div = document.createElement('div')
 		div.innerHTML =  firstID + "/" + secondID.replace(/\D/g, "") + " - " + $.trim(course[0]);
 		div.title = div.innerHTML;
@@ -647,11 +617,6 @@ function addDivFull(course, firstID, secondID, timeslot) {
 		div.setAttribute("obstructions", "0");
 		if (others.indexOf(timeslot + "S2") == -1) {
 			others.push(timeslot + "S2");
-		}
-		if (timeslot < 7) {
-			day = "A";
-		} else {
-			day = "B";
 		}
 		div.addEventListener('mousedown', () => {
 			if (!div.classList.contains('forbidden')) {
