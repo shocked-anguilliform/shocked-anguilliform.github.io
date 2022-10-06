@@ -123,29 +123,32 @@ function selectClass (mode, targetValue, targetID, doubleClass, day, others) {
 	timeText = (maxLines > 2 ? splitByWord(timeText, 2).join(" ") : splitByWord(timeText, 1).join(" "));
 	bodyText = (courseNameSpaces < maxLines ? courseName : splitByWord(courseName, maxLines).join(" "));
 	Array.from(group.querySelectorAll(".markerTextField")).forEach((field) => {
-		field.firstElementChild.children[1].innerHTML = timeText;
-		field.firstElementChild.children[2].innerHTML = bodyText;
-		field.firstElementChild.children[0].innerHTML = courseID;
-		field.firstElementChild.children[1].title = timeText.replace(/&nbsp;/g, " ");
-		field.firstElementChild.children[2].title = bodyText.replace(/&nbsp;/g, " ");
-		field.firstElementChild.children[0].title = courseID;
-		field.firstElementChild.title = bodyText.replace(/&nbsp;/g, " ");
+		let innerField = field.firstElementChild;
+		let timeField = innerField.children[1];
+		let bodyField = innerField.children[2];
+		let IDField = innerField.children[0];
+		timeField.innerHTML = timeText;
+		bodyField.innerHTML = bodyText;
+		IDField.innerHTML = courseID;
+		timeField.title = timeText.replace(/&nbsp;/g, " ");
+		bodyField.title = bodyText.replace(/&nbsp;/g, " ");
+		IDField.title = courseID;
+		innerField.title = bodyText.replace(/&nbsp;/g, " ");
 		if (mode == "half"/* && (blockType == 0 || blockType == 2)*/) {
 			if (blockType == 0) {
-				field.firstElementChild.children[1].style.fontSize = "0.6rem";
-				field.firstElementChild.children[0].style.fontSize = "0.6rem";
-				field.firstElementChild.children[0].style.top = "calc(100% - 0.5rem)";
+				timeField.style.fontSize = "0.6rem";
+				IDField.style.fontSize = "0.6rem";
+				IDField.style.top = "calc(100% - 0.5rem)";
 			} else {
-				
-				field.firstElementChild.children[1].style.fontSize = "0.8rem";
-				field.firstElementChild.children[0].style.fontSize = "0.8rem";
-				field.firstElementChild.children[0].style.top = "calc(100% - 0.8em)";
+				timeField.style.fontSize = "0.8rem";
+				IDField.style.fontSize = "0.8rem";
+				IDField.style.top = "calc(100% - 0.8em)";
 			}
-			field.firstElementChild.children[2].style.fontSize = "0.8rem";
+			bodyField.style.fontSize = "0.8rem";
 		} else {
-			field.firstElementChild.children[1].style.fontSize = "0.8rem";
-			field.firstElementChild.children[2].style.fontSize = "1rem";
-			field.firstElementChild.children[0].style.top = "calc(100% - 0.8rem)";
+			timeField.style.fontSize = "0.8rem";
+			bodyField.style.fontSize = "1rem";
+			IDField.style.top = "calc(100% - 0.8rem)";
 		}
 	});
 }
