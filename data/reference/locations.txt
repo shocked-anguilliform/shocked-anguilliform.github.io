@@ -25,18 +25,18 @@ Sunspeckled Sanctuary || - | SunspeckledSanctuary
 The Old Orchard || - | OldOrchard
 -The Morytha || - | Morytha
 -Treehouse || - | Treehouse
-Amplegreen Trail || - | AmplegreenTrail
+Amplegreen Trail || A frequently visited trail that runs from the academy northward to Ondor Ruin. It’s a lush trail filled with fruiting plants tended to by students and teachers throughout the years. | AmplegreenTrail
 Broken Branch Bend | BrokenBranchBend.png | - | BrokenBranchBend
 Bygone Bourn || - | BygoneBourn
 Dusty's Trail || - | DustysTrail
 Gleamwater Gyre || - | GleamwaterGyre
-Hopskip Bound || - | HopskipBound
-Nestled Crook | NestledCrook.png | Winding through the overwrapping canopy is a narrow, quiet path. Various plants cradle the crooks edges with curled leaves. A rustling overhead catches your attention. Glancing up, you see a small furry creature leaping into the branches away from you. It stops and looks back at you curiously with large yellow eyes and a piece of fruit held in its mouth. | NestledCrook
-Ondor Steps || - | OndorSteps
+Hopskip Bound || An offshoot of the Magelight Road. The trails are well defined and dotted with vacant wooden stalls. | HopskipBound
+Nestled Crook | NestledCrook.png | A somewhat popular trail often used between the academy and Two Step Road. It’s frequented by those looking to avoid the bustle of the Magelight Road between the school and Hwen... and the occasional lemur. | NestledCrook
+Ondor Steps || A minor road leading off the tangle and into Ondor Ruin. The dirt is compacted with stone slabs into a rudimentary staircase sloped with time. | OndorSteps
 Overlook Path || - | OverlookPath
 Ravelroot Trail | RavelrootTrail.png | - | RavelrootTrail
 Shrine Path || - | ShrinePath
-Sundered Tangle || - | SunderedTangle
+Sundered Tangle || A long, twisting trail bridging together the Magelight Road to Faerie Dragon Lane and every trail in between. The path is commonly traveled by people and wildlife alike. | SunderedTangle
 Unnamed Trail || - | UnnamedTrail
 #Center
 Smirey Docks || - | SmireyDocks
