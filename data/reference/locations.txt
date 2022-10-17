@@ -97,7 +97,7 @@ The Tower || - | TheTower
 #Roads
 Two Step Road || This road has two steps | TwoStepRoad
 Magelight Road || Often called the lifeblood of Westra, the Magelight Road connects Hwen and Westra Academy. The way is often bustling outside class hours. | MagelightRoad
-Radstone Road || An old, cobbled road that runs from the end of Cape Seaspray through a long stretch of Driftwind Beach. The cobblestones are a deep red-orange color with spots of glimmer to them. Traveling beachgoers are a common sight. | RadstoneRoad
+Radstone Road || An old, cobbled road that runs from the end of Cape Seaspray through a long stretch of Driftwind Beach. The cobblestones are a deep red-orange color with speckles of glimmer. Beachgoers are a common sight. | RadstoneRoad
 Farie Dragon Lane || - | FarieDragonLane
 Meadow Road || - | MeadowRoad
 Hwen Road || - | HwenRoad
