@@ -31,12 +31,12 @@ Bygone Bourn || - | BygoneBourn
 Dusty's Trail || - | DustysTrail
 Gleamwater Gyre || - | GleamwaterGyre
 Hopskip Bound || An offshoot of the Magelight Road. The trails are well defined and dotted with vacant wooden stalls. | HopskipBound
-Nestled Crook | NestledCrook.png | A somewhat popular trail often used between the academy and Two Step Road. It’s frequented by those looking to avoid the bustle of the Magelight Road between the school and Hwen... and the occasional lemur. | NestledCrook
+Nestled Crook | NestledCrook.png | A somewhat popular trail often used from the academy to Two Step Road. It’s frequented by those looking to avoid the bustle of the Magelight Road between the school and Hwen... & the occasional lemur. | NestledCrook
 Ondor Steps || A minor road leading off the tangle and into Ondor Ruin. The dirt is compacted with stone slabs into a rudimentary staircase sloped with time. | OndorSteps
 Overlook Path || - | OverlookPath
 Ravelroot Trail | RavelrootTrail.png | - | RavelrootTrail
 Shrine Path || - | ShrinePath
-Sundered Tangle || A long, twisting trail bridging together the Magelight Road to Faerie Dragon Lane and every trail in between. The path is commonly traveled by people and wildlife alike. | SunderedTangle
+Sundered Tangle || A long, twisting trail bridging together the Magelight Road to Faerie Dragon Lane and every trail in between. The path is oft traveled by people and wildlife alike. | SunderedTangle
 Unnamed Trail || - | UnnamedTrail
 #Center
 Smirey Docks || - | SmireyDocks
