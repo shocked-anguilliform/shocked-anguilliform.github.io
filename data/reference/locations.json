@@ -1,0 +1,153 @@
+[
+    {
+        "name": "Unsorted",
+        "entries": [
+            {
+                "name": "Test Location",
+                "id": "testID2",
+                "text": "This is a test entry; it is to be removed @CabinArea[click me] @TwoStepRoad[or me] post link text",
+                "pictures": [
+                    {"picture": "LowoodPath.png", "title": "flowers"},
+                    {"picture": "BrokenBranchBend.png", "title": "trees"},
+                    {"picture": "NestledCrook.png"}
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Academy",
+        "entries": [
+            {
+                "name": "Cabin Area",
+                "id": "CabinArea",
+                "hideText": true
+            }
+        ]
+    },
+    {
+        "name": "Hwen",
+        "entries": []
+    },
+    {
+        "name": "Townside",
+        "entries": [
+            {
+                "name": "Westra Academy",
+                "id": "WestraAcademy",
+                "hideText": true
+            },
+            {
+                "name": "School Docks",
+                "id": "SchoolDocks",
+                "hideText": true
+            }
+        ]
+    }
+]
+
+
+
+#Unsorted
+Test Location | LowoodPath.png[flowers], BrokenBranchBend.png[trees], NestledCrook.png | This is a test entry; it is to be removed @CabinArea[click me] @TwoStepRoad[or me] post link text | testId2
+#Academy
+Cabin Area || - | CabinArea
+#Hwen
+#Townside
+Westra Academy || - | WestraAcademy
+School Docks || - | SchoolDocks
+Hwen || - | Hwen
+Cape Seaspray || - | Capeseaspray
+Crumbled Peninsula || - | CrumbledPeninsula
+Kalclith Horn || - | KalclithHorn
+Stoney Beach || - | StoneyBeach
+Scuttling Shore || - | ScuttlingShore
+Bay Of Many Crabs || - | BayOfManyCrabsText
+Glimmer Tides | GlimmerTides.png | - | GlimmerTides
+Sweetfish Bay || - | SweetFishBayText
+Bramble Bastion || - | BrambleBastion
+-Headmaster's Graveyard || - | HeadmastersGraveyard
+-Hermany Mural || - | HermanyMural
+North Point Overlook || - | NorthPointOverlook
+-Ondor Ruin || - | OndorRun
+-Staff in the Stone || - | StaffintheStone
+Sunspeckled Sanctuary || - | SunspeckledSanctuary
+The Old Orchard || - | OldOrchard
+-The Morytha || - | Morytha
+-Treehouse || - | Treehouse
+Amplegreen Trail || A frequently visited trail that runs from the academy northward to Ondor Ruin. It’s a lush trail filled with fruiting plants tended to by students and teachers throughout the years. | AmplegreenTrail
+Broken Branch Bend | BrokenBranchBend.png | - | BrokenBranchBend
+Bygone Bourn || - | BygoneBourn
+Dusty's Trail || - | DustysTrail
+Gleamwater Gyre || - | GleamwaterGyre
+Hopskip Bound || An offshoot of the Magelight Road. The trails are well defined and dotted with vacant wooden stalls. | HopskipBound
+Nestled Crook | NestledCrook.png | A somewhat popular trail often used from the academy to Two Step Road. It’s frequented by those looking to avoid the bustle of the Magelight Road between the school and Hwen... & the occasional lemur. | NestledCrook
+Ondor Steps || A minor road leading off the tangle and into Ondor Ruin. The dirt is compacted with stone slabs into a rudimentary staircase sloped with time. | OndorSteps
+Overlook Path || - | OverlookPath
+Ravelroot Trail | RavelrootTrail.png | - | RavelrootTrail
+Shrine Path || - | ShrinePath
+Sundered Tangle || A long, twisting trail bridging together the Magelight Road to Faerie Dragon Lane and every trail in between. The path is oft traveled by people and wildlife alike. | SunderedTangle
+Unnamed Trail || - | UnnamedTrail
+#Center
+Smirey Docks || - | SmireyDocks
+Bowing Bluffs || - | BowingBluffs
+Driftwind Beach || - | DriftwindBeach
+Scrawlmark Channel || - | Scrawlmark Channel
+-Fife Fields || - | FifeFields
+-Lachrymose Grounds || - | LachrymoseGrounds
+Lost Meadow || - | LostMeadow
+Monster Rock || - | MonsterRock
+Prancing Prairie || - | PrancingPrairie
+-Spice House || - | SpiceHouse
+Tower Overlook || - | TowerOverlook
+Copperquill Run | CopperquillRun.png | - | CopperquillRun
+Mistral Pass | MistralPass.png | - | MistralPass
+Prince's Peril || - | PrincesPeril
+Seasculpt Ascent || - | SeasculptAscent
+Talontrot Trail | TalontrotTrail.png | - | TalontrotTrail
+The Overgrove | TheOvergrove.png | - | TheOvergrove
+Wandering Way || - | WanderingWay
+#Mawside
+Llaffan || - | Llaffan
+Crag Maw || - | CragMaw
+Point Rock || - | PointRockText
+West Point || - | WestPoint
+Brine's Bounty || - | BrinesBounty
+Jagged Jaw Coast  || - | JaggedJawCoast
+Seaweed Cove || - | SeaweedCoveText
+Wameday Bay || - | WamedayBayText
+West Point || - | WestPointText
+-Haunted House || - | HauntedHouse
+Long Meadow || - | LongMeadow
+-Mysterious Shack || - | MysteriousShack
+-Shrouded Statue || - | ShroudedStatue
+-Tanglerock Outpost || - | TanglerockOutpost
+-Village Ruins || - | VillageRuins
+-Volcanic Caverns || - | VolcanicCaverns
+-Willowalk Pier || - | WillowalkPier
+Ameryns Cradle || - | AmerynsCradle
+Bay Walk | BayWalk.png | - | BayWalk
+Forsaken Steps || - | ForsakenSteps
+Galigos Trail | GaligosTrail.png | - | GaligosTrail
+Hag's Stroll || - | HagsStroll
+Lowood Path | LowoodPath.png | - | UnnamedTrail2
+Marlin Way | MarlinWay.png | - | MarlinWay
+Outpost Trail | OutpostTrail.png | - | OutpostTrail
+Shaded Snarl | ShadedSnarl.png | - | ShadedSnarl
+Stoneskip Jaunt || - | StoneskipJaunt
+Underbite Path | UnderbitePath.png | - | UnderbitePath
+Whistler's Crossing | WhistlersCrossing.png | - | WhistlersCrossing
+#Islands
+High Tide Island || - | HighTdeIslandText
+Lost Lily Island || - | LostLilyIslandText
+Skyview Skerry || - | SkyviewSkerryText
+Smirey Isle || - | SmireyIsleText
+-Grey Mirror || - | GreyMirror
+The Tower || - | TheTower
+#Roads
+Two Step Road || This road has two steps | TwoStepRoad
+Magelight Road || Often called the lifeblood of Westra, the Magelight Road connects Hwen and Westra Academy. The way is often bustling outside class hours. | MagelightRoad
+Radstone Road || An old, cobbled road that runs from the end of Cape Seaspray through a long stretch of Driftwind Beach. The cobblestones are a deep red-orange color with speckles of glimmer. Beachgoers are a common sight. | RadstoneRoad
+Farie Dragon Lane || - | FarieDragonLane
+Meadow Road || - | MeadowRoad
+Hwen Road || - | HwenRoad
+Dock Road || The short sloping road down to the academy’s private docks. Most of the passers-by are equipped for a day on the beach off the branching paths ahead. | DockRoad
