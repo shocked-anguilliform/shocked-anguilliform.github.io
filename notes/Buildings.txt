@@ -1,25 +1,53 @@
 Library (1/1+) B1
+From the outside, the school library is an imposing stone building with a beautiful sea green roof. The inside is finished with smooth plaster walls that transition into decorative leaves flowers and vine as they approach the cealing. Those walls that don't sport large windows are covered in tapestries and paintings depicting many scenes and people you are entirely unfamiliar with, and a few that you recognize from popular tales. The main feature of course is the rows upon rows of fine wood shelves, packed full of not only books, but scrolls, loose notes, and diagrams. On the far side of the library is a circular room with an outer wall that's almost entirely window. The room has a carpeted floor that is littered with cushions of varying shapes and sizes, ranging from small head pillow to the size of a small horse, as well as several reading students. To the right of the entrance is a more conventional studying area with desks and chairs that looks out over the campus commons. The back door leads out to an older circular building in the same style as the main structure and a small pie slice of a patio with a crust made of bench.
+	While noticibly older and smaller, the rear buidling of the library contains the vast bulk of the library's collection. The center of the single room is dedicated to a grand, if ancient looking, spiral staircase that descends down to a system of tunnels containg a wide variety of objects. Joining the books, scrolls, papers, and other somewhat expected articles is an eclictic array of odds, ends, and various inscrutable objects. The only limit to what you can find is how much time you're willing to spend searching.
+ 
 Commons (1/1+) B2
+In the center of the campus lies the school commons, a favorite place to relax, talk, eat, study, and a dozen other things. Many of the schools buildings directly face the comons, and the path arround it's border serves as the campus's transportatin hub. Most of the commons is soft grass, sloping gently down to a central pond wringed by a small footpath. Clusters of trees and bushes provide shade for lounging students, and though the largest are barely more than a hundred feet across, it's common to joke about people getting lost in them
+
 Eateries (1/1+) B3
+Dozens of long tables lounge on brick pavement underneath several colorful sail shades. The wooden posts that support the shades dot the pavement, and many sport flyers advertising clubs and all manner of other things. The schools kitchen is the only permanent building, but several food carts line the perimeter with a wide array of tasty offerings.
+
 Classrooms (6/3+) B4 3L/3S
 1B4L: An architectually artistic building made framed with several soaring wooden arches. The first thing you'd notice about the building is the freshness of the wood and the smell of sawdust and tung oil as you walk inside; it's readily apparent that this building was built rather recently. Next you might notice that the buidling is nearly entirely lacking in sharp corners, or the colorful light that trickles down the central staircase. The building consists of two levels. The first level consists of a round central room, ringed by classrooms, and at the very center, a spiral staircase winding it's way up a massive wooden pole that at one punt must have been the trunk of a very large tree. The classrooms are all lit by massive curved windows that make up nearly all of the outer wall. The central room has large windows too, located high enough up on the domed ceiling to avoid the classrooms, but not so far in as to interfere with the smaller upper floor. The uper floor is a single round room, furnished with mats, cusions, and carved wooden chairs. The colorful glass windows that ring the upper floor cast beautiful shadows that slowly crawl across the floor as the day goes by.
+
 Stores (1/1+) B5
+
 Stage, theatre/dance (1/1) B6
+
 Stage, music (1/1) B7
 The music stage is located in a large clearing, far enough away from campus for the noise to not be an issue. The rest of the clearing is covered in a thick layer of grass that has miraculously survived generations of students' picnic blankets. A closer look at the perimiter would reveal the remenants of countless prunings and trimmings, the evidance of a decades long fight with the encroaching plant life.
+
 Gardens (1/1) B8
+
 Office (1/1+) B9
+
 Storage (3/1+) B10
-Stables, horses (1/1) B11
+
+Stables, horses (1/1) B11 (currently houses 12 horses)
+The main stable building is a simple but sturdy wooden structure containing two wings of stalls and an elongated tack room. A couple stalls in the east wing have been converted into hay storage. The stalls face southeast and southwest and are protected by a large overhang supported by pillarsin the center of the structure. The back walls of the stable are windowless to keep out rain, but there is a small gap just below the roof that allows for airflow. The main yard contains troughs, tie posts, and various other horse related equipment, and also features a row of straight stalls and a secondary storage shed.
+
 Carriage house (1/1) B12
+A red brick building with a peaked wooden roof that houses the school's carraiges. A couple dormers allow a few beams of dusty light into the eternally dim single room.
+
 Stables, griffins/pegasi (1/1) B14
+
 Lab, alchemy (1/1) B15
+
 Lab, spellcraft (1/1) B16
+
 Workshop (1/1) B17
+
 Paintball (1/1) B18
+
 Arena (1/1) B19
+
 Shooting Range (1/1) B20
+
 Forge (1/1) B21
-Faculty housing (1/1+) B22
+
+Faculty housing (10/1+) B22
+
 Glassblowing (1/1) B23
+
 Study Room (1/1+) B24

@@ -76,6 +76,16 @@ body {
 }
 
 @font-face {
+   font-family: Homemade Apple;
+   src: url(/data/fonts/HomemadeApple.ttf);
+}
+
+@font-face {
+   font-family: Dawning of a New Day;
+   src: url(/data/fonts/DawningofaNewDay.ttf);
+}
+
+@font-face {
    font-family: Zector;
    src: url(/data/fonts/Zector.ttf);
 }
@@ -289,6 +299,6 @@ body::-webkit-scrollbar-button:horizontal:increment {
 		scrollbar-width: thin;
 	}
 	*:hover {
-		scrollbar-color: #aaa #555)
+		scrollbar-color: #aaa #555
 	}
 }

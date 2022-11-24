@@ -1,0 +1,76 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-image: url('/data/images/WoodBoards.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% center;
+    background-attachment: fixed;
+
+
+}
+
+#bookBase {
+    box-shadow: inset 0px 0px 5px 5px #781a1a;
+    width:66rem;
+    height:38.5rem;
+    background-color: #a52a2a;
+    background: linear-gradient(to right, #a52a2a 45%, #781a1a 46%, #781a1a 54%, #a52a2a 55%);
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.35rem;
+}
+
+.navArrow {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    top: 52%;
+    transform: translateY(-50%);
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.navArrow:hover {
+    color:lightblue;
+}
+
+.navArrow:active {
+    color: blue;
+}
+
+#navArrowLeft {
+    left: 10%;
+}
+
+#navArrowRight {
+    right: 10%;
+}
+
+.page {
+    width: 31.7rem;
+    height: 35.9rem;
+    top: 1.3rem;
+    position: absolute;
+    font-family: "Homemade Apple";
+    line-height: 1.7rem;
+}
+
+#page1 {
+    right: 50%;
+    background: linear-gradient(to right, BlanchedAlmond 92.5%, #dfceb2 97%, #97886f 100%);
+}
+
+#page2 {
+    left: 50%;
+    background: linear-gradient(to left, BlanchedAlmond 92.5%, #dfceb2 97%, #97886f 100%);
+}
+
+.pageContent {
+    padding-block: 3rem;
+    padding-inline: 4rem;
+}
