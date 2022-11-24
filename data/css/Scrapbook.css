@@ -14,7 +14,7 @@ html, body {
 #bookBase {
     box-shadow: inset 0px 0px 5px 5px #781a1a;
     width:66rem;
-    height:38.5rem;
+    height:42rem;
     background-color: #a52a2a;
     background: linear-gradient(to right, #a52a2a 45%, #781a1a 46%, #781a1a 54%, #a52a2a 55%);
     position: fixed;
@@ -53,7 +53,7 @@ html, body {
 
 .page {
     width: 31.7rem;
-    height: 35.9rem;
+    height: 39.4rem;
     top: 1.3rem;
     position: absolute;
     font-family: "Homemade Apple";
