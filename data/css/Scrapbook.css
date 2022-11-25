@@ -51,23 +51,43 @@ html, body {
     right: 10%;
 }
 
-.page {
-    width: 31.7rem;
+#pages {
+    width: 63.4rem;
     height: 39.4rem;
-    top: 1.3rem;
+    position: relative;
+    margin: 1.3rem;
+}
+
+.page {
+    width: 50%;
+    height: 100%;
     position: absolute;
     font-family: "Homemade Apple";
     line-height: 1.7rem;
 }
 
-#page1 {
+#leftStaticPage {
     right: 50%;
     background: linear-gradient(to right, BlanchedAlmond 92.5%, #dfceb2 97%, #97886f 100%);
 }
 
-#page2 {
+#rightStaticPage {
     left: 50%;
     background: linear-gradient(to left, BlanchedAlmond 92.5%, #dfceb2 97%, #97886f 100%);
+}
+
+#leftFlippedPage {
+    right: 25%;
+    background: linear-gradient(to right, rgb(205, 237, 255) 92.5%, #b2d5df 97%, #6f8e97 100%);
+    scale: 0 1;
+    transform: translateX(-50%);
+}
+
+#rightFlippedPage {
+    left: 25%;
+    background: linear-gradient(to left, rgb(205, 237, 255) 92.5%, #b2d5df 97%, #6f8e97 100%);
+    scale: 1 1;
+    transform: translateX(50%);
 }
 
 .pageContent {

@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Schedule Maker | Magic School</title>
+		<title>Old Scrapbook | Magic School</title>
 		<link rel="stylesheet" href="/data/css/General.css">
 		<link rel="stylesheet" href="/data/css/Scrapbook.css">
 		<script src="/data/js/schedule.js"></script>
 		<script src="/data/js/jquery-3.6.0.min.js"></script>
+		<script>
+			let leftPageFlipTimeout = null
+			let rightPageFlipTimeout = null
+			function flipLeft(){
+				let rightPage = document.querySelector("#rightFlippedPage")
+				let leftPage = document.querySelector("#leftFlippedPage")
+				rightPage.style.scale = "0 1"
+				leftPage.style.transition = "0.5s ease-out"
+				rightPage.style.transition = "0.5s ease-in"
+				if(rightPageFlipTimeout){
+    				clearTimeout(rightPageFlipTimeout);
+  				}
+				leftPageFlipTimeout = setTimeout(() => {
+					rightPage.style.scale = "0 1"
+					leftPage.style.scale = "1 1"
+				}, 500)
+				console.log(rightPage)
+			}
+			function flipRight(){
+				let rightPage = document.querySelector("#rightFlippedPage")
+				let leftPage = document.querySelector("#leftFlippedPage")
+				leftPage.style.scale = "0 1"
+				leftPage.style.transition = "0.5s ease-in"
+				rightPage.style.transition = "0.5s ease-out"
+				if(leftPageFlipTimeout){
+    				clearTimeout(leftPageFlipTimeout);
+  				}
+				rightPageFlipTimeout = setTimeout(() => {	
+					leftPage.style.scale = "0 1"
+					rightPage.style.scale = "1 1"
+				}, 500)
+				console.log(rightPage)
+			}
+		</script>
 	</head>
 	<body>
 		<div class="headSpace">
@@ -15,21 +49,34 @@
 			</div>
 		</div>
 		<div id="bookBase">
-			<div class="page" id="page1">
-				<div class="pageContent">
-					Sample page content in which I pretend to write something of substance, but really mean only to fill the page regardless of the relevance of the content. The biggest con of lettuce, in my humble opinion, is the sheer variance when compared to other salad greens. This makes the mastery of lettuce much more difficult in scope and devalues the sacred lettuce arts in terms of salad-making by comparison to the more easily mastered leaves, which are nearly as good. Nevertheless, the lettuce masters should be greatly revered, for there is a great variety of lettuce, and the perfect lettuce in a salad will surely outshine any other green.
+			<div id="pages">
+				<div class="page" id="leftStaticPage">
+					<div class="pageContent">
+						Sample page content in which I pretend to write something of substance, but really mean only to fill the page regardless of the relevance of the content. The biggest con of lettuce, in my humble opinion, is the sheer variance when compared to other salad greens. This makes the mastery of lettuce much more difficult in scope and devalues the sacred lettuce arts in terms of salad-making by comparison to the more easily mastered leaves, which are nearly as good. Nevertheless, the lettuce masters should be greatly revered, for there is a great variety of lettuce, and the perfect lettuce in a salad will surely outshine any other green.
+					</div>
 				</div>
-			</div>
-			<div class="page" id="page2">
-				<div class="pageContent">
-					There are forty lemons in the average lemon bushel. This is a standard that was established in 1938, following a series of scandals where lemon growers would shortchange distributors by selling lemon bushels containing only twenty or thirty lemons, far below the generally accepted amount. However, this was technically legal due to the lemon bushel not being a standardized measurement. The standardization of the lemon bushel reduced lemon based scandals by six percent.<br>
-					<img src="/data/images/LemonSketch.png" style="width:8rem;left:12rem;position: absolute;">
+				<div class="page" id="rightStaticPage">
+					<div class="pageContent">
+						There are forty lemons in the average lemon bushel. This is a standard that was established in 1938, following a series of scandals where lemon growers would shortchange distributors by selling lemon bushels containing only twenty or thirty lemons, far below the generally accepted amount. However, this was technically legal due to the lemon bushel not being a standardized measurement. The standardization of the lemon bushel reduced lemon based scandals by six percent.<br>
+						<img src="/data/images/LemonSketch.png" style="width:8rem;left:12rem;position: absolute;">
+					</div>
+				</div>
+				<div class="page" id="leftFlippedPage" onclick="flipRight()">
+					<div class="pageContent">
+						Sample page content in which I pretend to write something of substance, but really mean only to fill the page regardless of the relevance of the content. The biggest con of lettuce, in my humble opinion, is the sheer variance when compared to other salad greens. This makes the mastery of lettuce much more difficult in scope and devalues the sacred lettuce arts in terms of salad-making by comparison to the more easily mastered leaves, which are nearly as good. Nevertheless, the lettuce masters should be greatly revered, for there is a great variety of lettuce, and the perfect lettuce in a salad will surely outshine any other green.
+					</div>
+				</div>
+				<div class="page" id="rightFlippedPage" onclick="flipLeft()">
+					<div class="pageContent">
+						There are forty lemons in the average lemon bushel. This is a standard that was established in 1938, following a series of scandals where lemon growers would shortchange distributors by selling lemon bushels containing only twenty or thirty lemons, far below the generally accepted amount. However, this was technically legal due to the lemon bushel not being a standardized measurement. The standardization of the lemon bushel reduced lemon based scandals by six percent.<br>
+						<img src="/data/images/LemonSketch.png" style="width:8rem;left:12rem;position: absolute;">
+					</div>
 				</div>
 			</div>
 		</div>
 		<div id="navArrows">
-			<div class="navArrow" id="navArrowLeft"><=</div>
-			<div class="navArrow" id="navArrowRight">=></div>
+			<div class="navArrow" id="navArrowLeft" onclick="flipLeft()"><=</div>
+			<div class="navArrow" id="navArrowRight" onclick="flipRight()">=></div>
 		</div>
 	</body>
 </html>
