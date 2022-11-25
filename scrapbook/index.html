@@ -50,8 +50,8 @@
 			}
 			function spin2 (x) {
 				test2.style.transform = `rotateY(${x}deg) translateX(50%)`
-				if (x <= 179.8) {
-					setTimeout(() => {spin2 (359.8)}, 250)
+				if (x <= 180) {
+					setTimeout(() => {spin2 (360)}, 250)
 				} else {
 					setTimeout(() => {spin2 (x - 1)}, 10)
 				}
@@ -96,11 +96,11 @@
 			<div class="navArrow" id="navArrowRight" onclick="flipLeft()">=></div>
 		</div>
 		<div id="testBox">
-			<div id="test">
+			<div id="test2">
 				<div style="margin:0.1in;">Test text is text used for a test</div>
 				<img src="/data/images/LemonSketch.png" style="width:1.6in;position:absolute;left:0.2in;top:0.3in;">
 			</div>
-			<div id="test2">
+			<div id="test">
 				<div style="margin:0.1in;">Text that is highly different to the first set of text. In fact, it is so different, that in 1947 a set of delegations from 180 countries came together, and 165 said it was the most different thing they had ever seen</div>
 			</div>
 		</div>
@@ -108,7 +108,7 @@
 			let test = document.getElementById("test")
 			let test2 = document.getElementById("test2")
 			spin(180)
-			spin2(359.8)
+			spin2(360)
 		</script>
 	</body>
 </html>

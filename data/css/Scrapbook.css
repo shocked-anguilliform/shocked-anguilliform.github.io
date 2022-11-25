@@ -100,24 +100,27 @@ html, body {
     position: absolute; 
     height: 2.8in;
     width: 2in;
-    background-color: goldenrod;
+    background-color: #daa520;
     left: 8rem;
     top: 2.6in;
+    backface-visibility: hidden;
 }
 
 #test2 {
     position: absolute; 
     height: 2.8in;
     width: 2in;
-    background-color: goldenrod;
+    background-color: #daa520;
     left: 8rem;
     top: 2.6in;
+    backface-visibility: hidden;
 }
 
 #testBox {
-    perspective: 16in;
+    perspective: 12in;
     position: absolute;
     width: 10in;
     perspective-origin: 2in 4in;
     transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
