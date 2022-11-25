@@ -1,0 +1,103 @@
+
+:root {  
+  --duration: 500ms;   
+  --ease-in: cubic-bezier(0.85, 0, 1, 1);  
+  --ease-out: cubic-bezier(0, 0, 0.3, 1);  
+  --ease-in-out: ease-in-out;  
+  --image-current: url(https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg);
+  --image-next: url( https://cdn.pixabay.com/photo/2019/07/14/16/29/pen-4337524_960_720.jpg);  
+ }  
+ html, body, section {  
+  height: 100%;  
+background-image: linear-gradient(to right top, #336ef2, #325ace, #2d47ac, #26358b, #1c246c);
+ }  
+ @keyframes zoom-1 {  
+  0%, 100% { transform: scale(0.8); }  
+  50% { transform: scale(0.75); box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.1); }  
+ }  
+ @keyframes zoom-2 {  
+  0%, 100% { transform: scale(0.8); }  
+  50% { transform: scale(0.75); box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.1); }  
+ }  
+ section {  
+  animation: zoom-1 calc(var(--duration) * 2) var(--ease-in-out);  
+  border-radius: 1vh;  
+  box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.2);  
+  display: flex;  
+  perspective: 2000px;  
+  position: relative;  
+  transform: scale(0.8);  
+  width: 80%;  
+   margin-left:200px;
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+ }  
+ /* duplicating the animation to get it to fire again */  
+ section.flip {  
+  animation: zoom-2 calc(var(--duration) * 2) var(--ease-in-out);  
+ }  
+ .left,  
+ .right {  
+  backface-visibility: hidden;  
+  background-attachment: fixed;  
+  background-position: center center;  
+  background-size: cover;  
+  height: 100%;  
+  position: absolute;  
+  top: 0;  
+  transition-property: transform;  
+  transition-duration: var(--duration);  
+  width: 50%;  
+ }  
+ .current {  
+  background-image: var(--image-current);  
+ }  
+ .next {  
+  background-image: var(--image-next);  
+ }  
+ .left {  
+  border-radius: 1vh 0 0 1vh;  
+  left: 0;  
+  transform-origin: 100% 50%;  
+ }  
+ .right {  
+  border-radius: 0 1vh 1vh 0;  
+  right: 0;  
+  transform-origin: 0% 50%;  
+ }  
+ .next.left {  
+  transform: rotateY(90deg);  
+  transition-delay: 0ms;  
+  transition-timing-function: var(--ease-in);  
+  z-index: 9;  
+ }  
+ .current.right {  
+  transform: rotateY(0deg);  
+  transition-delay: var(--duration);  
+  transition-timing-function: var(--ease-out);  
+ }  
+ .flip .current.right {  
+  transform: rotateY(-90deg);  
+  transition-delay: 0ms;  
+  transition-timing-function: var(--ease-in);  
+ }  
+ .flip .next.left {  
+  transform: rotateY(0deg);  
+  transition-delay: var(--duration);  
+  transition-timing-function: var(--ease-out);  
+ }  
+ h1 {  
+  bottom: 3vh;  
+  font-size: 2vh;  
+  left: 0;  
+  position: absolute;  
+  text-align: center;  
+  transition: opacity 500ms var(--ease-out);  
+  width: 100%;  
+ }  
+
+ #test {
+  position: absolute; 
+  height: 2in;
+  width: 2in;
+  background-color: goldenrod;
+ }
