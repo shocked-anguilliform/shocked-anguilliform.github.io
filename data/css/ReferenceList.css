@@ -111,7 +111,7 @@
 
 
 .foot {
-	top: 0;nt
+	top: 0;
 }
 
 .tooltip img {
@@ -194,7 +194,6 @@
 }
 
 #variableImage {
-	display: inline-block;
     width: min(20.3rem,  25vw + 0.3rem);
     float: left;
     white-space: normal;
@@ -231,7 +230,6 @@
 	/*width: calc(100% - 2.1rem - 16px - max(min(20.3rem,  25vw + 0.3rem), 7.3rem) - calc(max(0.75rem, 2vw) - 	1rem));*/
 	width: calc(100% - 1.1rem - 16px - clamp(7.3rem,  25vw + 0.3rem, 20.3rem) - max(0.75rem, 2vw));
 	display: inline-block;
-	float: left;
 	margin-right: 0;
 	margin-bottom: 1rem;
 	margin-top: 1.5rem;

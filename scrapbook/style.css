@@ -94,10 +94,3 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   transition: opacity 500ms var(--ease-out);  
   width: 100%;  
  }  
-
- #test {
-  position: absolute; 
-  height: 2in;
-  width: 2in;
-  background-color: goldenrod;
- }
