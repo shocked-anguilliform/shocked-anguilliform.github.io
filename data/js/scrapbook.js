@@ -50,10 +50,34 @@ function turnPage(direction) {
     leftContent.classList.add("pageContent")
     leftNumber.classList.add("pageNumber")
     rightContent.classList.add("pageContent")
-    leftContent.innerHTML = "text"
-    rightContent.innerHTML = "text"
-    pages.appendChild(leftFace)
-    pages.appendChild(rightFace)
+    rightNumber.classList.add("pageNumber")
+    if (direction == "fromRight") {
+        leftContent.innerHTML = getPage(++currentPage).content
+        leftNumber.innerHTML = currentPage
+        rightContent.innerHTML = getPage(++currentPage).content
+        rightNumber.innerHTML = currentPage
+        pagesDiv.querySelector("#rightStaticPage .pageContent").innerHTML = getPage(currentPage + 1).content
+        pagesDiv.querySelector("#rightStaticPage .pageNumber").innerHTML = getPage(currentPage + 1).number
+        let oldPage = currentPage
+        setTimeout(() => {
+            pagesDiv.querySelector("#leftStaticPage .pageContent").innerHTML = getPage(oldPage).content
+            pagesDiv.querySelector("#leftStaticPage .pageNumber").innerHTML = getPage(oldPage).number
+        }, flipDuration)
+    } else {
+        rightNumber.innerHTML = currentPage
+        rightContent.innerHTML = getPage(currentPage--).content
+        leftNumber.innerHTML = currentPage
+        leftContent.innerHTML = getPage(currentPage--).content
+        pagesDiv.querySelector("#leftStaticPage .pageContent").innerHTML = getPage(currentPage).content
+        pagesDiv.querySelector("#leftStaticPage .pageNumber").innerHTML = getPage(currentPage).number
+        let oldPage = currentPage + 1
+        setTimeout(() => {
+            pagesDiv.querySelector("#rightStaticPage .pageContent").innerHTML = getPage(oldPage).content
+            pagesDiv.querySelector("#rightStaticPage .pageNumber").innerHTML = getPage(oldPage).number
+        }, flipDuration)
+    }
+    pagesDiv.appendChild(leftFace)
+    pagesDiv.appendChild(rightFace)
     setTimeout(() => {
         leftFace.parentElement.removeChild(leftFace)
         rightFace.parentElement.removeChild(rightFace)
