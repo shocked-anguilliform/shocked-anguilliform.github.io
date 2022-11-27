@@ -1,14 +1,14 @@
 {
-   "contentPages": [1, 2, 3, 4],
-   "maxPage": 100,
+   "contentPages": [1, 2, 3, 4, 5, 6, 50],
+   "maxPage": 50,
    "pages": [
       {
          "number": 1,
-         "content": "<div style=\"margin:0.1in;\">Test text is text used for a test</div><img src=\"/data/images/LemonSketch.png\" style=\"width:1.6in;position:absolute;left:0.2in;top:0.3in;\">"
+         "content": "Sample page content in which I pretend to write something of substance, but really mean only to fill the page regardless of the relevance of the content. The biggest con of lettuce, in my humble opinion, is the sheer variance when compared to other salad greens. This makes the mastery of lettuce much more difficult in scope and devalues the sacred lettuce arts in terms of salad-making by comparison to the more easily mastered leaves, which are nearly as good. Nevertheless, the lettuce masters should be greatly revered, for there is a great variety of lettuce, and the perfect lettuce in a salad will surely outshine any other green."
       },
       {
          "number": 2,
-         "content": "<div style=\"margin:0.1in;\">Text that is highly different to the first set of text. In fact, it is so different, that in 1947 a set of delegations from 180 countries came together, and 165 said it was the most different thing they had ever seen</div>"
+         "content": "There are forty lemons in the average lemon bushel. This is a standard that was established in 1938, following a series of scandals where lemon growers would shortchange distributors by selling lemon bushels containing only twenty or thirty lemons, far below the generally accepted amount. However, this was technically legal due to the lemon bushel not being a standardized measurement. The standardization of the lemon bushel reduced lemon based scandals by six percent.<br><img src=\"/data/images/LemonSketch.png\" style=\"width:8rem;left:12rem;position: absolute;\">"
       },
       {
          "number": 3,
@@ -17,6 +17,18 @@
       {
          "number": 4,
          "content": "<h1 style=\"margin:0.1in;\">This is page 4!</h1>"
+      },
+      {
+         "number": 5,
+         "content": "<div style=\"margin:0.1in;\">Text that is highly different to the first set of text. In fact, it is so different, that in 1947 a set of delegations from 180 countries came together, and 165 said it was the most different thing they had ever seen</div>"
+      },
+      {
+         "number": 6,
+         "content": "<div style=\"margin:0.1in;\">Test text is text used for a test</div><img src=\"/data/images/LemonSketch.png\" style=\"width:1.6in;position:absolute;left:1.2in;top:1.3in;\">"
+      },
+      {
+         "number": 50,
+         "content": "<h1>The End.</h1>"
       }
    ]
 }

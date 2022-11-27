@@ -1,76 +1,54 @@
-// let leftPageFlipTimeout = null
-// let rightPageFlipTimeout = null
-// function flipLeft(){
-//     let rightPage = document.querySelector("#rightFlippedPage")
-//     let leftPage = document.querySelector("#leftFlippedPage")
-//     rightPage.style.transform = "rotateY(90deg)"
-//     leftPage.style.transition = "0.5s ease-out"
-//     rightPage.style.transition = "0.5s ease-in"
-//     if(rightPageFlipTimeout){
-//         clearTimeout(rightPageFlipTimeout);
-//     }
-//     leftPageFlipTimeout = setTimeout(() => {
-//         rightPage.style.transform = "rotateY(90deg)"
-//         leftPage.style.transform = "rotateY(180deg)"
-//     }, 500)
-//     console.log(rightPage)
-// }
-// function flipRight(){
-//     let rightPage = document.querySelector("#rightFlippedPage")
-//     let leftPage = document.querySelector("#leftFlippedPage")
-//     leftPage.style.transform = "rotateY(90deg)"
-//     leftPage.style.transition = "0.5s ease-in"
-//     rightPage.style.transition = "0.5s ease-out"
-//     if(leftPageFlipTimeout){
-//         clearTimeout(leftPageFlipTimeout);
-//     }
-//     rightPageFlipTimeout = setTimeout(() => {	
-//         leftPage.style.transform = "rotateY(90deg)"
-//         rightPage.style.transform = "rotateY(180deg)"
-//     }, 500)
-//     console.log(rightPage)
-// }
-// console.log(test)
-function spin (x) {
-    test.style.transform = `rotateY(${x}deg) translateX(-50%)`
-    if (x <= 0) {
-        setTimeout(() => {spin (180)}, 250)
+const pagesDiv = document.getElementById("pages");
+let book
+let currentPage
+const flipDuration = 1400;
+
+(async () => {
+    let JSONfile = await fetch("/data/json/bookpages.json")
+    let JSONtext = await JSONfile.text()
+    book = JSON.parse(JSONtext)
+    populatePages()
+})()
+
+function getPage(pageNumber) {
+    if (book.contentPages.includes(pageNumber)) {
+        page = book.pages.find(page => page.number === pageNumber)
     } else {
-        setTimeout(() => {spin (x - 1)}, 10)
+        page = {
+            number: pageNumber,
+            content: ""
+        }
     }
-}
-function spin2 (x) {
-    test2.style.transform = `rotateY(${x}deg) translateX(50%)`
-    if (x <= 180) {
-        setTimeout(() => {spin2 (360)}, 250)
-    } else {
-        setTimeout(() => {spin2 (x - 1)}, 10)
-    }
+    return page
 }
 
-let test = document.getElementById("test")
-let test2 = document.getElementById("test2")
-spin(180)
-spin2(360)
-
-const pages = document.getElementById("pages")
+function populatePages() {
+    let n = book.contentPages[0]
+    currentPage = n-(~n&1) //number of first page with content, or odd page immediately preceding
+    let firstPage
+    let secondPage
+    firstPage = getPage(currentPage)
+    secondPage = getPage(currentPage + 1)
+    pagesDiv.querySelector("#leftStaticPage .pageContent").innerHTML = firstPage.content
+    pagesDiv.querySelector("#leftStaticPage .pageNumber").innerHTML = firstPage.number
+    pagesDiv.querySelector("#rightStaticPage .pageContent").innerHTML = secondPage.content
+    pagesDiv.querySelector("#rightStaticPage .pageNumber").innerHTML = secondPage.number
+    console.log(firstPage)
+    console.log(secondPage)
+}
 
 function turnPage(direction) {
-    switch (direction) {
-        case "toLeft":
-            direction = "fromRight"
-            break
-        case "toRight":
-            direction = "fromLeft"
-            break
-    }
+    if ((currentPage < 3 && direction == "fromLeft") || (currentPage > book.maxPage - 2 && direction == "fromRight")) return
     let leftFace = document.createElement("div")
     let rightFace = document.createElement("div")
     leftFace.classList.add("page", "dynamicPage", "leftFace", direction)
     rightFace.classList.add("page", "dynamicPage", "rightFace", direction)
     let leftContent = leftFace.appendChild(document.createElement("div"))
+    let leftNumber = leftFace.appendChild(document.createElement("div"))
     let rightContent = rightFace.appendChild(document.createElement("div"))
+    let rightNumber = rightFace.appendChild(document.createElement("div"))
     leftContent.classList.add("pageContent")
+    leftNumber.classList.add("pageNumber")
     rightContent.classList.add("pageContent")
     leftContent.innerHTML = "text"
     rightContent.innerHTML = "text"
@@ -79,15 +57,5 @@ function turnPage(direction) {
     setTimeout(() => {
         leftFace.parentElement.removeChild(leftFace)
         rightFace.parentElement.removeChild(rightFace)
-    }, 1400)
-}
-
-function turnBackward() {
-    let div = document.createElement("div")
-    div.classList.add("page", "dynamicPage")
-    div.style.transform = "translateX(-50%)"
-    let content = div.appendChild(document.createElement("div"))
-    content.classList.add("pageContent")
-    content.innerHTML = "text"
-    pages.appendChild(div)
+    }, flipDuration)
 }

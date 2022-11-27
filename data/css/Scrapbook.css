@@ -1,6 +1,36 @@
 :root { 
     --pageWidth: 31.7rem;
     --pageHeight: 39.4rem;
+    --flipDuration: 1.4s;
+    --coverShade0: #a52a2a;
+    --coverShade1: #781a1a;
+    --pageShade0: #fee4bc;
+    --pageShade1: #f8e8c9;
+    --pageShade2: #f7e0c0;
+    --pageShade3: #d8c6a7;
+    --pageShade4: #97886f;
+    --pageShade5: #726145;
+    --leftPageGradient: linear-gradient(to right,
+        var(--pageShade0) 15%,
+        var(--pageShade1) 85%,
+        var(--pageShade2) 92.5%,
+        var(--pageShade3) 97%,
+        var(--pageShade4) 99.5%,
+        var(--pageShade5) 100%);
+    --rightPageGradientTrans: linear-gradient(to left,
+        rgb(210, 210, 210) 15%,
+        rgb(233, 233, 233) 85%,
+        rgb(200, 200, 200) 92.5%,
+        rgb(133, 133, 133) 97%,
+        rgb(98, 98, 98) 99.5%,
+        rgb(75, 75, 75) 100%);
+    --rightPageGradient: linear-gradient(to left,
+        var(--pageShade0) 15%,
+        var(--pageShade1) 85%,
+        var(--pageShade2) 92.5%,
+        var(--pageShade3) 97%,
+        var(--pageShade4) 99.5%,
+        var(--pageShade5) 100%);
 }
 
 html, body {
@@ -14,10 +44,10 @@ html, body {
 }
 
 #bookBase {
-    box-shadow: inset 0px 0px 5px 5px #781a1a;
+    box-shadow: inset 0px 0px 5px 5px var(--coverShade1);
     width:66rem;
     height:42rem;
-    background: linear-gradient(to right, #a52a2a 45%, #781a1a 46%, #781a1a 54%, #a52a2a 55%);
+    background: linear-gradient(to right, var(--coverShade0) 45%, var(--coverShade1) 46%, var(--coverShade1) 54%, var(--coverShade0) 55%);
     position: fixed;
     top: 52%;
     left: 50%;
@@ -62,6 +92,7 @@ html, body {
     perspective-origin: var(--pageWidth) calc(var(--pageHeight) / 2);
     transform-style: preserve-3d;
     backface-visibility: hidden;
+    /* filter: drop-shadow(0 0 5px #2228); */
 }
 
 .page {
@@ -74,14 +105,28 @@ html, body {
 
 #leftStaticPage {
     right: 50%;
-    background: linear-gradient(to right, BlanchedAlmond 92.5%, #dfceb2 97%, #97886f 100%);
+    background: var(--leftPageGradient);
 }
 
 #rightStaticPage {
     left: 50%;
-    background: linear-gradient(to left, BlanchedAlmond 92.5%, #dfceb2 97%, #97886f 100%);
+    background: var(--rightPageGradient);
 }
 
+#leftStaticPage .pageNumber, .dynamicPage.rightFace .pageNumber {
+    left: 2rem;
+}
+
+#rightStaticPage .pageNumber, .dynamicPage.leftFace .pageNumber {
+    right: 2rem;
+
+}
+
+.pageNumber {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1.3rem;
+}
 /* #leftFlippedPage {
     right: 25%;
     background: linear-gradient(to right, rgb(205, 237, 255) 92.5%, #b2d5df 97%, #6f8e97 100%);
@@ -132,18 +177,23 @@ html, body {
 
 .dynamicPage {
     left: calc(0.5 * var(--pageWidth));
-    background-color: #55eda080;
     backface-visibility: hidden;
 }
 
 .dynamicPage.leftFace {
     transform-origin: 0% 0%;
     transform: translateX(50%);
+    background: var(--rightPageGradient);
+    /* background-color: #fee4bc;
+    background-blend-mode:luminosity; */
 }
 
 .dynamicPage.rightFace {
     transform-origin: 100% 0%;
     transform: translateX(-50%);
+    background: var(--leftPageGradient);
+    /* background-color: #fee4bc;
+    background-blend-mode:luminosity; */
 }
 
 @keyframes leftFromLeft {
@@ -167,17 +217,21 @@ html, body {
 }
 
 .dynamicPage.leftFace.fromLeft {
-    animation: leftFromLeft 1.4s ease-in-out;
+    animation: leftFromLeft var(--flipDuration) ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .dynamicPage.leftFace.fromRight {
-    animation: leftFromRight 1.4s ease-in-out;
+    animation: leftFromRight var(--flipDuration) ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .dynamicPage.rightFace.fromLeft {
-    animation: rightFromLeft 1.4s ease-in-out;
+    animation: rightFromLeft var(--flipDuration) ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .dynamicPage.rightFace.fromRight {
-    animation: rightFromRight 1.4s ease-in-out;
+    animation: rightFromRight var(--flipDuration) ease-in-out;
+    animation-fill-mode: forwards;
 }
