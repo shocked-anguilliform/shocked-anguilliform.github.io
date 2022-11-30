@@ -12,11 +12,11 @@
       },
       {
          "number": 3,
-         "content": "<h1 style=\"margin:0.1in;\">This is page 3!</h1>"
+         "content": "<h1 style=\"margin:0.1in;\">This is page 3!</h1>Not very interesting, huh?"
       },
       {
          "number": 4,
-         "content": "<h1 style=\"margin:0.1in;\">This is page 4!</h1>"
+         "content": "<h1 style=\"margin:0.1in;\">This is page 4!</h1>Interesting content resumes on page 7"
       },
       {
          "number": 5,
