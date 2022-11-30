@@ -24,9 +24,11 @@ function getPage(pageNumber) {
 }
 
 function populatePages() {
-    let n = location.hash ? parseInt(location.hash.replace('#', '')) : book.contentPages[0]
+    let hash = parseInt(location.hash.replace('#', ''))
+    let n = hash > 0 && hash <= parseInt(book.maxPage) ? hash : book.contentPages[0] // if hash is a valid value, start on that page, else start on the first page with contents
     console.log(n)
     currentPage = n-(~n&1) //number of first page with content, or odd page immediately preceding
+    location.hash = currentPage
     let firstPage
     let secondPage
     firstPage = getPage(currentPage)
