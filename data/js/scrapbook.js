@@ -3,6 +3,7 @@ let book
 let currentPage
 const flipDuration = 1400;
 
+
 (async () => {
     let JSONfile = await fetch("/data/json/bookpages.json")
     let JSONtext = await JSONfile.text()
@@ -23,7 +24,8 @@ function getPage(pageNumber) {
 }
 
 function populatePages() {
-    let n = book.contentPages[0]
+    let n = location.hash ? parseInt(location.hash.replace('#', '')) : book.contentPages[0]
+    console.log(n)
     currentPage = n-(~n&1) //number of first page with content, or odd page immediately preceding
     let firstPage
     let secondPage
@@ -82,4 +84,5 @@ function turnPage(direction) {
         leftFace.parentElement.removeChild(leftFace)
         rightFace.parentElement.removeChild(rightFace)
     }, flipDuration)
+    location.hash = currentPage;
 }
