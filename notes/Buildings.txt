@@ -32,9 +32,9 @@ A red brick building with a peaked wooden roof that houses the school's carraige
 
 Stables, griffins/pegasi (1/1) B14
 
-Lab, alchemy (1/1) B15
+Lab, alchemy (1/1) B16
 
-Lab, spellcraft (1/1) B16
+Lab, spellcraft (1/1) B15
 
 Workshop (1/1) B17
 
